@@ -1,0 +1,201 @@
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wg-logo {
+    margin-right: auto; /*separates logo to left side from other navbar elements*/
+    height: 35px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    grid-area: navbar;
+}
+
+nav {
+    background-color: #793375;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    min-width: 800px; /*Keeps nav bar from distorting when browser window narrows*/
+}
+
+nav a {
+    flex-direction: row-reverse;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 10px;
+}
+
+nav a.language-selector {
+    font-weight: 700;
+    background-color: #642961;
+    border-radius: 50px;
+    padding: 4px 14px 8px;
+    margin-right: 40px;
+    margin-top: 2px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 325px 1fr;
+    grid-template-areas:
+    "navbar navbar"
+    "sidebar content";
+}
+
+.content {
+    padding: 22px;
+    height: 100%;
+}
+
+aside {
+    grid-area: sidebar;
+    border-right: 2px solid #d9d9d9;
+    width: 259px;
+    background-color: #efefef;
+    padding: 22px 30px 22px 22px;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside > div > a {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+aside > div > a:hover {
+    text-decoration: underline;
+}
+
+aside > div {
+    padding-bottom: 15px;
+}
+
+aside ul {
+    padding: 0;
+}
+
+aside ul li {
+    line-height: 2;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
+}
+
+aside ul li:hover {
+    text-decoration: underline;
+}
+
+.content {
+    grid-area: content;
+    max-width: 870px;
+}
+
+.content h1 {
+    font-size: 32pt;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #793375;
+    margin-bottom: 0;
+}
+
+.content h2 {
+    font-size: 26pt;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#escalation-table h2 {
+    margin-bottom: 30px;
+}
+
+.content h3,h4 {
+    margin: 30px 0 20px;
+}
+
+.content h3 {
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.content h4 {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.content p, li {
+    margin-bottom: 1em;
+    font-size: 13pt;
+}
+
+.content a {
+    color: #2b61a9;
+    font-weight: bold;
+}
+
+p.published-author {
+    color: #793375;
+    margin: 15px 0 30px;
+    font-size: 12pt;
+}
+
+.article-divider {
+    height: 1px;
+    background-color: #793375;
+    margin: 75px 0 0;
+}
+
+.y-target {
+    padding-top: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12pt;
+}
+
+table ol {
+    margin: 0;
+    padding-left: 17px;
+}
+
+table li {
+    font-size: 12pt;
+    padding-left: 5px;
+}
+  
+th, td {
+    border: 1px solid #d9d9d9;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+th {
+    background-color: #793375;
+    color: #fff;
+    font-size: 13pt;
+}
