@@ -51,7 +51,7 @@ header > nav > a:hover {
 
 .banner {
     background-color: #793375;
-    border-top: 3px solid #efefef;
+    border-top: 2px solid #efefef;
     padding: 25px 0;
 }
 
@@ -117,6 +117,12 @@ header > nav > a:hover {
     font-size: 1rem;
     margin-bottom: 4px;
     font-family: Segoe UI Semibold;
+}
+
+.vspacer {
+    height: 20px;
+    max-width: 300px;
+    margin: 0;
 }
 
 footer {

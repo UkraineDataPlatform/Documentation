@@ -1,8 +1,13 @@
+* {
+    color: #333333;
+}
+
 body {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0;
+    color: #333333;
 }
 
 .wg-logo {
@@ -31,7 +36,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
     padding: 14px 10px;
 }
 
@@ -82,9 +87,10 @@ aside a {
 }
 
 aside > div > a {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 18pt;
+    font-family: Segoe UI Semibold;
     text-decoration: none;
+    color: #333333;
 }
 
 aside *:hover:not(a) {
@@ -93,7 +99,7 @@ aside *:hover:not(a) {
 
 aside a:hover {
     text-decoration: underline;
-    text-decoration-color: #642961;
+    text-decoration-color: #793375;
 }
 
 aside > div {
@@ -109,8 +115,8 @@ aside ul {
 }
 
 aside ul li {
-    margin: 20px 0;
-    font-size: 1.1rem;
+    margin: 15px 0;
+    font-size: 13pt;
     list-style: none;
     text-decoration: none;
 }
@@ -118,11 +124,13 @@ aside ul li {
 aside .chapter {
     font-weight: 600;
     color: #333;
+    font-size: 14pt;
 }
 
 aside .nest1 {
     margin-left: 18px;
     font-weight: 400;
+    font-size: 13pt;
 }
 
 .content {
@@ -132,7 +140,7 @@ aside .nest1 {
 
 .content h1 {
     font-size: 32pt;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
     padding-bottom: 15px;
     border-bottom: 1px solid #793375;
     margin-bottom: 0;
@@ -140,7 +148,7 @@ aside .nest1 {
 
 .content h2 {
     font-size: 26pt;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
     margin: 0 0 20px;
 }
 
@@ -154,21 +162,21 @@ aside .nest1 {
 
 .content h3 {
     font-size: 22pt;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
 }
 
 .content h4 {
     font-size: 18pt;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
 }
 
 .content h5 {
     font-size: 16pt;
-    font-weight: 600;
+    font-family: Segoe UI Semibold;
 }
 
 .content p, li {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     font-size: 13pt;
 }
 
