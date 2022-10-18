@@ -35,16 +35,16 @@ nav a {
     padding: 14px 10px;
 }
 
-nav a.language-selector {
+/* nav a.language-selector {
     font-weight: 700;
     background-color: #642961;
     border-radius: 50px;
     padding: 4px 14px 8px;
     margin-right: 40px;
     margin-top: 2px;
-}
+} */
 
-nav a:hover {
+header > nav > a:hover {
     background-color: #fff;
     color: #333;
 }
@@ -53,7 +53,7 @@ main {
     height: 100%;
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 325px 1fr;
+    grid-template-columns: 305px 1fr;
     grid-template-areas:
     "navbar navbar"
     "sidebar content";
@@ -67,12 +67,13 @@ main {
 aside {
     grid-area: sidebar;
     border-right: 2px solid #d9d9d9;
-    width: 259px;
+    width: 240px;
     background-color: #efefef;
     padding: 22px 30px 22px 22px;
     position: fixed;
     top: 50px;
     height: 100%;
+    overflow-y: scroll;
 }
 
 aside a {
@@ -86,12 +87,21 @@ aside > div > a {
     text-decoration: none;
 }
 
-aside > div > a:hover {
+aside *:hover:not(a) {
+    text-decoration: none;
+}
+
+aside a:hover {
     text-decoration: underline;
+    text-decoration-color: #642961;
 }
 
 aside > div {
     padding-bottom: 15px;
+}
+
+.aside-margin-block { 
+    margin-bottom: 120px;
 }
 
 aside ul {
@@ -99,14 +109,20 @@ aside ul {
 }
 
 aside ul li {
-    line-height: 2;
-    font-size: 18px;
+    margin: 20px 0;
+    font-size: 1.1rem;
     list-style: none;
     text-decoration: none;
 }
 
-aside ul li:hover {
-    text-decoration: underline;
+aside .chapter {
+    font-weight: 600;
+    color: #333;
+}
+
+aside .nest1 {
+    margin-left: 18px;
+    font-weight: 400;
 }
 
 .content {
@@ -125,7 +141,7 @@ aside ul li:hover {
 .content h2 {
     font-size: 26pt;
     font-weight: 600;
-    margin: 15px 0;
+    margin: 0 0 20px;
 }
 
 #escalation-table h2 {
@@ -133,7 +149,7 @@ aside ul li:hover {
 }
 
 .content h3,h4 {
-    margin: 30px 0 20px;
+    margin: 25px 0 10px;
 }
 
 .content h3 {
@@ -143,6 +159,11 @@ aside ul li:hover {
 
 .content h4 {
     font-size: 18pt;
+    font-weight: 600;
+}
+
+.content h5 {
+    font-size: 16pt;
     font-weight: 600;
 }
 
@@ -156,6 +177,15 @@ aside ul li:hover {
     font-weight: bold;
 }
 
+.content img {
+    max-width: 100%; /* resize images proportionally with viewport */
+    height: auto; /* resize images proportionally with viewport */
+}
+
+p {
+    margin: 0 0 15px;
+}
+
 p.published-author {
     color: #793375;
     margin: 15px 0 30px;
@@ -165,7 +195,11 @@ p.published-author {
 .article-divider {
     height: 1px;
     background-color: #793375;
-    margin: 75px 0 0;
+    margin: 50px 0 0;
+}
+
+section {
+    padding: 0;
 }
 
 .y-target {
@@ -178,6 +212,10 @@ table {
     font-size: 12pt;
 }
 
+td p {
+    font-size: 12pt !important;
+}
+
 table ol {
     margin: 0;
     padding-left: 17px;
@@ -186,6 +224,13 @@ table ol {
 table li {
     font-size: 12pt;
     padding-left: 5px;
+}
+
+table img {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    width: auto;
 }
   
 th, td {
@@ -198,7 +243,7 @@ th, td {
 th {
     background-color: #793375;
     color: #fff;
-    font-size: 13pt;
+    font-size: 12pt;
 }
 
 .video-container {
@@ -218,4 +263,70 @@ th {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+/* custom text formatting */
+
+.nonbold > a {
+    font-weight: inherit; /* 'font-weight: inherit' fixes the issue of links appearing bold in headings */
+}
+
+/* Accordion styling */
+
+details ul {
+    margin-left: 18px;
+}
+
+details summary {
+    cursor: pointer;
+    color: #642961;
+}
+
+aside summary {
+    font-size: 18px;
+}
+
+summary {
+    margin: 20px 0 0;
+}
+
+/* Responsive 2 column section */
+
+.responsive-columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+
+.image-column {
+    flex: 0 1 auto;
+    margin-top: 15px;
+    min-width: 100px;
+}
+
+.text-column {
+    flex: 1 1 48%;
+    margin-top: 15px;
+}
+
+.image-column img {
+    max-width: 100%;
+    max-height: 85%;
+}
+
+span > img {
+    max-height: 35px;
+}
+
+/* spacer */
+
+.vspacer {
+    height: 20px;
+    max-width: 300px;
+    margin: 0;
+}
+
+.lower-alpha {
+    list-style-type: lower-alpha;
 }
