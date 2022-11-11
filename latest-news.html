@@ -49,8 +49,9 @@
         <details>
             <summary class="chapter">System updates</summary>
             <ul>
+                <li><a href="#release-note-2">Release Note - 11 Nov 2022</a></li>
                 <li><a href="#live-rollout">Live Rollout - 21 Jun 2022</a></li>
-                <li><a href="#release-notes-1">Release Note - 10 Aug 2022</a></li>
+                <li><a href="#release-note-1">Release Note - 10 Aug 2022</a></li>
                 <li><a href="#release-newsletter-1">Release Note - 14 Jul 2022</a></li>
             </ul>
         </details>
@@ -66,6 +67,28 @@
             All article tags need a unique id and a class="y-target"
             All news articles need a <p> underneath the <h2> as follows:
             <p class="published-author">Published on [PUBLICATION DATE] &nbsp | &nbsp Written by [AUTHOR'S NAME]</p> -->
+
+        <article id="release-note-2" class="y-target">
+            <h2>Release Note - 11 November 2022</h2>
+            <h3>Fixes</h3>
+            <ul>
+                <li>The Family Member Network flow was updated to resolve a minor bug.</li>
+                <li>Create Placement Tracking’s to Applicants flow issue.  A step was added to fetch the dates of the PT, this will ensure that the correct dates are used on the PT’s.</li>
+                <li>Applicant field on Application was temporary editable which could lead to accidental deletion. This field is now read only. </li>
+            </ul>
+            <h3>New features</h3>
+            <ul>
+                <li>Journey tracking data fields added to Household. Five new fields (Arrival Into UK Date, Arrival Hub ETA, Point of Arrival, Arrival Hub, Welcome Centre ETA) were added to Household, to capture Journey Tracking data. To be used by the contact centre.</li>
+                <li>Health Board Info tab added to Applicant. To be used by the health boards.</li>
+                <li>Age field on Applicant & flows to calculate field. Please note if DOB is changed you will need to press the refresh button to see the new age value.</li>
+                <li>The UK arrival date can now only be edited by the contact centre.</li>
+                <li>“Self Supporting” reason code added to Status Reason field on Applicant. To be used when an applicant is now self-supporting (e.g., has rented own accommodation). Should be used with journey status code set to IS05 or SS10.</li>
+                <li>“Repatriation” reason code added to Status Reason field on Applicant. To be used when applicant has returned to the Ukraine. Should be used with journey status code set to IS05 or SS10.</li>
+                <li>“Support Ended” reason code added to Status Reason field on Applicant. To be used when support is no longer required (e.g., applicant deceased). Should be used with journey status code set to IS05 or SS10.</li>
+            </ul>
+        </article>
+
+        <div class="article-divider"></div>
 
         <article id="newsletter-9" class="y-target">
             <h2>Announcing our new information hub</h2>
@@ -381,7 +404,7 @@
 
         <div class="article-divider"></div>
 
-        <article id="release-notes-1" class="y-target">
+        <article id="release-note-1" class="y-target">
             <h2>Release notes</h2>
             <p class="published-author">Published on 10 August 2022 &nbsp | &nbsp Written by William Rees</p>
             <p>We are continuing to develop the live Ukraine Data Platform MVP based on your feedback, to improve user experience and functionality.</p>
