@@ -77,8 +77,8 @@
                 <ul>
                     <li class="nest1"><a href="#identifying-suitable-host">Identifying a suitable host</a></li>
                     <li class="nest1"><a href="#rematch-within-boundary">Re-match within individual local authority boundary</a></li>
-                    <li class="nest1"><a href="#rematch-across-boundary">Re-match across local authority boundaries (within Wales)</a></li>
-                    <li class="nest1"><a href="#rematch-across-national-borders">Re-match across UK national borders</a></li>
+                    <li class="nest1"><a href="#rematch-across-boundary">Re-assignment across local authority boundaries (within Wales)</a></li>
+                    <li class="nest1"><a href="#rematch-across-national-borders">Cross Border Re-assignment across UK national borders</a></li>
                 </ul>
             <li class="chapter"><a href="#repatriation">Repatriation</a></li>
                 <ul>  
@@ -129,8 +129,9 @@
         <h1>Data Platform User Guide</h1>
          <section>
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
-            <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v7-10-11-2022.docx">Data Platform User Guide - Version 7 - Updated 10-11-2022</a>
+            <p>An offline copy of the latest User Guide will be available to download by the 20/12/2022</p>
+            <!---- <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
+            <a href="assets/documents/data-platform-user-guide-v7-10-11-2022.docx">Data Platform User Guide - Version 7 - Updated 10-11-2022</a> -->
             <div class="vspacer"></div>
         </section>
         <section>
@@ -190,6 +191,18 @@
                         <p>Definitions of a host and sponsor. Managing repatriation within the system; Recording No-Shows; Using the Health Board Info Tab; Using the Journey Tracking table. Annex 2 – Status Journey Reasons and Explanations</p>
                         <p>Updated:</p>
                         <p>Using the Search function; Navigation Button Change to access the Info and Training Hub; Searching for records outside a local authority; Screen shots to mirror changes in the platform. Saving and deleting a System View.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V8</td>
+                    <td>14/12/2022</td>
+                    <td>
+                        <p>Added:</p>
+                        <p>Status Reasons for Sponsor/Host records.<br>
+                            Cross Border Re-assignment – if a person has moved into Wales and we find out retrospectively
+                            </p>
+                        <p>Updated:</p>
+                        <p>Creating a New Housing Need Record; Re-matching; Re-match within the individual LA boundary; Re-assignment across Local Authority boundaries but wholly within Wales; Cross Border Re- assignment ; if a person is moving to Wales – advanced notice</p>
                     </td>
                 </tr>
             </table>
@@ -798,7 +811,12 @@
                 <li>On the General tab, double click on the Linked Housing Need field and select New Housing Need</li>
                 <img src="assets/images/select-new-housing-need.png" alt="select new housing need">
                 <li>Complete the fields as required. Those marked with a red asterisk (*) are mandatory. </li>
-                <li>Once you have made the required changes, make sure to save by clicking the Save button or Save & Close button. </li>
+                <li>Once you have made the required changes, make sure to save by clicking the Save button. This will assign the Housing Need record with a unique reference Code (HN--#####)</li>
+                <ol>
+                    <li>Copy the Housing Need reference code (you can highlight, right click and copy). Return to the Household Record (General Tab).and paste the Housing Need reference into the Linked Housing Need Field.</li>
+                    <img src="assets/images/linked-housing-needs.png" alt="screen grab of the linked housing needs menu">
+                    <li>Click Save & Close.</li>
+                </ol>
             </ol>
             <h5>Deleting an orphaned Housing Need record</h5>
             <p>When you merge households, you will also update the main household housing need. The person that has joined the new household will now have an orphaned housing need record which will need to be deleted.  Only a limited number of platform users can delete records, so if you have a housing need which needs to be deleted, please email <a href="mailto:WNSManagement@cardiff.gov.uk">WNSManagement@cardiff.gov.uk</a> with the Housing Needs reference (H-N – xxxx) that needs to be deleted.  </p>
@@ -1010,22 +1028,22 @@
             <h2 id="re-matching" class="y-target">Re-matching</h2>
             <p>There will be times where households need to be re-matched to alternative accommodation. This may be for several reasons including the scheduled end of a placement; placement breakdown; and movement to be closer to friends or family – amongst other reasons.</p>
             <p>Re-matching process is the same for individuals, irrelevant of the scheme through which they travelled to Wales.</p>
-            <p>The process for re-matching will depend on the nature of the re-match in question. There are broadly four categories of re-match:</p>
+            <p>The process for re-matching will depend on the nature of the re-match in question. Depending on the scenario, some elements of ‘rematching’ will be referred to as Re-assignment.  There are broadly four categories:</p>
             <ol>
                 <li>Re-match within the individual local authority boundary</li>
-                <li>Re-match across local authority boundaries but wholly within Wales</li>
-                <li>Re-match across UK national borders (e.g., from a local authority in Wales to a local authority in England – or vice versa)</li>
+                <li>Re-assignment across local authority boundaries but wholly within Wales</li>
+                <li>Cross Border Re-assignment across UK national borders (e.g., from a local authority in Wales to a local authority in England – or vice versa)</li>
                 <li>Re-match from a super sponsor route to a host across a UK national boundary.</li>
             </ol>
             <h3 id="identifying-suitable-host" class="y-target">Identifying a suitable host</h3>
-            <p>If you are aware of a household (individual/family/group) that requires re-matching you will need to identify a host identified (either via the Ukrainian themselves, through the Expression of Interest data previously shared, or via other means)</p>
+            <p>If you are aware of a household (individual/family/group) that requires re-matching you will need to identify a host (either via the Ukrainian themselves, through the Expression of Interest data previously shared, or via other means)</p>
             <p>There are two possible ways to identify a possible host:</p>
             <ol>
                 <li>Review existing sponsors that are/have hosted individuals through the Homes for Ukraine Sponsor Scheme. This can be done within the data platform.</li>
                 <li>Review those that have offered accommodation through the Super Sponsor Scheme. This will need to be done outside of the data platform using the Expressions of Interest shared through the Ukraine Offer Tracker spreadsheet. Access and further guidance on the <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure.objectiveconnect.co.uk%2Flogin&data=05%7C01%7CSarah.Lilley%40gov.wales%7C5188c88010944180a59108da6e4d9d90%7Ca2cc36c592804ae78887d06dab89216b%7C0%7C0%7C637943576870226169%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=0VA07uBBVe9%2FChZtintEkk5Gsm7TeOZGkBB6rhlvvyw%3D&reserved=0">Offer Tracker Spreadsheet is available here</a>.  You will require access to the to the URD - URD - Onward Accommodation workspace within Objective Connect to access both the spreadsheet and guidance.</li>
             </ol>
             <h3 id="rematch-within-boundary" class="y-target">Re-match within the individual local authority boundary</h3>
-            <p>If you can facilitate a local re-match, there is no need for another local authority’s agreement nor notification to the UK Government via the <a href="https://digital.dclg.gov.uk/jira/servicedesk/customer/portal/11/user/login?destination=portal%2F11">Jira</a> system.</p>
+            <p>If you can facilitate a local re-match, there is no need for another local authority’s agreement nor notification to the UK Government.</p>
             <p>If you are able to-match with a sponsor of another Ukrainian household who has travelled under the Homes for Ukraine Scheme, you will find their details in the system and will need to link the records of both the Sponsor and the household that requires re-matching.</p>
             <p>If you have found a suitable host from the EoI data generated through the Super Sponsor Scheme, you will need to undertake the following steps on the data platform to record the re-match and ensure appropriate property, DBS and safeguarding checks are completed for the new host and where necessary other family members living with them.</p>
             <ol>
@@ -1041,8 +1059,9 @@
                     </ol>
                 </li>
             </ol>
-            <h3 id="rematch-across-boundary" class="y-target">Re-match across local authority boundaries but wholly within Wales</h3>
-            <p>The key difference between matching and this process is the need for local authorities to get the agreement of the onward destination local authority before processing the transfer on the Ukraine Data Platform. You will also need to export any data required about the specific Ukrainian household moving out of their area to ensure you do not lose access to the information before transferring records to the new local authority.</p>
+            <h3 id="rematch-across-boundary" class="y-target">Re-assignment across local authority boundaries but wholly within Wales</h3>
+            <p>The key difference between matching and this process is the need for local authorities to get the agreement of the onward destination local authority before processing the transfer on the Ukraine Data Platform. The Ukraine Data Platform does not permit full access to all records for every local authority. Only the records of those linked to an area can be viewed by the relevant local authority. Therefore, if a visa holder moves to a new local authority a re-assignment process must take place to ensure data transfers appropriately.</p>
+            <p>You will also need to export any data required about the specific Ukrainian household moving out of their area to ensure you do not lose access to the information before transferring records to the new local authority.</p>
             <p>Once the re-match has been agreed between both local authorities, <b>the original local authority</b> (where a household is already placed) will need to:</p>
             <ol>
                 <li><a href="#creating-personalised-system-views">Create a system view</a> of the names within the household transferring and all required fields and export the data to Excel.</li>
@@ -1059,30 +1078,54 @@
                 <li><a href="#linking-applicant-record">Add the host into the placement tracking record</a> for the household using the Host Sponsor field.</li>
                 <li>Once the host has confirmed the move has taken place, complete the finance section of the host record.</li>
             </ol>
-            <h3 id="rematch-across-national-borders" class="y-target">Re-match across UK national borders (either Scheme)</h3>
+            <h3 id="rematch-across-national-borders" class="y-target">Cross Border Re-assignment across UK national borders (either Scheme)</h3>
             <p>Where a Ukrainian wishes to move from or to Wales, to another country within the UK and agreement has been reached between both local authorities, the way to capture that within the system is straight forward.  The process of recording this in the data platform is the same, irrelevant of the scheme they are transferring from.</p>
+            
             <h4>If the person is leaving Wales</h4>
             <ol>
+                <li>Establish the location within the UK where the Ukrainian has identified the new host </li>
+                <li>Contact the Case Management Team <a href="mailto:casemanagementteam@cardiff.gov.uk">casemanagementteam@cardiff.gov.uk</a> with all relevant details of the transfer request </li>
+                <li>The Case Management Team will contact the onward Local Authority and submit the request via Foundry, if accepted they will confirm back to the Welsh Local Authority once Foundry has been updated </li>
                 <li>Ensure the <a href="#using-case-notes">case notes</a> record that the onward destination local authority has agreed to the transfer.</li>
                 <li><a href="#creating-placement-record">Close the placement record</a> of the household’s existing placement.</li>
                 <li><a href="#creating-placement-record">Create a new placement record</a> providing their new cross border address and date of transfer. If this is not possible, add the country to which they are moving to.</li>
-                <li>Select either (England), (Scotland), (Northern Ireland) or (Outside of UK) within the Local Authority mandatory field.</li>
-                <li>Update the <a href="https://digital.dclg.gov.uk/jira/servicedesk/customer/portal/11/user/login?destination=portal%2F11">Jira</a> platform to notify UK Government of the re-match.</li>
-            </ol>
-            <p>Selecting (England), (Scotland), (Northern Ireland), or (Outside of UK) ensures you can correctly assign an individual when they have moved outside of Wales and remove the records from your local authority view. However, it will not transfer records out of the data platform to cross border systems. Updating cross border systems such as Jira will need to be completed separately.</p>
-            <h4>If the person is moving into Wales</h4>
-            <p>Where a local authority is notified of a re-match request to their area from outside of Wales you will need to do the following:</p>
+                <li>Select either (England), (Northern Ireland) or (Outside of UK) within the Local Authority mandatory field. </li>
+            </ol> 
+            <p><b>Scotland does not currently use Foundry so this process will not be applicable to those who are requesting to leave the country to live in Scotland.</b></p>  
+            <p>Selecting (England), (Northern Ireland), or (Outside of UK) ensures you can correctly assign an individual when they have moved outside of Wales and remove the records from your local authority view. However, it will not transfer records out of the data platform to cross border systems.  Updating cross border systems such as Foundry will be completed separately by the case management team.</p>
+           
+            <h4>If the person is moving into Wales with advanced notice</h4>
+            <p>These are requests sent for re-assignment to Wales via Foundry with notice prior to any travel arrangements being made.</p>
+            <p>When a local authority from outside of Wales sends a re-assignment request to Wales via Foundry, the Case Management Team will receive and discuss the request with the relevant Welsh Local Authority. If the Welsh Local Authority accepts the process will be as follows:</p>
             <ol>
-                <li>Update the <a href="https://digital.dclg.gov.uk/jira/servicedesk/customer/portal/11/user/login?destination=portal%2F11">Jira</a> system to notify UK Government of the re-match (unless the original LA has completed this process) which will prompt UK Gov to send the files across to WG.</li>
-                <li>Notify Welsh Government via <a href="mailto:UkraineResponseQueries@gov.wales">UkraineResponseQueries@gov.wales</a> to confirm whether request has been granted or denied.</li>
-                <li>Within the data platform, you will need to:</li>
-                <ol class="lower-alpha">
-                    <li>Ensure the <a href="#using-case-notes">case notes</a> case notes record the transfer has been agreed</li>
-                    <li><a href="#adding-new-sponsor">Add a new host</a> within the Sponsor section of the data platform</li>
-                    <li><a href="#adding-host-addresses">Add the host property address</a></li>
-                    <li>Update the <a href="#using-case-notes">Case Notes and Check boxes</a> to record non sensitive info regarding outcomes of checks and any other information necessary.</li>
-                    <li>Once the UK Gov transfer the records across to Welsh Government, they will be uploaded into the Ukraine Data Platform. Once they are visible, you will need to <a href="#creating-placement-record">create a new household placement tracking record</a>, linking the host to the applicant within the Host Sponsor field in the placement tracking form.</li>
-                </ol>
+                <li>The Case Management Team will accept the request on Foundry and gain access to the data </li>
+                <li>The data will flow into the Ukraine Data Platform – please note there may be a time lag </li>
+                <li>Within the data platform, you will need to:
+                    <ol>
+                        <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
+                        <li><a href="#adding-host-addresses">Add the host property address</a></li>
+                        <li>Update the <a href="#using-case-notes">Case Notes and Check boxes</a> to record non sensitive info regarding outcomes of checks and any other information necessary.</li>
+                        <li>Once the applicant records are visible, you will need to <a href="#creating-placement-record">create a new household placement tracking record</a>, linking the host to the applicant within the Host Sponsor field in the placement tracking form.</li>
+                        <li>Ensure the <a href="#using-case-notes">case notes</a> record the transfer has been agreed and include any information received from the Case Management Team</li>
+
+                    </ol>
+                </li>
+            </ol>
+            <h4>If the person has moved into Wales and we find out retrospectively</h4>
+            <p>These are instances where a Local Authority has identified that a Ukrainian has already arrived in Wales with no advance notice of travel.  The receiving Welsh Local Authority will need to follow the below process:</p>
+            <ol>
+                <li>Contact the Case Management Team <a href="mailto:casemanagementteam@cardiff.gov.uk">casemanagementteam@cardiff.gov.uk</a> and ask them to raise a re-assignment request on Foundry</li>
+                <li>The Case Management Team will contact the original Local Authority and if the request is accepted will arrange for the information to be sent over</li>
+                <li>The data will flow into the Ukraine Data Platform – please note there may be a time lag </li>
+                <li>Within the data platform, you will need to:
+                    <ol>
+                        <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
+                        <li><a href="#adding-host-addresses">Add the host property address</a></li>
+                        <li>Update the <a href="#using-case-notes">Case Notes and Check boxes</a> to record non sensitive info regarding outcomes of checks and any other information necessary.</li>
+                        <li>Once the applicant records are visible, you will need to <a href="#creating-placement-record">create a new household placement tracking record</a>, linking the host to the applicant within the Host Sponsor field in the placement tracking form.</li>
+                        <li>Ensure the <a href="#using-case-notes">case notes</a> record the transfer has been agreed and include any information received from the Case Management Team</li>
+                    </ol>
+                </li>
             </ol>
           </section>
           <div class="article-divider"></div>
@@ -1923,7 +1966,7 @@
         <p>Users  of the system will need to make a judgement on a case-by-case basis as to which status reason is applicable for a particular record at a point in time.</p>
         <table>
             <tr>
-                <th>Journey Status</th>
+                <th>Status for Applicants</th>
                 <th>Explanation</th>
             </tr>
             <tr>
@@ -1984,7 +2027,28 @@
             </tr>
             
         </table>
-
+        <table>
+            <tr>
+                <th>Status Reasons for Sponsor/Host</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>Active</td>
+                <td>The record is active and in use.</td>
+            </tr>
+            <tr>
+                <td>Duplicate Record</td>
+                <td>There are multiple records for the same sponsor/Host. Mark up all bar one as duplicate</td>
+            </tr>
+            <tr>
+                <td>Adverse Checks</td>
+                <td>An individual has failed a check against the Police National Computer (PNC) or the Home Office Warnings Index (Central Gov). Used in conjunction with rejected status code when appropriate</td>
+            </tr>
+            <tr>
+                <td>Inactive</td>
+                <td>The record is no longer active.  Used in conjunction with rejected or withdrawn status codes.</td>
+            </tr>
+            </table>
 
         </section>
         <div class="vspacer"></div>
