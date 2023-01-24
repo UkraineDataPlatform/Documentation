@@ -89,9 +89,12 @@
                 <ul>
                     <li class="nest1"><a href="#adding-new-sponsor">Adding a new Sponsor / Host</a></li>
                     <li class="nest1"><a href="#adding-host-addresses">Adding Host Addresses</a></li>
-                    <li class="nest1"><a href="#linking-applicant-record">Linking an Applicant Record and a Sponsor Record</a></li>
+                    <li class="nest1"><a href="#host-with-multiple-addresses">Hosts with multiple addresses</a></li>
+                    <li class="nest1"><a href="#linking-household-record">Linking a household record and a Sponsor/host record</a></li>
+                    <li class="nest1"><a href="#replacing-an-existing-host">Replacing an existing Host / Sponsor</a></li>
                     <li class="nest1"><a href="#recording-additional">Recording additional sponsor household members</a></li>
                     <li class="nest1"><a href="#handling-duplicate-records">Handling duplicate Applicant Records</a></li>
+                    <li class="nest1"><a href="#rejected-sponsors">Rejected / Withdrawn Sponsors/Hosts </a></li>
                 </ul>
             <li class="chapter"><a href="#creating-personalised-system-views">Creating personalised Views and Reports</a></li>
                 <ul>
@@ -110,7 +113,7 @@
                 <ul>
                     <li class="nest1"><a href="#super-sponsor-scheme">Super Sponsor scheme</a></li>
                     <li class="nest1"><a href="#individual-sponsor-scheme">Individual Sponsor scheme</a></li>
-                    <li class="nest1"><a href="#sponsor-status">Sponsor status</a></li>
+                    <li class="nest1"><a href="#sponsor-status">Sponsor</a></li>
                 </ul>
                 <li class="chapter"><a href="#status-reasons">Status reasons and explanations</a></li>
             <li class="chapter"><a href="#mfa">Multi Factor Authentication</a></summary>
@@ -131,7 +134,7 @@
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
             <!----  <p>An offline copy of the latest User Guide will be available to download by the 20/12/2022</p>-->
            <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v8-14-12-22.docx">Data Platform User Guide - Version 8 - Updated 14-12-2022</a> 
+            <a href="assets/documents/data-platform-user-guide-v9-24-01-23.docx">Data Platform User Guide - Version 9 - Updated 24-01-2023</a> 
             <div class="vspacer"></div>
         </section>
         <section>
@@ -824,6 +827,7 @@
             <p>Whenever a household is moved, you will need to create a new placement record and close the previous one. This creates a history of their placements including start and end dates and reasons for moving. </p>
             <p>Creating and closing placement records is equally applicable irrelevant of the Scheme.</p>
             <p>If you only need to move one person in the household (for example someone needs to be moved to hospital) they will need to be split from the family group. You can find instructions on how to do that under the <a href="#removing-applicant-new-household">removing an applicant to a household</a> section.</p>
+            <p><b>Important:</b> Before creating a placement tracking for a sponsor/host placement you must first assign / replace a host within the household section. </p>
             <h5>Closing a placement record</h5>
             <p>We advise closing a placement record before you create a new record detailing their next placement. To do so:</p>
             <ol>
@@ -852,7 +856,7 @@
                     </tr>
                     <tr>
                         <td>Placement Type  </td>
-                        <td>Welcome Centre / Emergency Accommodation / Hospital /Move on Accommodation etc</td>
+                        <td>Welcome Centre / Temporary Accommodation / Hospital /Move on Accommodation / Sponsor / Host etc</td>
                     </tr>
                     <tr>
                         <td>Date started </td>
@@ -860,7 +864,7 @@
                     </tr>
                     <tr>
                         <td>Date Allocated </td>
-                        <td>Date when Contact Centre allocated space in Welcome Centre (if known) or Local Authority allocated space for other accommodation</td>
+                        <td>Date when Contact Centre allocated space in Welcome Centre (if known / applicable) or Local Authority allocated space for other accommodation</td>
                     </tr>
                     <tr>
                         <td>Date ended </td>
@@ -894,6 +898,51 @@
                 <div class="vspacer"></div>
                 <li>Once you have completed all relevant fields, click the Save or Save & Close buttons. </li>
             </ol>
+            <p>When creating a placement tracking once the placement type has been selected as ‘sponsor / host’ the host information will auto populate onto the right-hand side of the placement tracking from the household page.</p>
+            <img src="assets/images/npt23.png" alt="New Placement Tracking Menu">
+            <p>This will allow you to copy and paste information over to the free text address box if required.</p>
+            <p>If you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ this will not pull through the host details into the placement tracking.  It is important that you consider the below placement reasons and when to use them within a placement tracking record:</p>
+            <table>
+                <tr>
+                    <th>Placement Type</th>
+                    <th>Reason for Placement Type</th>
+                    <th>Additional Reasons</th>
+                    <th>Additional Reasons 2</th>
+                </tr>
+                <tr></tr>
+                    <td>Hospital</td>
+                    <td>When someone has left their accommodation to be hospitalised</td>
+                    <td></td>
+                    <td></td>
+                <tr></tr>
+                    <td>Move on accommodation</td>
+                    <td>When someone has left hosted accommodation to become self-supported</td>
+                    <td>When someone has left one local authority to be hosted at another</td>
+                    <td></td>
+                <tr></tr>
+                    <td>Repatriation</td>
+                    <td>When someone has left the UK entirely to return to Ukraine</td>
+                    <td></td>
+                    <td></td>
+                <tr></tr>
+                    <td>Sponsor/Host</td>
+                    <td>When someone is matched with a host - usually for the first time on the individual scheme</td>
+                    <td>When someone is new to the local authority having moved from another LA in Wales to live with a chosen host</td>
+                    <td></td>
+                <tr></tr>
+                    <td>Temporary Accommodation</td>
+                    <td>When someone arrives unexpected and is housed in initial accommodation (welcome centre) until a suitable host can be found</td>
+                    <td>When someone needs to leave host address due to relationship breakdown and is moved to initial accommodation (welcome centre)</td>
+                    <td>When someone needs to leave host address due to relationship breakdown and is moved to another host temporarily</td>
+                <tr></tr>
+                    <td>Welcome Centre</td>
+                    <td>When a person on the super sponsor scheme is housed in initial accommodation (welcome centre)</td>
+                    <td></td>
+                    <td></td>
+
+            </table>
+            <p>When a new placement tracking record is created for anything other than ‘sponsor/host’ – the host details will automatically be removed from the Household page. You do not need to remove the host prior to ending the current placement tracking record.</p>
+
             <h3 id="changing-journey-status" class="y-target">Changing Journey Status</h3>
             <p>To change an applicant’s Journey Status: </p>
             <ol>
@@ -977,6 +1026,7 @@
                 <li>Click Save or Save and Close. </li>
             </ol>
             <p>Once you have completed these steps, you must edit the linked housing need record for the existing household to reflect the change in accommodation requirements.</p>
+            <p>The host linked to the original household will also be removed from the locked sponsor field within applicant page. </p>
             <p>A case note will be automatically generated which will show the household ID they were in and their new WG ID reference.</p>
             <h5>Adding an applicant to a household group</h5>
             <p>To add an applicant to an existing household group you need to: </p>
@@ -995,6 +1045,7 @@
                 <li>You will need to edit the new household member’s relationship to the lead applicant. In the table, click the dropdown under the ‘Relationship to Lead Applicant’ field.</li>
                 <img src="assets/images/relationship-to-lead-applicant.png" alt="relationship to lead applicant">
                 <li>Select the appropriate relationship and save your changes by clicking the small disk icon on the right-hand side of the table <span><img src="assets/images/small-disk-icon.png" alt=""></span></li>
+                <li>The host linked to the new household will automatically link to the new added applicant and will appear on the locked sponsor section of the applicant page.</li>
                 <li>A case note will be automatically generated which will show the household ID they were in and their new household ID reference.</li>
                 <li>You will now need to <a href="#updating-checks-box">amend the Household Housing Needs record</a> and email <a href="mailto:WNSManagement@cardiff.gov.uk">WNSManagement@cardiff.gov.uk</a> requesting deletion of the now orphaned housing need record, for the person that has just joined the family. For example, Maurice Jones.</li>
             </ol>
@@ -1054,7 +1105,7 @@
                     <ol class="lower-alpha">
                         <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
                         <li><a href="#adding-host-addresses">Add the host property address</a></li>
-                        <li><a href="#linking-applicant-record">Link the host to the applicant</a></li>
+                        <li><a href="#linking-household-record">Link the host to the applicant</a></li>
                         <li><a href="#creating-placement-record">Create a new tracking placement record</a></li>
                     </ol>
                 </li>
@@ -1066,8 +1117,13 @@
             <ol>
                 <li><a href="#creating-personalised-system-views">Create a system view</a> of the names within the household transferring and all required fields and export the data to Excel.</li>
                 <li><a href="#creating-placement-record">Close the existing placement tracking record</a> completing the Move on Reason and placement end date.</li>
-                <li>To assign them to the new local authority, <a href="#creating-placement-record">create a new household placement tracking record</a>. Ensure you detail the name and address of the new host within the address field and assign it to the new local authority by adding them into the ‘Local Authority’ field within the placement tracking form.  </li>
-                <li>Save the placement tracking record. <b>At this point all information will transfer over to the new local authority and you will lose access to the record(s).</b></li>
+                <li>To assign them to the new local authority, <a href="#creating-placement-record">create a new household placement tracking record</a>. 
+                    <ol>
+                        <li>Ensure the move on reason is set to ‘move on accommodation’.</li>
+                        <li>Detail the name and address of the new host within the address field, if known.</li>
+                        <li>Assign it to the new local authority by adding them into the ‘Local Authority’ field within the placement tracking form.  </li>
+                    </ol>
+                <li>Save the placement tracking record. <b>At this point the current host will automatically remove from the household page and all information will transfer over to the new local authority and you will lose access to the record(s).</b></li>
                 <li>Inform the new local authority the records have been transferred across.</li>
             </ol>
             <p>The <b>new</b> local authority needs to:</p>
@@ -1075,7 +1131,10 @@
                 <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
                 <li><a href="#adding-host-addresses">Add the host property address</a></li>
                 <li>Completing necessary checks on the host updating <a href="#using-case-notes">Case Notes and Check boxes</a> during the process.</li>
-                <li><a href="#linking-applicant-record">Add the host into the placement tracking record</a> for the household using the Host Sponsor field.</li>
+                <li><a href="#linking-household-record">Add the host into the placement tracking record</a> using the Host field.</li>
+                <li>Go into the current open placement tracking (for move on accommodation) and update with the end date as the same day. </li>
+                <li>Open a new placement under the relevant placement type for the same day (this will not override the previous placement tracking date). </li>
+                <li>If the placement type ‘sponsor/host’ is selected, then the new host will pull through into the right-hand side of the placement tracking. </li>
                 <li>Once the host has confirmed the move has taken place, complete the finance section of the host record.</li>
             </ol>
             <h3 id="rematch-across-national-borders" class="y-target">Cross Border Re-assignment across UK national borders (either Scheme)</h3>
@@ -1223,7 +1282,7 @@
         <div class="article-divider"></div>
         <section>
             <h2 id="using-the-Sponsor-section" class="y-target">Using the Sponsor Section</h2>
-            <p>A Sponsor is the person who sponsor’s the visa for the individual.  For Super Sponsor that is the Welsh Government but for Individual Sponsor Route, that would be the host providing them with accommodation.</p>
+            <p>A Sponsor is the person who sponsor’s the visa for the individual.  For Super Sponsor that is the Welsh Government but for Individual Sponsor Scheme, that would be the host providing them with accommodation.</p>
             <p>A Host is the person providing accommodation for the household(s).</p>
             <p>An individual can be both sponsor and host. </p>
             <h3 id="adding-new-sponsor" class="y-target">Adding a new Sponsor / Host</h3>
@@ -1236,6 +1295,7 @@
                 <ol class="lower-alpha">
                     <li>Within the ‘Type’ field, select host to reflect that it is someone who has offered accommodation through Expression of Interest (EoI) as part of the Super Sponsor Scheme. In the unlikely event you need to create a new record for someone offering accommodation through the Homes for Ukraine Scheme, you would select Sponsor.</li>
                     <li>Address refers to the home that the host lives in, rather than the address of the accommodation being offered.</li>
+                    <li>It is really important that you include contact details for the host including both telephone number and email address. </li>
                     <li>Once checks are completed and the host is active and receiving their monthly contribution, you will be able to add their finance system reference and other details within this section for reference. It will not link directly to your local finance systems.</li>
                 </ol>
                 <li>Update <a href="#using-case-notes">Case Notes and Activities</a> as appropriate.</li>
@@ -1261,50 +1321,69 @@
                 <img src="assets/images/user-or-team-selector.png" alt="user or team selector">
             </ol>
             <p>To check, this has happened correctly, you can check the host address to ensure the host local authority has changed as well as the ‘owner’ in the top right corner of the record.  This may take a little while to filter through so refresh after 20 to 30 seconds</p>
-            <h3 id="linking-applicant-record" class="y-target">Linking an applicant record and a Sponsor record</h3>
+            
+            <h3 id="host-with-multiple-addresses" class="y-target">Hosts with multiple addresses</h3>
+            <p>If a host has multiple addresses, then these need to be added separately for each property in the <a href="#adding-host-addresses">host addresses tab.</a>  Each address for the host will show as available individually until they are linked to an applicant. </p>
+            <p>When a host is linked to the applicant on the household page, you will be able to search all available addresses for that host.</p>
+            <p>If a host has more than one family staying in the same property:</p>
+            <ol>
+                <li>The address will need to be <a href="#adding-host-addresses">added onto the address section</a> multiple times</li>
+                <li>Each address will require a different annotation to show it’s a different part of the house/ building – e.g. Flat 1 / Flat 2: </li>
+                <img src="assets/images/host-multiple-addresses-23.png" alt="Host address menu displaying multiple addresses">
+            </ol>
+
+            <h3 id="linking-household-record" class="y-target">Linking a household record and a Sponsor/host record</h3>
             <p>When linking a sponsor to a household there are two steps to follow.</p>
             <ol>
-                <li>Within the individual applicant record, you need to input the sponsor details within the Personal Details Tab.  </li>
+                <li>Within the household page, you need to input the sponsor / host into the house field.</li>
                 <li>Create a Household Placement Tracking record</li>
             </ol>
-            <h4>Adding the Sponsor Details to your applicant record</h4>
+            <h4>Adding the Sponsor / host Details to your household record</h4>
+            <p>To open a household record:</p>
             <ol>
-                <li>Open the applicant record from the <a href="#applicant">Applicant section</a> of the data platform and click on the Personal Details tab.</li>
-                <li>Click in the Sponsor tab to add the name of your sponsor.  You can either type the name or press return to bring up a full list.</li>
-                <img src="assets/images/add-sponsor-name.png" alt="add sponsor name">
-                <li>If your sponsor has more than one address or you have multiple sponsors with the same name, click on the drop-down arrow next to their name to see further details.</li>
+                <li>Search for an applicant within the household you wish to edit either through the Applicants or Households menu.  </li>
+                <li>Double-click on a member of the household and click on the blue Household ID at the top of the summary screen.  </li>
+                <li>Click in the Host Field to add the name of your sponsor.  You can either type the name or press return to bring up a full list.</li>
+                <img src="assets/images/host-field23.png" alt="menu showing the hose field">
+                <li>If you have multiple sponsors with the same name, click on the drop-down arrow next to their name to see further details</li>
                 <img src="assets/images/further-sponsor-details.png" alt="further details">
-                <li>Click in the host address field to select the appropriate address.  It will only list those associated with the sponsor.</li>
+                <li>Click in the host address field to select the appropriate address.  It will only list those associated with the sponsor that are currently available.</li>
                 <img src="assets/images/host-address-field.png" alt="host address field">
                 <div class="vspacer"></div>
                 <li>If you select the wrong address, you can easily delete and select the right address or check the HA reference in the host address tab within the Sponsor section of the platform.</li>
-                <li>Click Save or Save and Close.</li>
+                <li>Click Save or Save and Close - if you check the ‘sponsor’ section on the personal details tab of the applicant page – you will see this has now pulled through the new sponsor – this field will be locked with no option to update</li>
+                <img src="assets/images/sponsor-section23.png" alt="Menu showing the sponsor section">
             </ol>
             <div class="vspacer"></div>
-            <h4 id="create-placement-tracking-record">Create a Household Placement Tracking record</h4>
-            <p>Create a <a href="#creating-placement-record">placement household tracking</a> record ensuring you add</p>
-            <ul>
-                <li>Placement Type as Sponsor/Host</li>
-                <li>Date started</li>
-                <li>Host Sponsor name </li>
-                <li>Address, this does not autofill based on sponsor </li>
-                <li>Local Authority</li>
-            </ul>
-            <p>Leave the move on reason and end date blank as this is an active record.</p>
-            <p>Click Save or Save and Close.</p>
-            <h3 id="recording-additional" class="y-target">Recording additional sponsor household members</h3>
-            <p>A sponsor household member is a person that is living with the applicant at the time the application to be a sponsor is made. For example, a child or partner.</p>
+            <h3 id="replacing-an-existing-host">Replacing an existing Host / Sponsor </h3>
+            <p>On some occasions you will need to replace an existing host/sponsor with another within the current local authority. </p>
+            <p>If the host is being replaced:</p>
+            <ol>
+                <li>Firstly, you must delete the current host out of the host / host address field on the household page.</li>
+                <li>When searching the replacement host’s name in the host box, only available hosts will show (those that don’t have an applicant attached to their record).</li>
+                <li>Hosts with multiple properties will show as available if they have any available properties – only the available properties will show in the host address list. </li>
+            </ol>
+            <img src="assets/images/replace-host232.png" alt="Replace host menu">
+            <p><b>Important:</b>when changing / updating a host on the record you must update the host on the household field <b>first</b> and then create a placement tracking for the new placement.</p>
+            <p>As the host section on the household page is mandatory you can only replace a host with an alternative host unless the applicant is moving to move on accommodation (self-supporting).</p>
+            <p>To remove a host completely (because the person is moving to self-supporting within the LA for instance) you need to create a placement tracking with a dropdown of any scenario other than sponsor/host:</p>
+            <img src="assets/images/dropdown-nohost23.png" alt="Drop down menu with sponsor/host striked through">
+            <p>Once a placement tracking has been created with one of the above dropdowns, the host will be automatically removed from the household page and the host section will no longer be a mandatory field. </p>
+
+            <h3 id="recording-additional">Recording additional sponsor household members</h3>
+            <p>A sponsor household member is a person that is living with the applicant at the time the application to be a sponsor is made.  For example, a child or partner.</p>
             <p>Understanding who lives with the sponsor in their home, will help to ensure the appropriate checks are undertaken.</p>
             <p>To add a sponsor household member, you need to:</p>
             <ol>
-                <li>Click on <a href="#sponsor-household">Sponsor Household</a> section in the left hand navigation.</li>
-                <li>Click <span><img src="assets/images/new-button.png" alt="'new' button"></span>in the top application navigation bar</li>
-                <li>Add the name of the sponsor. Click into the Sponsor field and the most recent record you have opened will show in the drop down.  Otherwise you can hit return for a full list of start to type their name for a short list of options to show.</li>
-                <img src="assets/images/sponsor-field.png" alt="sponsor field">
-                <div class="vspacer"></div>
+                <li>Click on <a href="https://ukrainedataplatform.github.io/documentation/user-guide.html#sponsor-household">Sponsor Household</a> section in the left hand navigation.</li>
+                <li>Click <img src="assets/images/new-button.png" alt="New button"> in the top application navigation bar.</li>
+                <li>3)	Add the name of the sponsor.  Click into the Sponsor field and the most recent record you have opened will show in the drop down.  Otherwise you can hit return for a full list of start to type their name for a short list of options to show.</li>
+                <img src="assets/images/sponsor-field.png" alt="Sponsor Field">
                 <li>Complete the remainder of the fields.</li>
                 <li>Click Save or Save & Close.</li>
             </ol>
+
+
             <h3 id="handling-duplicate-records" class="y-target">Handling Duplicate Applicant Records</h3>
             <p>Many Ukrainians have applied on several visa schemes in order to seek sanctuary in Wales and the UK. If they have had a visa approved for more than one scheme, the data in the platform may reflect this, appearing as duplicate records. </p>
             <p>It may be clear to you which sponsorship scheme a person is travelling on, for example if they arrive at a Welcome Centre (super sponsor) or if they have their own sponsor (Individual Sponsor). If it is not clear, you can ask the individual to confirm which scheme they are travelling on, or you can ask to check their application number on any emails or documentation they have brought with them.</p>
@@ -1319,6 +1398,26 @@
                 <li>Ensure the linked housing needs record reflects the correct number of people and their requirements using the <a href="#updating-existing-housing-need">Updating an existing housing needs record</a> guide</li>
                 <li>To remove these duplicates from your system or personalised Views, filter the SS or IS journey status column to ensure SS11 / IS100 is not included.</li>
             </ol>
+
+            <h3 id="rejected-sponsors" class="y-target">Rejected or Withdrawn Sponsors / Hosts</h3>
+            <p>There may be occasions where a sponsor/host wishes to withdraw their interest in hosting or is rejected as a result of failed checks, such as local government/ property checks.</p>
+            <p>If a host expresses that they wish to ‘withdraw’ from the scheme or is ‘rejected’ as a result of failed checks the record will need to be set to the correct sponsor journey status in order for the system to deactivate their records.</p>
+            <img src="assets/images/sponsor-journey23.png" alt="Menu showing the selection to make under sponsor journey.">
+            <p>Once selected the system will automatically deactivate these records to prevent them from showing up on the active sponsors list.</p>
+            <ul>
+                <li>You will still have the ability to create case notes on the record once deactivated.</li>
+                <li>If you need to access a withdrawn / rejected sponsor record – you can locate these via the inactive sponsor’s view: </li>
+                <img src="assets/images/inactive-sponsors23.png" alt="Inactive Sponsor drop down">
+            </ul>
+            <h3 id="duplicate-host-no-approved" class="y-target">Duplicate Hosts with no approved applicants attached</h3>
+            <p>From time to time you may come across an additional host record.  These will usually have no linked applicants or PTs attached.</p>
+            <p>It will normally show an application linked with no applicant name which suggests that the applicant has not yet been approved.</p>
+            <img src="assets/images/duplicate-hosts23.png" alt="Image showing application screen with no applicant">
+            <p>To avoid having multiple records in the system for hosts/sponsors you can deactivate these by selecting their sponsor/host journey status to HST006 – Duplicate. </p>
+            <p>The record will be automatically de-activated</p>
+            <img src="assets/images/hst00623.png" alt="Sponsor page showing HST006 selected">
+            <p>If you need to access a Deactivated sponsor record – you can locate these via the inactive sponsors view:</p>
+            <img src="assets/images/inactive-sponsors23.png" alt="Inactive sponsors dropdown">
         </section>
         <div class="article-divider"></div>
         <section>
@@ -1873,15 +1972,16 @@
             <p><b>IS 23 – Uncontactable:</b> Where a local authority has tried to contact an applicant multiple times but has failed to reach them.</p>
             <p><b>IS99 – On Hold</b> That travel and/ or move to a host is on hold. This may be due to waiting for all families of a household to receive their visas prior to travel, for example.</p>
             <p><b>IS100 – Duplicate</b> The applicant has more than one record on the Data Platform and this is a duplicate.</p>
-            <h3 id="sponsor-status" class="y-target">Sponsor status</h3>
+            <h3 id="sponsor-status" class="y-target">Sponsor</h3>
             <p>As sponsors / hosts are identified through the checks and updates to the data platform to ensure arrivals from Ukraine are safely guided to accommodation in Wales, through the Individual Sponsor Scheme.</p>
             <h4>Overview of Sponsor Status</h4>
             <div class="vspacer"></div>
             <p><b>HST001 - Applied</b></p>
             <p><b>HST002 - Approved</b></p>
             <p><b>HST003 - Active</b></p>
-            <p><b>HST004 - Withdrawn from scheme</b></p>
+            <p><b>HST004 - Withdrawn</b></p>
             <p><b>HST005 - Rejected</b></p>
+            <p><b>HST006 - Duplicate</b></p>
             <div class="vspacer"></div>
             <table>
                 <tr>
@@ -1942,7 +2042,11 @@
                     <td>The host/sponsor no longer wishes to offer their property to house individuals/families under either scheme </td>
                     <td>Change the status and add a case note to the system with any relevant (non-sensitive) information. </td>
                     <td>Local authority</td>
-                    <td></td>
+                    <td><ol>
+                        <li>Set Sponsor/host journey status to HST004 - Withdrawn</li>
+                        <li>The host record will now become inactive and appear in the inactive sponsors list</li>
+                    </ol>
+                    </td>
                 </tr>
                 <tr>
                     <td>HST005 - Rejected</td>
@@ -1954,7 +2058,25 @@
                         <p>The status can then be updated to HST005.</p>
                     </td>
                     <td>Local authority</td>
-                    <td></td>
+                    <td><ol>
+                        <li>Set Sponsor/host journey status to HST005 – Rejected</li>
+                        <li>The host record will now become inactive and appear in the inactive sponsors list</li>
+                    </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>HST006 - Duplicate</td>
+                    <td>Sponsor record is duplicated due to applicant visa not yet being approved </td>
+                    <td>
+                        <p>Update the case notes to explain that sponsor/host record is linked to application that has not yet been approved </p>
+                        <p>The status can be updated to HST006 - Duplicate</p>
+                    </td>
+                    <td>Local authority</td>
+                    <td><ol>
+                        <li>Set Sponsor/host journey status to HST006 - Duplicate</li>
+                        <li>The host record will now become inactive and appear in the inactive sponsors list</li>
+                    </ol>
+                    </td>
                 </tr>
             </table>
         </section>
