@@ -57,6 +57,13 @@
                 <li><a href="#data-champions">Data Champions</a></li>
             </ul>
         </details>
+        <details>
+            <summary class="chapter"><a href="#deduplication">De Duplication of Sponsor Records</a></summary>
+            <ul>
+                <li><a href="#relationships-host">Relationships of host/sponsors to applicants</a></li>
+                <li><a href="#deduplicating-sponsor">Deduplicating the Sponsor Records</a></li>
+            </ul>
+        </details>
         <ul>
             <li class="chapter"><a href="#faq">Frequently Asked Questions</a></li>
             <li class="chapter"><a href="#policyfaq">Policy Frequently Asked Questions</a></li>
@@ -374,7 +381,108 @@
         </article>
 
         <div class="article-divider"></div>
+        <article id="deduplication" class="y-target">
+        <h2>De Duplication of Sponsor Records</h2>
+            <section id="relationships-host" class="y-target">
+                <h3>Relationships of host/sponsors to applicants</h3>
+                <p>The relationship for hosts/sponsors to applicants has been updated in the system with a new approach that there will be 1 relationship for the host and 1 relationship for the sponsor.  Although, with most cases these will be the same individuals, the ‘sponsor’ will be linked to the application section only and locked, where as the host will be interchangeable should it need to be deleted / updated / replaced. </p>
+                <p>You can view the locked 'sponsor' section by:</p>
+                <ol>
+                    <li>Accessing the application page </li>
+                    <li>Selecting the general tab </li>
+                    <li>The sponsor will show on the middle of the page with a padlock next to the sponsor and host address fields </li>
+                    <li>This cannot be changed / updated or removed and will remain the sponsor on the application regardless of if there is a change in host </li>
+                    <img src="assets/images/locked-sponsor23.png" alt="Locked sponsor section highlighted in application page">
+                </ol>
+                <h4>What is the difference between a Sponsor and a Host?</h4>
+                <p><b>Sponsors:</b> those that are sponsoring the applicants’ visas. Dependent on the scheme this could be – Welsh Government (Super Sponsor Scheme) or an individual (Homes for Ukraine Individual Scheme). Once a Visa has been granted, the sponsor will never change. The sponsor is linked directly to the applicant/application. A sponsor is often also the initial host for the applicant and where the sponsor is also the host they require two separate records. Sponsor details can be updated but the link between the sponsor and applicant/application cannot.</p>
+                <p><b>Hosts: </b>those providing accommodation for an applicant irrespective of Homes for Ukraine route. The host is determined by where the applicant is currently housed (normally this is with the sponsor initially). This relationship between the host and applicant is transient and are linked through the placement record.</p>
+                <p>Host and sponsor details are recorded in the same section of the data platform but are classified as either sponsor or host. Sponsor information comes into the Platform through the data imported from UK Government.</p>
+                <h4>New Host Field</h4>
+                <p>There is an added section on the household page which shows the host and host address fields. It is in this new section that you can:</p>
+                <ol>
+                <li>View all hosts attached to the household (where there are multiple applicants in the household it will show multiple sponsor records in the dropdown).</li>
+                <li>Select the host you wish to be the active sponsor/host so that all duplications become inactive.</li>
+                <li>The host can be selected by typing in their name or hitting enter on your keypad.  Once the host is selected, hit enter and the host address(es) will appear.</li>
+                <img src="assets/images/new-host-field23.png" alt="">
+                </ol>
+            </section>
 
+            <section id="deduplicating-sponsor" class="y-target">
+                <h3>Deduplicating the Sponsor Records </h3>
+                <h4>Households with only one applicant</h4>
+                <p>As there should be no duplicated sponsor/hosts on households with a single applicant, only the following updates in the system will occur: </p>
+                <ol>
+                    <li><b>Existing records - </b>the host will be automatically copied to the new host field on the household page from the applicant.</li>
+                    <li><b>For new data uploads - </b>the host will be automatically copied to the new host field on the household page when uploaded. </li>
+                </ol>
+                <h4>Households with more than one applicant</h4>
+                <p>These changes will only apply for existing households already in the system where there are multiple applicants, and each applicant has been linked to the sponsor/host separately causing multiple sponsor/host records to be created.  This change does not apply to new data.</p>
+                <p>Example: 3 applicants linked to one host – Edward Jones.  In the system the sponsor/host will link separately to each applicant therefore creating duplicated records for the host</p>
+                <h4 id="search-via-sponsor">Search via the sponsor tab</h4>
+                <p>You will need to decide which sponsor record should remain the active record, to do this you can either:</p>
+                <ol>
+                    <li>Access the Sponsor record by going to the sponsor tab and clicking the ‘Active Sponsors’ View.</li>
+                    <img src="assets/images/search-sponsor-tab23.png" alt="Image of sponsor tab in active sponsors view">
+                    <li>From here you can search for the host in the top right-hand corner (in this example typing in Martin and hitting enter). </li>
+                    <li>You will see multiple records for the same sponsor.</li>
+                    <li>You may need to access each record to find the record with the most relevant information recorded. </li>
+                    <li>Once you have established which record you intend to keep as active we recommend you annotate the record so you know which one to select (e.g. add a 1 to the forename / surname of the record</li>
+                    <img src="assets/images/martin23.png" alt="Screenshot of adding 1 to forename">
+                </ol>
+                <h4>Search via the household tab</h4>
+                <p>Alternatively, to find the Sponsor/host, you can search via the household tab:</p>
+                <ol>
+                    <li>Use the new ‘Active households and hosts’ system view on the household tab (which is available to all champions) and filter the number of approved applicants by ‘sort larger to smaller’. </li>
+                    <p><b>View:</b></p>
+                    <img src="assets/images/household-tab23.png" alt="Screenshot of active households and hosts">
+                    <p><b>Sorting 'larger to smaller':</b></p>
+                    <img src="assets/images/ht-large-small23.png" alt="Sorting active households from largeer to smaller">
+                    <li>Click into the FAM ID, access the lead applicant page and go to the ‘personal details tab’ where you will see the host linked.</li>
+                    <img src="assets/images/famid23.png" alt="Screenshot demonstrating FAM ID">
+                    <li>Once you have established the sponsor for the household with multiple applicants, you can <a href="#search-via-sponsor">follow the process of accessing the sponsor tab and clicking the ‘active sponsors’ view.</a> </li>
+                </ol>
+                <h4>De-duplicating the records</h4>
+                <p>Once you have completed the above steps, you can start the de-duplication process.</p>
+                <ol>
+                    <li>Go into the household page and click into the host field and click ‘enter’. This will show the list of duplicated sponsors. </li>
+                    <li>When searching for the correct sponsor/host record it will only show all duplicate records that have been linked to that applicant/household, it will not search all hosts under the same name. </li>
+                    <li>Select the record you have previously added an annotation to ‘Martin1 Boyle / Carolyn2 Morgan’</li>
+                    <li>Move to the host address tab and click ‘enter’ and select the host address associated to the Sponsor/Host.</li>
+                    <li>By selecting this record, all the other duplicated records will then become inactive, and you will not be able to see them in the ‘active sponsors’ view.  </li>
+                    <li>The only way to locate these records would be by searching for them in the ‘Inactive Sponsors’ view.</li>
+                    <img src="assets/images/inactive-sponsors23.png" alt="Inactive Sponsors drop down">
+                    <li>If any of the deactivated sponsor records are linked to placement tracking records, these will be replaced with the new active sponsor record.</li>
+                </ol>
+                <h4>If you de-duplicate the wrong record</h4>
+                <p>If you accidently choose the wrong host (selecting sponsor A1 instead of A2) you can either update the record to reflect the information on the inactivated record OR you can follow the steps below: </p>
+                <li>Go to ‘Inactive Sponsors’ view. </li>
+                <li>Locate the inactivated record (example: Sponsor A2).</li>
+                <li>Activate the record (so now both Sponsor A1 and Sponsor A2 are active).</li>
+                <li>Go to the household, click into the host field and replace the host from Sponsor A1 to Sponsor A2. </li>
+                <li>Replace the host on the PT record to reflect the new host (sponsor A2) – to do this you need to:</li>
+                    <ol>
+                        <li>Go into the placement type dropdown and select anything other than sponsor/host (e.g. temporary accommodation).</li>
+                        <img src="assets/images/famtemp23.png" alt="Screenshot showing temporary accomodation selected from dropdown">
+                        <li>Go back into the dropdown and re-select sponsor/host – this will pull through the updated host details </li>
+                        <img src="assets/images/famhost23.png" alt="Screenshot showing Sponsor/Host selected from dropdown">
+                    </ol>
+                <li><b>You will need to update the host in the applicant placement tracking records – you can do this by simply deleting the sponsor and replacing with the correct sponsor record. </b></li>
+                <li>Go the “Active sponsors” view.  </li>
+                <li>Locate Sponsor A1, close any active placement tracking’s and change the sponsor/host journey status to HST006- Duplicate.  This will deactivate the record</li>
+                <h4>Further Data Uploads</h4>
+                <ol>
+                    <li>When data is uploaded of households with more than one applicant, one of the linked sponsor records will be selected and linked to the whole household.</li>
+                    <li>Applicants who join the household after the initial creation will be linked to the household’s active host. </li>
+                    <li>All other duplicate records will be de-activated. </li>
+                    <li>The only way to locate these records would be by searching for them in the ‘Inactive Sponsors’ view.</li>
+                </ol>
+                <p><b>Information added to previously duplicated (and now inactive) sponsor records will not be merged into the chosen ‘active’ sponsor record.  It is important that you ensure the record with the correct and most up to date information is selected and any information held on duplicated inactive records is manually added to the active record, if appropriate.</b></p>
+                <p><b>Changes will only be made to update existing households with more than one applicant </b></p>
+            </section>
+        </article>
+        <div class="article-divider"></div>
+        
         <article id="faq" class="y-target">
             <h2>Frequently Asked Questions</h2>
 
