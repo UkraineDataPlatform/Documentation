@@ -51,6 +51,7 @@
         <details>
             <summary class="chapter">System updates</summary>
             <ul>
+                <li><a href="#release-note-3">Release Note – 25 January 2023</a></li>
                 <li><a href="#release-note-2">Release Note - 11 Nov 2022</a></li>
                 <li><a href="#live-rollout">Live Rollout - 21 Jun 2022</a></li>
                 <li><a href="#release-note-1">Release Note - 10 Aug 2022</a></li>
@@ -69,6 +70,32 @@
             All article tags need a unique id and a class="y-target"
             All news articles need a <p> underneath the <h2> as follows:
             <p class="published-author">Published on [PUBLICATION DATE] &nbsp | &nbsp Written by [AUTHOR'S NAME]</p> -->
+            <article id="release-note-3" class ="y-target">
+                <h2>Release Note – 25 January 2023</h2>
+                <p class="published-author">Published on 01 February 2023 &nbsp | &nbsp Written by Joshua Dickinson</p>
+                <p>The highlight of this release is the Sponsor deduplication process, which will make the system more convenient for users and will increase the data quality, as well as improved logic related to Placement Tracking and Welcome Centres, in order to better accommodate all possible scenarios. The misaligned records field is included in this release as well in order to resolve issues with records located in different Local Authorities.</p>
+                <p><b>Fixes:</b></p>
+                <ul>
+                    <li>Duplicate sponsors</li>
+                    <li>Wrong End Dates on PTs</li>
+                    <li>Owner on Household PT not aligned with owner Applicant PT</li>
+                    </ul>
+                </p>
+            <p><b>New features</b></p>
+            <ul>
+                <li>Changes to Family Member Network Flow</li>
+                <li>New Sponsor Deduplication Flow. This deduplicates new sponsor records as they are loaded.</li>
+                <li>New Host Assignment One Person Household Flow. If there is only one person in a household the Sponsor/host will be automatically be set on Household.</li>
+                <li>New Host and Host Address field on Household</li>
+                <li>Changes to Placement Tracking - new fields</li>
+                <li>Changes to Placement Tracking - adding an Applicant</li>
+                <li>Changes to Welcome Centre field and logic on Household.</li>
+                <li>New Sponsor journey statuses and logic: If Sponsor is set to Withdrawn, Rejected, or Duplicated the record will be made inactive providing there are no households attached. </li>
+                <li>New Misaligned records related to Household flow and field. This is to enable System Admin to detect and correct any historic data anomalies.</li>
+            </ul>
+   
+            </article>
+            <div class="article-divider"></div>
             <article id="udp-queries" class ="y-target">
                 <h2>Ukraine Data Platform Queries</h2>
                 <p class="published-author">Published on 22 November 2022 &nbsp | &nbsp Written by Joshua Dickinson</p>
