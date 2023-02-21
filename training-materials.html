@@ -63,6 +63,7 @@
             <ul>
                 <li><a href="#relationships-host">Relationships of host/sponsors to applicants</a></li>
                 <li><a href="#deduplicating-sponsor">Deduplicating the Sponsor Records</a></li>
+                <li><a href="#further-deduplication">Further guidance on system issues following de-duplication</a></li>
             </ul>
         </details>
         <ul>
@@ -502,6 +503,84 @@
                 </ol>
                 <p><b>Information added to previously duplicated (and now inactive) sponsor records will not be merged into the chosen ‘active’ sponsor record.  It is important that you ensure the record with the correct and most up to date information is selected and any information held on duplicated inactive records is manually added to the active record, if appropriate.</b></p>
                 <p><b>Changes will only be made to update existing households with more than one applicant </b></p>
+            </section>
+            <section id="further-deduplication" class="y-target">
+                <h3>Further guidance on system issues following de-duplication</h3>
+                <table>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Probably Cause</th>
+                        <th>How to Correct</th>
+                        <th>Instructions</th>
+                    </tr>
+                    <tr>
+                        <td>When I go to update the Host details on the Household record the host details don’t appear, but when I check under Sponsor section on the applicant page they exist</td>
+                        <td>The host/sponsor has multiple households living with them at the same address.  Once the first household has been allocated to the host/sponsor, their address won’t be available to use for the next household staying with them </td>
+                        <td>
+                            <ol>
+                                <li>Create Multiple Address records, one for each household (annotate record appropriately if more than one family are staying in the same property), or;</li>
+                                <li>If applicable, merge the separate households into one household  </li>
+                            </ol>
+                        </td>
+                        <td><ol>
+                            <li>For host with multiple addresses please refer to <a href="user-guide.html#host-with-multiple-addresses">'host with multiple addresses'</a> section of user guide and follow the steps to add multiple addresses and then link them to different households </li>
+                            <li>To add someone into a household please follow the steps in the user guide under <a href="user-guide.html#making-changes-household-groups">‘making changes to household groups’</a> and scrolling down to ‘adding an applicant to a household group.<br>You can also <a href="https://youtu.be/GPjQAzgXJW8">view this bitesize video</a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>When I go to update the Host details on the Household record the host details don’t appear and when I check under Sponsor, they also don’t exist</td>
+                        <td>The host record (EOI) hasn’t been created</td>
+                        <td>Create a new host record</td>
+                        <td>To create a new host and host address record please follow the <a href="user-guide.html#adding-new-sponsor">‘Using the sponsor section’</a> of the user guide and scroll to ‘Adding a new sponsor/host’</td>
+                    </tr>
+                    <tr>
+                        <td>When I am in a household with multiple applicants ready to select the correct record for de-duplication, I am only seeing one record to select</td>
+                        <td>This is due to the records being manually updated by users prior to de-duplication.  Applicants and hosts were linked via the applicant page prior to the de-duplication changes resulting in the de-duplication process not running correctly.  There are also some instances that this is also the result of duplicate records already being deactivated</td>
+                        <td>If you have already pulled the applicants into a host record prior to the system update, then you will just need to manually go back to the inactive duplicated records to the correct sponsor/host journey status to HST006 - Duplicate</td>
+                        <td><ol>
+                            <li>Check the record and PTs to ensure the same host is linked to the household and placement tracking’s</li>
+                            <li>Locate the duplicate sponsor records that have been deactivated (via inactive sponsors dropdown)</li>
+                            <li>Activate the record and click save </li>
+                            <li>Change the sponsor/host journey status to HST006 – Duplicate and the status reason to Active and save.  This will deactivate the record.  For further guidance please see the user guide under the section <a href="user-guide.html#duplicate-host-no-approved">‘Duplicate hosts with no approved applicants attached’</a></li>
+                        </ol></td>
+                    </tr>
+                    <tr>
+                        <td>When there is only one record to select for de-duplication, once saved the record on the placement tracking is still linked to another record for the host and that record has not deactivated</td>
+                        <td>This is due to the records being manually updated by users prior to de-duplication.  Applicants and hosts were linked via the applicant page prior to the de-duplication changes resulting in the de-duplication process not running correctly</td>
+                        <td>Providing the correct sponsor/host record was selected on the household page you will need to go into the placement tracking record and update the host and then deactivate the removed host record</td>
+                        <td><ol>
+                            <li>Close down the current move on PT and select the end date to be the same as the start date </li>
+                            <li>Open a new PT for ‘move on accommodation’ selecting the same start date as the previous and include all previous notes</li>
+                            <li>Add a case note to the household timeline explaining that there are 2 move on PTs due to an error when de-duplication was launched</li>
+                        </ol></td>
+                    </tr>
+                    <tr>
+                        <td>The automatic de-duplication has picked up the original sponsor/host and linked this to the household. However, the Placement Tracking’s reflect a move on into self-supported accommodation i.e. housing association</td>
+                        <td>The project ran a one-off matching routine for single applicant households, unfortunately the data feed has picked up the original sponsor as it is still linked to the applicant via the sponsor section on the personal details tab</td>
+                        <td>As there is currently no way to remove the host unless a PT is used you will need to resubmit a move on PT</td>
+                        <td>
+                            <ol>
+                                <li>Close down the current move on PT and select the end date to be the same as the start date </li>
+                                <li>Open a new PT for ‘move on accommodation’ selecting the same start date as the previous and include all previous notes</li>
+                                <li>Add a case note to the household timeline explaining that there are 2 move on PTs due to an error when de-duplication was launched</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The automatic de-duplication has picked up the original host/sponsor and linked this to the household.  However, the Placement Tracking’s reflect a new PT for a new host that wasn’t updated on the applicant page prior to the de-duplication going live</td>
+                        <td>The project ran a one-off matching routine for single applicant households, unfortunately it has picked up the original sponsor as it is still linked to the applicant via the sponsor section on the personal details tab</td>
+                        <td>You will need to update both the household and the PTs to reflect the new and correct host</td>
+                        <td><ol>
+                            <li>You will need to close the current PT with the new host (to remove the PTs on their sponsor record and essentially make them ‘available’ again)</li>
+                            <li>You will then need to delete the host from the household page</li>
+                            <li>You will then need to search and select the new host you’ve just made available </li>
+                            <li>Once saved you will need to go back into the placement tracking and create a new PT for host/sponsor to bring through the new and correct host, using the same dates and details as the previous </li>
+                            <li>Add a case note to the household timeline explaining that there are 2 host/sponsor PTs due to an error when de-duplication was launched</li>
+                        </ol></td>
+                    </tr>
+
+                </table>
             </section>
         </article>
         <div class="article-divider"></div>
