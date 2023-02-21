@@ -61,10 +61,13 @@
                     <li class="nest1"><a href="#searching-record">Searching for a record within your local authority</a></li>
                     <li class="nest1"><a href="#searching-record-outside">Searching for a record outside local authority</a></li>
                     <li class="nest1"><a href="#welcome-centre-checks">Welcome Centre checks</a></li>
+                    <li class="nest1"><a href="#sponsor-host-checks">Sponsor/Host Checks</a></li>
                     <li class="nest1"><a href="#bulk-updates-checks">Bulk updates to checks</a></li>
                     <li class="nest1"><a href="#using-case-notes">Using Case Notes</a></li>
                     <li class="nest1"><a href="#adding-complex-case-flag">Adding a Complex Case flag</a></li>
-                    <li class="nest1"><a href="#updating-checks-box">Updating the Checks box</a></li>
+                    <li class="nest1"><a href="#updating-case-notes">Updating the Case Notes and Activities Check boxes</a></li>
+                    <li class="nest1"><a href="#locked-case-notes">Locked Case Notes and Activities Check Boxes</a></li>
+                    <li class="nest1"><a href="#updating-checks-box">Updating the Applicant Checks box</a></li>
                     <li class="nest1"><a href="#updating-housing-need">Updating / Creating a Housing Need</a></li>
                     <li class="nest1"><a href="#creating-placement-record">Creating / Closing a Placement Record</a></li>
                     <li class="nest1"><a href="#changing-journey-status">Changing Journey Status</a></li>
@@ -96,6 +99,7 @@
                     <li class="nest1"><a href="#handling-duplicate-records">Handling duplicate Applicant Records</a></li>
                     <li class="nest1"><a href="#rejected-sponsors">Rejected / Withdrawn Sponsors/Hosts </a></li>
                     <li class="nest1"><a href="#duplicate-host-no-approved">Duplicate Hosts with no approved applicants attached</a></li>
+                    <li class="nest1"><a href="#update-sponsor-comms">Updating Sponsor Communication Preferences</a></li>
                 </ul>
             <li class="chapter"><a href="#creating-personalised-system-views">Creating personalised Views and Reports</a></li>
                 <ul>
@@ -133,9 +137,9 @@
         <h1>Data Platform User Guide</h1>
          <section>
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
-            <!----  <p>An offline copy of the latest User Guide will be available to download by the 20/12/2022</p>-->
-           <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v9-24-01-23.docx">Data Platform User Guide - Version 9 - Updated 24-01-2023</a> 
+            <p>An offline copy of the latest User Guide will be available to download by the 24/02/2023</p>
+           <!---<p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
+            <a href="assets/documents/data-platform-user-guide-v9-24-01-23.docx">Data Platform User Guide - Version 9 - Updated 24-01-2023</a> -->
             <div class="vspacer"></div>
         </section>
         <section>
@@ -219,6 +223,16 @@
                         <p>Creating/closing a placement record; Creating a new placement record; Removing an applicant to a new household; adding an applicant to a household group; Re-assignment across local authority boundaries but wholly within wales; linking a household record and a sponsor record; adding sponsor/host details to your household record; Annex 1 – sponsor</p>
                         <p>Removed:</p>
                         <p>Using the sponsor section – creating a household placement tracking </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V10</td>
+                    <td>22/02/2023</td>
+                    <td>
+                        <p>Added:</p>
+                        <p>Sponsor/ host checks; Updating the case notes and activities check boxes; Locked case notes and activities check boxes; updating sponsor communication preferences</p>
+                        <p>Updated:</p>
+                        <p>Cross Border Re- assignment across UK national borders (either scheme); if a person is leaving Wales; if a person is moving to Wales with advanced notice; if a person has moved into Wales and we find out retrospectively</p>
                     </td>
                 </tr>
             </table>
@@ -738,6 +752,14 @@
             <p><a href="#create-case-note">Create a case note</a> to record that these checks have been completed and change the checks box as appropriate.  </p>
             <p>At this point you will also need to check that the accommodation needs of the household have not changed. </p>
             <p>When these checks/services have been offered or provided, you can <a href="#change-journey-status">change the journey status</a> from SS07 – SS08 Welcome Centre Ready for Move On.  That will then enable local authorities to assess the housing need of individuals in the Welcome Centre who have had checks completed against available accommodation. </p>
+            <h3 id="sponsor-host-checks" class="y-target">Sponsor/Host Checks</h3>
+            <P>The sponsor/Host and their property should be checked prior to arrival, or very shortly after, a person or household are matched to them.  Three of checks below can used to track when a check has been carried out, the two checks with padlocks will be provided the DLUHC data feeds.</P>   
+            <P>The checks should be toggled on the data platform once completed and include:</P>
+            <img src="assets/images/sponsor-checks23.png" alt="Screenshot showing Housing inspection completed No, Basic DBS check completed No, Enhanced DBS Check Completed No">
+            <p><b>Housing Inspection Check -</b> to ensure the property is suitable and meets the correct criteria to host applicants.</p>
+            <p><b>Basic DBS Check Completed - </b>to ensure that the Basic DBS check has been completed and passed.</p>
+            <p><b>Enhanced DBS Check Completed - </b>to ensure that the Enhanced DBS check (if required) has been completed and passed.</p>
+            <p>As part of the application process, a sponsor may be rejected by the home office if they fail their <b>PNC (Police National Computer services) Check</b>.  This will be recorded in the data platform under a locked field and will be read only for information only.  It will be the Home Office’s responsibility to rematch the applicant to a suitable sponsor for their application, this will also show in the sponsor checks section under <b>Home Office Rematching</b> as a read only checkbox for information only.</p>
             <h3 id="bulk-updates-checks" class="y-target">Bulk updates to checks</h3>
             <p>There is a table within each household record which lists the members of the household and which checks they have undergone in the Welcome Centre. When several members of a household group have each undergone the same checks (such as having a family health appointment booked or welfare visit completed), you can quickly update these checks in a single location to save time. </p>
             <p>You can also use this table to see which members of a merged household (a reunited family for example) have had checks and which individuals have not. </p>
@@ -791,7 +813,48 @@
                 <li>Add a case note on the timeline with details on who to contact in the local authority for further information on handling the case appropriately. </li>
             </ol>
             <p>After a complex case note has been created, a pop up will show every time the person’s record is accessed.</p>
-            <h3 id="updating-checks-box" class="y-target">Updating the Checks box</h3>
+            <h3 id="updating-case-notes" class="y-target">Updating the Case Notes and Activities Check Boxes</h3>
+            
+            <H4>No Non-essential Communications</H4>
+            <p>An applicant may make contact to state they don’t want to receive any communication, however it is necessary that essential communications are still carried out.  This means they should only receive information from Welsh Government regarding their current sponsor/hosting position.  Restricting their communication preferences to essential communication only means they will stop receiving updates regarding things such as Ukrainian National holiday updates/ information on local Ukrainian events etc.</p>
+            <p>To action this request in the UDP:</p>
+            <ol>
+                <li>Go into the Applicant record, on the summary tab</li>
+                <li>Locate the No Non-essential Comunications check under Case Notes and Activities</li>
+                <li>Toggle this to YES</li>
+                <img src="assets/images/no-nonessential23.png" alt="Applicant menu with No Non-essential toggle highlighted">
+            </ol>
+            <p>Please note: you will need to click the dotted lines once for the toggle to appear and then you can click this again to toggle over to YES</p>
+            <img src="assets/images/no-nonessentialbig23.png" alt="No Non-essential Communications toggled to YES" width="60%" height="60%">
+            <h4>Unaccompanied Minor</h4>
+            <p>There may be occasions when a minor (child under the age of 16) will travel to hosted/initial accommodation without the accompany of an adult.  There may also be occasions where Ukrainian parents repatriate and leave their child unaccompanied with the host/sponsor.  It is very important we capture these cases within the data platform to ensure we identify these individuals.</p>
+            <p>To action this within the UDP:</p>
+            <ol>
+                <li>Go into the Applicant record, on the summary tab</li>
+                <li>Locate the Unaccompanied Minor check under Case Notes and Activites</li>
+                <li>Toggle this to YES</li>
+                <img src="assets/images/unaccompanied-minor23.png" alt="Applicant menu showing unaccompanied minor selection highlighted">
+            </ol>
+            <p>Please note: you will need to click the dotted lines once for the toggle to appear and then you can click this again to toggle over to YES</p>
+            <img src="assets/images/unaccompanied-minorbig23.png" alt="Unaccompanied Minor toggled to YES" width="60%" height="60%">
+            <h3 id="locked-case-notes" class="y-target">Locked Case Notes and Activities Check Boxes</h3>
+            <P>These are locked fields within the system that are updated through DLUHC data flows.  They are read only records and serve for information purposes only.</P>
+            <TABLE>
+               <tr>
+                <th>Check</th>
+                <th>Explanation</th>
+               </tr>
+               <tr>
+                <td>Re-assignment/ Cross Border Move on </td>
+                <td>If toggled, this will indicate that the individual has either been re-assigned from another UK Nation following the Rematching/Reassignment process.</td>
+               </tr>
+               <tr>
+                <td>Withdrawn</td>
+                <td>If toggled to yes, this will indicate the applicant has withdrawn this application for a visa – this can either be due to no longer needing the visa or due to there being multiple visa’s applied for.</td>
+               </tr>
+            </TABLE>
+
+            <h3 id="updating-checks-box" class="y-target">Updating the Applicant Checks box</h3>
             <p>To ensure reports can be accurately extracted by a range of organisations please ensure you update the checks box. The checkboxes are split into Super Sponsor Checks and Individual Sponsor Checks. </p>
             <p>Click the <span><img src="assets/images/yes-button.png" alt="yes button"></span> boxes to switch between yes and no. A blue box indicates the check has taken place. </p>
             <img src="assets/images/super-sponsor-checked-options.png" alt="Checks have taken place indication">
@@ -950,6 +1013,12 @@
                 <tr></tr>
                     <td>Welcome Centre</td>
                     <td>When a person on the super sponsor scheme is housed in initial accommodation (welcome centre)</td>
+                    <td></td>
+                    <td></td>
+                <tr></tr>
+                    <td>Temporarily Left</td>
+                    <td>When a person has left their hosted accommodation for a short, temporary period for a holiday etc.<br>There will be a known return date and the case should be kept with the LA.
+                        </td>
                     <td></td>
                     <td></td>
 
@@ -1165,7 +1234,8 @@
             </ol> 
             <p><b>Scotland does not currently use Foundry so this process will not be applicable to those who are requesting to leave the country to live in Scotland.</b></p>  
             <p>Selecting (England), (Northern Ireland), or (Outside of UK) ensures you can correctly assign an individual when they have moved outside of Wales and remove the records from your local authority view. However, it will not transfer records out of the data platform to cross border systems.  Updating cross border systems such as Foundry will be completed separately by the case management team.</p>
-           
+            <p>Once the Data has been passed to the receiving LA, Within the applicant summary page under case notes and activities, once the data has arrived onto the Data Platform, the Reassignment/Cross Border Move on will be toggled to YES.  This is a locked field and is for information purposes only to show those individuals who have been reassigned across UK Nations.</p>
+            <img src="assets/images/reassignment-crossborder23.png" alt="Reassignment/Cross Border Move On toggle greyed out as yes" height="60%" width="60%">           
             <h4>If the person is moving into Wales with advanced notice</h4>
             <p>These are requests sent for re-assignment to Wales via Foundry with notice prior to any travel arrangements being made.</p>
             <p>When a local authority from outside of Wales sends a re-assignment request to Wales via Foundry, the Case Management Team will receive and discuss the request with the relevant Welsh Local Authority. If the Welsh Local Authority accepts the process will be as follows:</p>
@@ -1183,6 +1253,9 @@
                     </ol>
                 </li>
             </ol>
+            <p>Within the applicant summary page under case notes and activities, once the data has arrived onto the Data Platform, the Reassignment/Cross Border Move on will be toggled to YES.  This is a locked field and is for information purposes only to show those individuals who have been reassigned across UK Nations.</p>
+            <img src="reassignment-crossborderhighlight23.png" alt="Appliant menu with Reassignment/Cross Boarder Move On highlighted">
+            <p> <img src="assets/images/reassignment-crossborder23.png" alt="Reassignment/Cross Border Move On toggle greyed out as yes" height="60%" width="60%"> </p>
             <h4>If the person has moved into Wales and we find out retrospectively</h4>
             <p>These are instances where a Local Authority has identified that a Ukrainian has already arrived in Wales with no advance notice of travel.  The receiving Welsh Local Authority will need to follow the below process:</p>
             <ol>
@@ -1199,6 +1272,9 @@
                     </ol>
                 </li>
             </ol>
+            <p>Within the applicant summary page under case notes and activities, once the data has arrived onto the Data Platform, the Reassignment/Cross Border Move on will be toggled to YES.  This is a locked field and is for information purposes only to show those individuals who have been reassigned across UK Nations. </p>
+            <img src="reassignment-crossborderhighlight23.png" alt="Appliant menu with Reassignment/Cross Boarder Move On highlighted">
+            <p> <img src="assets/images/reassignment-crossborder23.png" alt="Reassignment/Cross Border Move On toggle greyed out as yes" height="60%" width="60%"> </p>
           </section>
           <div class="article-divider"></div>
           <section>
@@ -1431,6 +1507,17 @@
             <img src="assets/images/hst00623.png" alt="Sponsor page showing HST006 selected">
             <p>If you need to access a Deactivated sponsor record – you can locate these via the inactive sponsors view:</p>
             <img src="assets/images/inactive-sponsors23.png" alt="Inactive sponsors dropdown">
+            <h3 id="updating-sponsor-comms" class="y-target">Updating Sponsor Communication Preferences</h3>
+            <p>A sponsor/host may make contact to state they don’t want to receive any communication, however it is necessary that essential communications are still carried out. This means they should only receive information from Welsh Government regarding their current sponsor/hosting position.  Restricting their communication preferences to essential communication only means they will stop receiving updates regarding things such as Ukrainian National holiday updates/ information on local Ukrainian events etc. </p>
+            <p>To action this request in the UDP:</p>
+            <ol>
+                <li>Go into the Sponsor record, on the summary tab  </li>
+                <li>Locate the No Non-essential Communications check under Case Notes and Activities </li>
+                <li>Toggle this to YES</li>
+            </ol>
+        <img src="assets/images/no-nonessentialcomms23.png" alt="Sponsor menu with No Non-Essential Communications highlighted">
+        <p>Please note: you will need to click the dotted lines once for the toggle to appear and then you can click this again to toggle over to YES</p>
+        <img src="assets/images/no-nonessentialcommsbig23.png" alt="No Non-essential Communications toggled to yes" height="60%" width="60%">
         </section>
         <div class="article-divider"></div>
         <section>
