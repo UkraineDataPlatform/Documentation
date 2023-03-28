@@ -70,6 +70,8 @@
                     <li class="nest1"><a href="#updating-checks-box">Updating the Applicant Checks box</a></li>
                     <li class="nest1"><a href="#updating-housing-need">Updating / Creating a Housing Need</a></li>
                     <li class="nest1"><a href="#creating-placement-record">Creating / Closing a Placement Record</a></li>
+                    <li class="nest1"><a href="#update-existing-tracking-record">Updating an existing Placement Tracking</a></li>
+                    <li class="nest1"><a href="#create-historic-placement-tracking">Create a historical Placement Tracking</a></li>
                     <li class="nest1"><a href="#changing-journey-status">Changing Journey Status</a></li>
                     <li class="nest1"><a href="#updating-multiple-records">Updating multiple records with the same journey status</a></li>
                     <li class="nest1"><a href="#handling-no-shows">Handling No Shows</a></li>
@@ -95,6 +97,7 @@
                     <li class="nest1"><a href="#host-with-multiple-addresses">Hosts with multiple addresses</a></li>
                     <li class="nest1"><a href="#linking-household-record">Linking a household record and a Sponsor/host record</a></li>
                     <li class="nest1"><a href="#replacing-an-existing-host">Replacing an existing Host / Sponsor</a></li>
+                    <li class="nest1"><a href="#remove-household-no-show">Removing a Host/Sponsor when the household is a No Show </a></li>
                     <li class="nest1"><a href="#recording-additional">Recording additional sponsor household members</a></li>
                     <li class="nest1"><a href="#handling-duplicate-records">Handling duplicate Applicant Records</a></li>
                     <li class="nest1"><a href="#rejected-sponsors">Rejected / Withdrawn Sponsors/Hosts </a></li>
@@ -233,6 +236,16 @@
                         <p>Sponsor/ host checks; Updating the case notes and activities check boxes; Locked case notes and activities check boxes; updating sponsor communication preferences</p>
                         <p>Updated:</p>
                         <p>Cross Border Re- assignment across UK national borders (either scheme); if a person is leaving Wales; if a person is moving to Wales with advanced notice; if a person has moved into Wales and we find out retrospectively</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>V11</td>
+                    <td>29/03/2023</td>
+                    <td>
+                        <p>Added:</p>
+                        <p>Updating an existing placement tracking ; creating a historic placement tracking ; Removing a host/sponsor when the household is a no show </p>
+                        <p>Updated:</p>
+                        <p>Creating / Closing a placement Record; Closing a placement record; Closing a placement record; Handling no shows; Re-assignment across local authority boundaries but wholly within Wales; Cross Border Re- assignment across UK national borders (either scheme); Repatriation</p>
                     </td>
                 </tr>
             </table>
@@ -901,18 +914,19 @@
             <h5>Deleting an orphaned Housing Need record</h5>
             <p>When you merge households, you will also update the main household housing need. The person that has joined the new household will now have an orphaned housing need record which will need to be deleted.  Only a limited number of platform users can delete records, so if you have a housing need which needs to be deleted, please email <a href="mailto:WNSManagement@cardiff.gov.uk">WNSManagement@cardiff.gov.uk</a> with the Housing Needs reference (H-N – xxxx) that needs to be deleted.  </p>
             <h3 id="creating-placement-record" class="y-target">Creating / Closing a Placement Record</h3>
-            <p>Whenever a household is moved, you will need to create a new placement record and close the previous one. This creates a history of their placements including start and end dates and reasons for moving. </p>
+            <p>Whenever a household is moved, you will need to create a new placement record. This creates a history of their placements including start and end dates and reasons for moving. </p>
             <p>Creating and closing placement records is equally applicable irrelevant of the Scheme.</p>
+            <p>Creating a new placement tracking will force the closure of the previous placement tracking, so it is really important that the dates are entered correctly.</p>
             <p>If you only need to move one person in the household (for example someone needs to be moved to hospital) they will need to be split from the family group. You can find instructions on how to do that under the <a href="#removing-applicant-new-household">removing an applicant to a household</a> section.</p>
             <p><b>Important:</b> Before creating a placement tracking for a sponsor/host placement you must first <a href="#using-the-Sponsor-section">assign / replace</a> a host within the household section. </p>
             <h5>Closing a placement record</h5>
-            <p>We advise closing a placement record before you create a new record detailing their next placement. To do so:</p>
+            <p> You do not need to close a placement record before you create a new record detailing their next placement. When you create a new placement tracking, this will automatically close the previous.  You must update the move on reason before you create a new placement tracking, to do so:</p>
             <ol>
                 <li>Click on the Household ID number (either FAM ID or WG ID) from an Applicant Summary record.</li>
                 <li>Go to the Placement Trackings tab. </li>
                 <img src="assets/images/placement-tracking-tab.png" alt="placement tracking tab">
                 <li>Click on the record you wish to close. </li>
-                <li>Add the placement end date and the move on reason (using the drop down). </li>
+                <li>Add the move on reason (using the drop down). </li>
                 <li>Click Save or Save and Close.</li>
             </ol>
             <h5>Creating a new placement record</h5>
@@ -1024,7 +1038,48 @@
                     <td></td>
 
             </table>
-            <p>When a new placement tracking record is created for anything other than ‘sponsor/host’ – the host details will automatically be removed from the Household page. You do not need to remove the host prior to ending the current placement tracking record.</p>
+            <p>When a new placement tracking record is created for anything other than ‘sponsor/host’ – the host details will automatically be removed from the Household page. You do not need to remove the host prior to ending the as the creation of the new placement tracking will end the current sponsor/host placement tracking and remove that link to the host on the household.</p>
+
+            <h3 id="update-existing-tracking-record" class="y-target">Updating an existing Placement Tracking</h3>
+            <p>If you identify that need to make a change / update a placement tracking that you have created on the household page, it will be possible to do this, but you may be limited to what you can change.  Once a placement tracking has been updated, all changes will filter through to the linked applicant and sponsor placement tracking’s.  We refer to this as the ‘Parent / Child’ relationship between placement tracking’s (the parent being the household PT and the child being the applicant PT)</p>
+
+            <p>To update the start date of a placement tracking:</p>
+            <ol>
+                <li>Go into the household placement tracking. </li>
+                <li>Select the PT you would like edit and click edit (you can also just double click on the record)</li>
+                <img src="assets/images/update_tracking23.png" alt="Update placement tracking menu">
+                <li>Once in the PT you can update any of the fields to add or remove information. </li>
+                <li>You can amend the start date to any date later than the original date set, unless this is the first ever PT created for the household. </li>
+                <li>Click save and close. </li>
+                <li>The changes will reflect on the applicant and sponsor PTs.</li>
+            </ol>
+            <p>Please note:</p>
+            <ol>
+                <li>If this is the first PT ever created for the household the start date can be altered to any date.</li>
+                <li>If there is a previous PT created before the one you wish to edit – you will only be able to update the start date to a later date, anything before the original date will throw up an error due to this being linked to the end date of the previous PT. </li>
+                <img src="assets/images/wrong_date23.png" alt="Menu prompt advising that the start date needs to be later then the previous date started.">
+                <li>The end date of any PT will always be locked and you will not be able to update it – it is very important that when creating a new PT, the date selected is correct as this will impact the end date if the previous placement tracking.</li>
+            </ol>
+            <h3 id="create-historic-placement-tracking" class="y-target">Creating a historical Placement Tracking</h3>
+            <p>There may be a requirement to create historical placement tracking record for the period of time where applicants had arrived into Wales but the UDP was not yet set up.</p>
+            <p>The ability to add a historic placement tracking will allow the Local Authority to create placement tracking’s with dates created prior to the first placement tracking for the household.  It will be the LAs responsibility to input any historic placement tracking’s for households who remain within the same Local Authority.  For households that no longer live in the same Local Authority as their original placement – it will be the responsibility of the Contact Centre to input historical placement tracking’s on these records, due to them having access to all Welsh LA data. The contact centre will liaise with the previous LA to ensure the information inputted is correct.</p>
+            <p><b>IMPORTANT:  when inputting multiple historic placement tracking’s, it’s really important that you start by creating the most recent historic placement first and then work your way back to the first placement.  As the end date is locked you need to work backwards from newest to oldest placements.</b></p>
+            <p>To create a historic placement tracking:</p>
+            <ol>
+                <li>Go into the household record and select placement tracking’s.</li>
+                <li>Referring to the screenshot below, to create a historic placement tracking the date needs to precede the start date of the first placement tracking – in this example it would need to be a date prior to 04/01/23.</li>
+                <img src="assets/images/historical_tracking23.png" alt="Placement Tracking menu showing the 4th of January 2023 as the Date Started">
+                <li>Select new placement tracking and complete all fields, the placement type selected should reflect what the placement type was at the time of the historic placement.</li>
+                <li>When you input the start date you will get a warning message that you are about to create a historic placement tracking.</li>
+                <img src="assets/images/new_historical23.png" alt="Menu prompt advising that you are going to submit a historical record">
+                <li>Select ok and create the placement tracking inputting all relevant information:</li>
+                    <ol>
+                        <li>if the placement was for a Welcome Centre you need to ensure you input the correct welcome centre into the allocated welcome centre field.</li>
+                        <li>if the placement was for a sponsor/host you need to ensure you link the host and host address relevant to that placement.</li>
+                    </ol>
+                <li>6.	Save and close the PT.</li>
+            </ol>
+            <p>	Please note:  there is no system functionality behind historic placement tracking’s so this will not link the welcome centre or sponsor/host and will also not move the record (if the previous placement was in another LA).</p>
 
             <h3 id="changing-journey-status" class="y-target">Changing Journey Status</h3>
             <p>To change an applicant’s Journey Status: </p>
@@ -1064,6 +1119,7 @@
                 <li>Add a journey status reason - relevant examples include Case completed; Not Traveling or Move to another scheme.</li>
                 <li>Where reasons are known, you can provide addiitonal information in the case notes.</li></ol>
                 <p>There are no placement records required where an individual has not shown.</p>
+                <p>Updating the Journey Status for these scenarios is essential as this allows for functionality to remove the host link on the household page.</p>
                 <p>If there are safeguarding concerns, please refer to your local safeguarding policies.</p>
             <h3 id="making-changes-household-groups" class="y-target">Making changes to Household Groups</h3>
             <p>There may be circumstances when it is necessary to either add or remove a person to a household, or to change the lead applicant of the group. This section explains that process.  </p>
@@ -1199,14 +1255,14 @@
             <p>Once the re-match has been agreed between both local authorities, <b>the original local authority</b> (where a household is already placed) will need to:</p>
             <ol>
                 <li><a href="#creating-personalised-system-views">Create a system view</a> of the names within the household transferring and all required fields and export the data to Excel.</li>
-                <li><a href="#creating-placement-record">Close the existing placement tracking record</a> completing the Move on Reason and placement end date.</li>
+                <li>Completing the Move on Reason and placement end date for the current placement tracking</li>
                 <li>To assign them to the new local authority, <a href="#creating-placement-record">create a new household placement tracking record</a>. 
                     <ol>
                         <li>Ensure the move on reason is set to ‘move on accommodation’.</li>
                         <li>Detail the name and address of the new host within the address field, if known.</li>
                         <li>Assign it to the new local authority by adding them into the ‘Local Authority’ field within the placement tracking form.  </li>
                     </ol>
-                <li>Save the placement tracking record. <b>At this point the current host will automatically remove from the household page and all information will transfer over to the new local authority and you will lose access to the record(s).</b></li>
+                <li>Save the placement tracking record. <b>At this point the current host will automatically remove from the household page, the current PT will end and all information will transfer over to the new local authority and you will lose access to the record(s).</b></li>
                 <li>Inform the new local authority the records have been transferred across.</li>
             </ol>
             <p>The <b>new</b> local authority needs to:</p>
@@ -1215,7 +1271,6 @@
                 <li><a href="#adding-host-addresses">Add the host property address</a></li>
                 <li>Completing necessary checks on the host updating <a href="#using-case-notes">Case Notes and Check boxes</a> during the process.</li>
                 <li><a href="#linking-household-record">Add the host into the placement tracking record</a> using the Host field.</li>
-                <li>Go into the current open placement tracking (for move on accommodation) and update with the end date as the same day. </li>
                 <li>Open a new placement under the relevant placement type for the same day (this will not override the previous placement tracking date). </li>
                 <li>If the placement type ‘sponsor/host’ is selected, then the new host will pull through into the right-hand side of the placement tracking. </li>
                 <li>Once the host has confirmed the move has taken place, complete the finance section of the host record.</li>
@@ -1229,7 +1284,7 @@
                 <li>Contact the Case Management Team <a href="mailto:casemanagementteam@cardiff.gov.uk">casemanagementteam@cardiff.gov.uk</a> with all relevant details of the transfer request </li>
                 <li>The Case Management Team will contact the onward Local Authority and submit the request via Foundry, if accepted they will confirm back to the Welsh Local Authority once Foundry has been updated </li>
                 <li>Ensure the <a href="#using-case-notes">case notes</a> record that the onward destination local authority has agreed to the transfer.</li>
-                <li><a href="#creating-placement-record">Close the placement record</a> of the household’s existing placement.</li>
+                <li>Update the move on reason of the household’s existing placement.</li>
                 <li><a href="#creating-placement-record">Create a new placement record</a> providing their new cross border address and date of transfer. If this is not possible, add the country to which they are moving to.</li>
                 <li>Select either (England), (Northern Ireland) or (Outside of UK) within the Local Authority mandatory field. </li>
             </ol> 
@@ -1298,7 +1353,7 @@
                             </ul>    
                         </p>
                     </li>
-                    <li>End their current placement record. Depending on the scheme they arrived under, this could be a placement record for a host or welcome centre.</li>
+                    <li>Update the move on reason on their current placement record. Depending on the scheme they arrived under, this could be a placement record for a host or welcome centre.</li>
                     <li>Crate a new placement tracking record including:
                         <p>
                             <ul>
@@ -1338,7 +1393,7 @@
                                 <p>
                                     <ol type="i">
                                         <li>
-                                            <a href="#creating-placement-record">close the original placement record</a>
+                                            <a href="#update-existing-tracking-record">update the original placement record if relevant</a>
                                         </li>
                                         <li>
                                             <a href="#creating-placement-record">create a new placement record</a> for repatriation. This is important for funding purposes
@@ -1359,7 +1414,7 @@
             <p>If the household records are not assigned to your local authority it means that either a repatriation tracking record has been completed and is assigned to (outside of UK) or the original local authority did not update their placement tracking records.</p>
             <ol>
                 <li>If the household record is assigned to another local authority, please make direct contact with their Data Champion and request that the placement tracking records reflect that they have repatriated. This will ensure the records are transferred to (outside of UK).</li>
-                <li>If / once the household is assigned to ‘(outside of UK)’, email the Contact Centre (<a href="mailto:wnsadmin@cardiff.gov.uk">wnsadmin@cardiff.gov.uk</a>) with the FAM/WG household reference and ask them to locate the household record. The Contact Centre will close the repatriation placement record and create a new placement tracking record to assign it to your local authority.
+                <li>If / once the household is assigned to ‘(outside of UK)’, email the Contact Centre (<a href="mailto:wnsadmin@cardiff.gov.uk">wnsadmin@cardiff.gov.uk</a>) with the FAM/WG household reference and ask them to locate the household record. The Contact Centre will  create a new placement tracking record to assign it to your local authority, this will close the original repatriation placement record.
                 <p>
                     <ol type="a">
                         <li>You will need to consider the available accommodation and whether the household has resided in the county previously and whether that placement (Welcome Centre or Host/Sponsor) is still available.</li>
@@ -1380,7 +1435,7 @@
                 <li>Click on the <a href="#sponsor">Sponsor section</a> in left hand navigation.</li>
                 <img src="assets/images/sponsors-section-highlighted.png" alt="sponsors section">
                 <li>Click New at the top of the screen to open a blank sponsor record</li>
-                <img src="assets/images/open-blank-sponsor-record.png" alt="open a blank sponsor record">
+                <img src="assets/images/open-blank-sponsor-record.png" alt="open a blank sponsor record" width="50%" height="50%">
                 <li>Complete the fields within the Summary Tab noting the following:</li>
                 <ol class="lower-alpha">
                     <li>Within the ‘Type’ field, select host to reflect that it is someone who has offered accommodation through Expression of Interest (EoI) as part of the Super Sponsor Scheme. In the unlikely event you need to create a new record for someone offering accommodation through the Homes for Ukraine Scheme, you would select Sponsor.</li>
@@ -1459,6 +1514,21 @@
             <p>To remove a host completely (because the person is moving to self-supporting within the LA for instance) you need to create a placement tracking with a dropdown of any scenario other than sponsor/host:</p>
             <img src="assets/images/dropdown-nohost23.png" alt="Drop down menu with sponsor/host striked through">
             <p>Once a placement tracking has been created with one of the above dropdowns, the host will be automatically removed from the household page and the host section will no longer be a mandatory field. </p>
+
+            <h3 id="remove-household-no-show" class="y-target">Removing a Host/Sponsor when the household is a No Show</h3>
+            <p>There will be occasions where a household has decided either not to travel to Wales, has decided not to use this Visa or has travelled to another part of the UK on a separate Homes for Ukraine Visa.  There may also be a situation where the household/applicant are uncontactable with no confirmed arrival date. </p>
+            <p>On these occasions, there may be a host still linked to the household page, which is a result of a flow that was run in release 4.0.  As the host / host address field is mandatory on the household page and you cannot create a placement tracking for someone who hasn’t arrived, it’s important that the IS Journey Status is reflective of the situation to enable the deletion of the data in these mandatory fields. </p>
+            <p>The system has functionality that when ALL members of a household group are set to No show / uncontactable it will remove the mandatory restrictions behind the host/ host address section of the household page.</p>
+            <p>When a household (multiple applicants or single applicants) are no shows, you should:</p>
+            <ol>
+                <li>Set the IS Journey Status to one of 3 options: IS21, IS22, IS23.</li>
+                <img src="assets/images/is_journey23.png" alt="list of IS codes available (IS21, IS22 and IS23)">
+                <li>Ensure that this is set for ALL members of the household.</li>
+                <li>Go into the household page and delete the host / host address. </li>
+                <li>Click save.</li>
+            </ol>
+            <P>The host/host address fields will now be empty, the link between sponsor/host and applicant will be removed and the sponsor/host will now become available.</P>
+            <P>Please note: if not all members of the household are no show’s then you will need to split the household removing the no show applicants into their own household group.</P>
 
             <h3 id="recording-additional" class="y-target">Recording additional sponsor household members</h3>
             <p>A sponsor household member is a person that is living with the applicant at the time the application to be a sponsor is made.  For example, a child or partner.</p>
