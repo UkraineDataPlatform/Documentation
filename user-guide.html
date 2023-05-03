@@ -115,7 +115,6 @@
                     <li class="nest1"><a href="#support-model">Service incident handling</a></li>
                     <li class="nest1"><a href="#faq-details">Frequently Asked Questions</a></li>
                     <li class="nest1"><a href="#udp-queries">Ukraine Data Platform Queries</a></li>
-                    <li class="nest1"><a href="#contact-details">Contact Details</a></li>
                 </ul>
             <li class="chapter"><a href="#summary-of-processes">Summary of processes by Scheme</a></li>
                 <ul>
@@ -142,7 +141,7 @@
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
             <!---<p>An offline copy of the latest User Guide will be available to download by the 24/02/2023</p>-->
            <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v11-03-04-23.docx">Data Platform User Guide - Version 11 - Updated 03-04-2023</a> 
+            <a href="assets/documents/data-platform-user-guide-v12-03-05-23.docx">Data Platform User Guide - Version 12 - Updated 03-5-2023</a> 
             <div class="vspacer"></div>
         </section>
         <section>
@@ -246,6 +245,14 @@
                         <p>Updating an existing placement tracking ; creating a historic placement tracking ; Removing a host/sponsor when the household is a no show </p>
                         <p>Updated:</p>
                         <p>Creating / Closing a placement Record; Closing a placement record; Closing a placement record; Handling no shows; Re-assignment across local authority boundaries but wholly within Wales; Cross Border Re- assignment across UK national borders (either scheme); Repatriation</p>
+                    </td>
+                    <td>V12</td>
+                    <td>03/05/2023</td>
+                    <td>
+                        <p>Added:</p>
+                        <p>Handling deceased Applicants</p>
+                        <p>Updated:</p>
+                        <p>Escalating any Data Platform related issues or functionality requests; Support Model - Escalation Table </p>
                     </td>
                 </tr>
             </table>
@@ -1198,6 +1205,23 @@
         </section>
         <div class="article-divider"></div>
         <section>
+            <h2 id="handling-deceased-applicants" class="y-target">Handling Deceased Applicants</h2>
+            <p>For scenarios where an active applicant has passed away, it is important that certain actions are carried out within the data platform to ensure that the record is set to the correct journey status and that the record is removed from ‘active’ views.</p>
+            <p>It is important that this process is carried out to prevent any communication being sent to family members and causing further distress.</p>
+            <p>The process to handle deceased applicant records is as follows:</p>
+            <ul>
+                <li>Remove the applicant into their own household (if applicable)</li>
+                <li>Add a note to the applicant timeline to explain the person has passed away.  No details other than the date of death will need to be recorded <b>(no sensitive or medical information to be included)</b></li>
+                <li>Raise a ticket with Jira to make them aware of the death.</li>
+                <li>Set the applicant Journey status to IS12 – Support Ended / SS07 – Support Ended  </li>
+                <li>Set the Status Reason to ‘Deceased’ </li>
+                <li>Toggle ‘No Non-Essential Communications’ to <b>YES</b></li>
+                <li>Email the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a>  mailbox to advise that the applicant has passed away and the above actions have been completed.</li>
+            </ul>
+            <p>The WG team will then deactivate the record.  If needed, you will be able to access this via the ‘inactive applicants’ view.</p>
+        </section>
+        <div class="article-divider"></div>
+        <section>
             <h2 id="health-board-tab" class="y-target">Using the Health Board Tab</h2>
             <p>The Health Board tab has been added for use by Local Health Boards. Local Authority users of the system do not need to complete fields in this tab but may refer to it for information if necessary.</p>
             <p>The three fields contained within the Tab are:</p>
@@ -1732,6 +1756,9 @@
             <h3 id="faq-details" class="y-target">Homes for Ukraine Data Platform FAQ</h3>
             <p>Please use the tabs in the top right of this page to access our FAQs, training videos and our latest news.</p>
             <h3 id="udp-queries" class="y-target">Ukraine Data Platform Queries</h3>
+            <p><b>Important</b></p>
+            <p>When sending emails to any of the mailboxes please ensure that only essential information is included.  If referring to an applicant record, the UAN (unique application number) / Household ID (begins with FAM or WG) is sufficient information to send, if you don’t have this information, please send over the applicant’s name.  If referring to a sponsor record, the sponsor’s name is sufficient.  Please do not send screenshots of the live Data Platform and please do not attach or send screenshots of your local documents including spreadsheets.  This may result in a data breach in which you as a Local Authority will be responsible for as independent data controllers for the UDP.</p>
+            <h4>General Training and System Queries</h4>
             <p>If you have a query relating to how you use the Ukraine Data Platform please:
                 <ul>
                     <li>Check the available <a href="user-guide.html">documentation</a> and <a href="training-materials.html">videos</a> on this site in the first instance. </li>
@@ -1739,10 +1766,19 @@
                     <li>If they are unable to resolve your query, they will contact us through the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a> mailbox to seek further assistance.</li>
                     </ul>
                 </p>
-            <p>The Nation of Sanctuary mailbox is for non-urgent platform queries only.  For urgent queries or safeguarding concerns please contact the <a href="mailto:Ukraine.Safeguarding@gov.wales">Ukraine.Safeguarding@gov.wales</a> mailbox to ensure teams with the appropriate expertise can respond to your concern.</p>
-            <p>Due to the breadth of queries that we receive through the mailbox, we will be prioritising messages relating to a technical issue or where the answer to a question  isn’t available on this site.</p>        
-            <h3 id="contact-details" class="y-target">Contact Details</h3>
-            <p>For any feedback on the system, please email <a href="mailto:UkraineResponseQueries@gov.wales">UkraineResponseQueries@gov.wales</a></p>
+            <p>The Nation of Sanctuary mailbox is for non-urgent platform queries only.</p>
+            <p>Due to the breadth of queries that we receive through the mailbox, we will be prioritising messages relating to a technical issue, data issue or where the answer to a question  isn’t available on this site.</p>    
+            <h4>Safeguarding Queries</h4>  
+            <p>For urgent queries or safeguarding concerns please contact the <a href="mailto:Ukraine.Safeguarding@gov.wales">Ukraine.Safeguarding@gov.wales</a> mailbox to ensure teams with the appropriate expertise can respond to your concern.</p>  
+            <h4>Data Queries</h4>
+            <p>For queries relating to data, including missing applicant / sponsor data and identified issues with the data load please contact the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a>.  Please do not send data queries to data@gov.wales. </p>
+            <h4>Policy Queries</h4>
+            <p>For any policy queries please send these over to the <a href="mailto:UkraineResponsQueries@gov.wales">UkraineResponsQueries@gov.wales</a> mailbox.</p>
+
+
+
+            <h4>General System Feedback</h4>
+            <p>For any General feedback on the system and processes, please email <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a></p>
         </section>
         <div class="article-divider"></div>
         <section>
