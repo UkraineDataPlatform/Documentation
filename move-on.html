@@ -50,7 +50,7 @@
 
     <!-- MAIN PAGE CONTENT -->
 
-    <div class="content">
+    <div class="content"></div>
         <h1>Move on Process User Guide</h1>
              <section>
                 <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
@@ -312,10 +312,251 @@
                 <li>Edit the title of the view to what you want to call it.</li>
                 <img src="assets/images/moveon/available-properties.png" alt="Screenshot of views menu with new title entered">
                 <li>This will now appear in the view’s dropdown on the move on search tab.</li>
-        
-        
+                
         </ol>
             </section>
+            <div class="article-divider"></div>
+            <Section>
+                <h2 id="reservation-process" class="y-target">Reservation Process</h2>
+                <p>Once a suitable property has been found you will need to follow the reservation process to ensure a match is completed successfully. </p>
+                <p>Reservation process:</p>
+                <ol><li>You will need to select the reservation by clicking the tick box on the left-hand side of the record in the list.  </li>
+                    <img src="assets/images/moveon/reserve.png" alt="Screenshot of reserve highlighted in record list">
+                <li>You will then need to click the reserve button. <ul><li>A pop-up window will confirm you wish to reserve the selected property - Click OK to reserve it.</li>
+                <li>You will see a ‘Reservation was created successfully’ message.</li></ul></li>
+                <li>This will remove the record from the available offered properties view and change its status to RS00 – New Reservation. </li></ol>
+                <p>The reservation journey status will show on the record and will need to be updated as you move through the process.</p>
+                <img src="assets/images/moveon/reserve-status.png" alt="Screenshot of reservation menu with journey status highlighted">
+                <p>The reservation will move to the Reservations table which can be located on the left-hand navigation.</p>
+                <img src="assets/images/moveon/reserve-nav.png" alt="Screenshot of reservation selected in navigation bar">
+                <p>The reserving Local authority will be able to view all active and inactive reservations here depending on the dropdown selected.  Once a reservation is complete the reservation will become inactive and move to the inactive reservation tab. </p>
+                <img src="assets/images/moveon/inactive-reservations.png" alt="Screenshot of inactive reservation view">
+                <p><b>Please Note:</b></p>
+                <p>If the reservation is within the same Local Authority then the user will have access to the household record, the host record and the reservation record.</p>
+                <p>If the reservation is requested for a property in another Local Authority only the requesting LA will see the reservation.  Both LAs will need to communicate off the Data Platform to ensure that the reservation process is completed successfully. </p>
+                <h3 id="reservation-status" class="y-target">Reservation Status</h3>
+                <p>Each stage of the reservation process requires a reservation status update.  Certain reservation statuses will have influence over the automatic update of the offered property status.  </p>
+                <p>An example of this would be when ‘RS02 – Host/Applicant introduction successful’ is selected, the offered property status will change from ‘Reserved’ to ‘Matched’.</p>
+                <p>It is important to understand what each reservations status means and its effect on the offered property status.</p>
+                <table>
+                    <tr><th>Reservation Status</th>
+                    <th>When should this be used</th>
+                    <th>Impact on offered property status</th></tr>
+                    <tr><td>RS00- New Reservation (Default)</td>
+                    <td>This is the default status when a reservation is selected </td>
+                    <td>Status remains as ‘Reserved’</td></tr>
+                    <tr><td>RS01 - Applicant informed of reservation</td>
+                    <td>The LA has reached out to the applicant to inform them of details of property / host / location etc and the applicant has accepted the reservation.  At this point a meeting with host and household will be arranged. </td>
+                    <td>Status remains as ‘Reserved’</td></tr>
+                    <tr><td>RS02 - Host / Applicant introduction successful</td>
+                    <td>The host and household have met, either in person or virtually and have both agreed they are happy to go ahead with the reservation. </td>
+                    <td>Once selected the status will change from ‘Reserved’ to ‘Matched’ </td></tr>
+                    <tr><td>RS03 -Enhanced DBS check in progress</td>
+                    <td>If the host has previously only completed a basic DBS check and now requires an enhanced check (because for example there will now be a child / vulnerable adult being hosted).  This status will be selected once this process has started. </td>
+                    <td>Status remains as ‘Matched’</td></tr>
+                    <tr><td>RS04 - Enhanced DBS check complete </td>
+                    <td>The enhanced DBS check has come back complete with no issues.</td>
+                    <td>Status remains as ‘Matched’</td></tr>
+                    <tr><td>RS05 – Date for move on confirmed </td>
+                    <td>The LA has arranged between the two parties a date/time for the household to arrive at the new hosted property. </td>
+                    <td>Status remains as ‘Matched’</td></tr>
+                    <tr><td>RS06 – Travel to new host arranged</td>
+                    <td>The LA/host has arranged travel for the household to arrive at the new hosted property.</td>
+                    <td>Status remains as ‘Matched’</td></tr>
+                    <tr><td>RS07 – Move on match complete </td>
+                    <td>The household has successfully moved into the new hosted accommodation with no issues.</td>
+                    <td>Once selected the status will change from ‘Matched’ to ‘Match Completed’</td></tr>
+                    <tr><td>RS08 – Match Unsuccessful   </td>
+                    <td>The host/household match has fallen through (potentially because either or both parties have changed their mind) / the reservation was selected in error / the host has failed further DBS checks.</td>
+                    <td>Once selected the status will change from ‘Reserved’ / ‘Matched’ to ‘Available’</td></tr>
+                </table>
+                <h4>If a match becomes unsuccessful</h4>
+                <p>There may be occasions where a match is deemed unsuccessful.  This may be due to the host or household changing their mind, it may be due to unsuitable accommodation/ location, or it may simply be that the property was reserved in error.</p>
+                <p>When this happens, you should:</p>
+                <ol><li>Make a note on the timeline explaining the reason for the match being unsuccessful (if necessary and remember to not include any sensitive information).</li>
+                <li>Ensure both parties are aware that the reservation will be deleted.</li>
+                <li>Set the reservation status to RS08 – Match Unsuccessful. </li></ol>
+            
+            <p>If RS08 – Match Unsuccessful is selected, then a sub status reason will appear.  This will enable you to specify the reason for the unsuccessful match.  This will ensure that no unnecessary information is inputted into the system and a generalised status reason is displayed.  The status reason does not include detailed information of why the match was unsuccessful, it is for overview purposes only.</p>
+            <p>One of the following status reasons should be selected depending on the individual circumstances: </p>
+            <table><tr><th>RS08 – Match Unsuccessful Status Reason </th>
+            <th>When should this be used?</th></tr>
+            <tr><td>Household rejected host </td>
+            <td>When the household has decided that the host / hosted property or location is not suitable for them. This should also be selected if a host has failed further DBS checks.</td></tr>
+            <tr><td>Host rejected Household </td>
+            <td>When the host has decided that the household is not suitable for them to host</td></tr>
+            <tr><td>Both parties in disagreement </td>
+            <td>When both the host and household agree that the hosting isn’t suitable for either party.  </td></tr>
+            <tr><td>Property reserved in error </td>
+            <td>When a property has been reserved incorrectly and no action has been taken </td></tr>
+        </table>
+        <h3 id="pt-active-reservation" class="y-target">Creating PT’s when there is an active reservation. </h3>
+        <p>There may be occasions where a reservation is in progress and a family need to move temporarily to emergency accommodation until the new reservation is complete.</p>
+        <p>The system will allow a PT to be created whilst the reservation is in place providing the person is staying within the same LA.  Once the reservation is completed the new PT will close the previous and pull in the new reservation and host details.</p>
+        <h4>If a PT is created with the local authority as outside of Wales: (outside of UK); (England) (Scotland):</h4>
+        <p>This may be due to the individuals repatriating or relocating.  The system will prevent the PT from being created until the reservation has been closed.  The below error message will appear: </p>
+        <img src="assets/images/moveon/error.png" alt="Screenshot of error message explaining that You need first to close the reservation before you can create move on placement tracking outside Wales">
+        <p>The reason this is blocked is to stop open reservations from being left in the system.  If a reservation has fallen through because the household has decided to leave Wales this should be set to RS08 – match unsuccessful and the status reason, be set to ‘property reserved in error’ before a PT repatriation or move on (with England or Scotland as the LA) PT is created on the household.</p>
+        <h3 id="other-placement" class="y-target">Other Placement Types</h3>
+        <h4>If Sponsor/Host PT is selected</h4>
+        <p>If a sponsor/host Placement type is selected whilst there is an active reservation, the system will prevent the PT from being created: </p>
+        <img src="assets/images/moveon/warning.png" alt="Screenshot of warning message stating that In order to create placement tracking from the type sponsor/host please create a reservation">
+        <p>This is because the reservation process should be followed to create a sponsor/host PT. </p>
+        <p><b>Please note:</b></p>
+        <p>If there is a host already attached to the household (from a previous/ current placement) then until the reservation is set to 'Matched' - RS02 – RS06, a host/ sponsor placement tracking will still be able to be created but will link to the current host linked to the household page.  Once the status is reflected to show the host / household as matched, the above error will appear preventing a PT from being created until the reservation process has been successfully completed.</p>
+        <h4>If there is no active reservation</h4>
+        <p>If the reservation process hasn’t been started but there is a host attached to the household (from previous data load) and no PT has yet been created, the system will allow this to be created to reflect the current hosted placement.  </p>
+        <p>When the time comes for the host to be changed, the reservation process should be followed. </p>
+        <h4>If any other PT is selected</h4>
+        <p>If any of the below PTs are created whilst a reservation is in place, the system will allow the PT to be created provided that the local authority is within Wales:</p>
+        <ul><li>Hospital</li>
+        <li>Move on accomodation</li>
+        <li>Temporary accomodation</li>
+        <li>Welcome Centre</li>
+        <li>Temporarily Left</li></ul>
+        <p>You should only need to create these placement tracking’s in emergency situations where someone needs to be relocated prior to the reservation process being completed.  </p>
+        <p>If you are creating a placement tracking for a more permanent move that is not a host/sponsor placement created via the reservation process, you should close the active reservation <b>before</b>creating the PT. </p>
+        <h3 id="view-all-reserved-la" class="y-target">To view all reserved hosts and properties that reside within your LA </h3>
+        <p>Because the reserving LA has access to the reservation only, as the receiving LA you will have access to a system view that will ensure that you have sight of all reserved properties situated within your LA.</p>
+        <p>To access the view:</p>
+        <ol><li>Go to the offered properties tab (accessing via the left-hand Navigation)</li>
+        <li>Select the view ‘My Offered Properties with an Active Reservation’ view </li></ol>
+        <p>This will enable you to track the offered properties that have been reserved and what their current offered property statuses are. </p>
+        <h3 id="changes-current-process" class="y-target">Changes to the current process for linking a household record with a sponsor/host</h3>
+        <p>Previously you were required to add a host to the household page and then create a placement tracking. </p>
+        <p>To make the connection between host and household you now need to follow and complete the reservation process via the move on search in the household tab.  </p>
+        <p>The host / host address fields on the household are now locked fields and the information will filter through from the completion of the reservation process: </p>
+        <img src="assets/images/moveon/locked-fields.png" alt="Screenshot of Host and Host address showing as locked">
+        <h4>Replacing an existing host / sponsor</h4>
+        <p>You will no longer have access to replace a host on the household page.  The host / host address fields will be locked, and the reservation process needs to be followed to link a suitable host with a household. </p>
+        <p>Completing the reservation process automatically creates a new link between the new host and household alongside automatically creating the placement tracking.  If there was a previous host linked to the household this process will replace that host and close all PTs associated with the previous hosting to free them up to potentially be available again. </p>
+        <h4>Removing a host / sponsor </h4>
+        <p>To remove a host/sponsor from a household who have moved out of hosted accommodation you will need to follow the process to create a placement tracking for anything other than host/sponsor.  </p>
+        <p>When a new placement tracking record is created for any placement type other than ‘sponsor/host’ – the host details will automatically be removed from the Household page. The locked host field will remain locked prior to ending the current placement tracking and the creation of the new placement tracking will end the current sponsor/host placement tracking and remove that link to the host on the household. </p>
+        <h4>For No Shows </h4>
+        <p>When the IS or SS journey status is set to <b>>No Show (IS21- No Show – Known; IS22 No Show – Unknown; SS05D – No Show – Known; SS05E – No Show – Unknown)</b> for all applicants within the household, any details in the locked host/host address fields on the household will automatically remove.</p>
+        <p>If one or more household members are not set to no show, the details will remain locked on the household page until all are changed to the no show status.  It’s important to split the households if some applicants intend to travel and others don’t. </p>
+        </Section>
+        <div class="article-divider"></div>
+        <section>
+            <h2 id="match-process" class="y-target">Match Process</h2>
+                <p>Once the final steps for the reservation process have been completed you will need to:</p>
+                <ul><li>Ensure all necessary timeline notes have been created.</li>
+                <li>Set the reservation status to RS07- Move on match complete.</li>
+                <li>Enter the start date for the move.</li>
+                <li>Click Save or Save & Close.</li></ul>
+            
+            <h3 id="automatic-new-placement-record" class="y-target">Automatic creation of a new placement record </h3>
+            <p>Once the match process is completed successfully a placement tracking will be created whether this is within the same current LA or whether the new hosted arrangement is in a different LA.</p>
+            <p>The completed match process (setting the status to RS07- Move on match complete with the start date) will link the host and household together on the host section of the household tab.  It will create a placement tracking on the household, applicant and sponsor records and will move the household into the new LA (if the household is moving from one LA to another).  To confirm this has processed correctly you can go back into the household record and into placement tracking’s and view the new placement tracking records.  If the household is moving to a new LA you will lose sight of the household record completely once you have entered the start date for the reservation. </p>
+            <h4>Matching within the same LA</h4>
+            <p>If the household and host both reside in your local authority, then the match process will mirror the reservation process: </p>
+            <ol><li>Find a suitable host by using the move on search.</li>
+            <li>Reserve the host.</li>
+            <li>Follow and complete the reservation process.</li>
+            <li>Ensure all necessary timeline notes have been created.</li>
+            <li>Set the reservation status to RS07- Move on match complete.</li>
+            <li>Set the start date as the first day of the new placement.</li>
+        <li>Click Save or Save & Close.</li></ol>
+        <p>Once the match process is completed successfully a placement tracking for ‘Sponsor/host’ will be created and will create the link between the host and household.  The new host details replace any existing host details on the household and applicant records and the creation of the new placement tracking will close any previous placement tracking’s associated with these records. </p>
+        <p>If you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ this will not pull through the host details into the placement tracking.  It is important that you consider the below placement reasons and when to use them within a placement tracking record: </p>
+        <table>
+            <tr><th>Placement Type</th>
+            <th>Reason for Placement Type</th>
+            <th>Additional Reasons</th>
+            <th>Additional Reasons 2</th>
+            </tr>
+            <tr>
+                <td>Hospital </td>
+                <td>When someone has left their accommodation to be hospitalised </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Move on accommodation </td>
+                <td>When someone has left hosted accommodation to become self-supported </td>
+                <td>When someone has left one local authority to be hosted at another </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Repatriation </td>
+                <td>When someone has left the UK entirely to return to Ukraine </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sponsor/Host </td>
+                <td>When someone is matched with a host - usually for the first time on the individual scheme </td>
+                <td>When someone is new to the local authority having moved from another LA in Wales to live with a chosen host </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temporary Accommodation </td>
+                <td>When someone arrives unexpected and is housed in initial accommodation (welcome centre) until a suitable host can be found </td>
+                <td>When someone needs to leave host address due to relationship breakdown and is moved to initial accommodation (welcome centre) </td>
+                <td>When someone needs to leave host address due to relationship breakdown and is moved to another host temporarily </td>
+            </tr>
+            <tr>
+                <td>Welcome Centre </td>
+                <td>When a person on the super sponsor scheme is housed in initial accommodation (welcome centre) </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temporarily Left </td>
+                <td>When a person has left their hosted accommodation for a short, temporary period for a holiday etc.   
+                    There will be a known return date and the case should be kept with the LA. 
+                    </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h4>Matching to a different LA</h4>
+        <p>If the household resides in your LA but the host resides in another local authority, you will need to follow the below steps: </p>
+        <ol>
+            <li>Find a suitable host by using the move on search.</li>
+            <li>Reserve the host.</li>
+            <li>Liaise with the receiving LA to follow and complete the reservation process.</li>
+            <li>Ensure all necessary timeline notes have been created.</li>
+            <li>Set the reservation status to RS07- Move on match complete.</li>
+            <li>Set the start date as the first day of the new placement (once confirmed with receiving LA)</li>
+            <li>Click Save or Save & Close</li>
+        </ol>
+        <p><b>At this point the current LA will lose access to the record(s) as these will be automatically transferred over to the new LA.  The host will automatically be replaced with the new host on the household page, the current PT will end.  It is important that you inform the new local authority the records have been transferred across. </b></p>
+        <p>The new local authority needs to: </p>
+        <ol>
+            <li>Check the records have been received correctly.</li>
+            <li>Ensure all relevant information has been recorded.</li>
+            <li>Complete any future check ins with the host and household. </li>
+        </ol>
+        <p>Once the host has confirmed the move has taken place, complete the finance section of the host record. </p>          
+
+        </section>
+        <div class="article-divider"></div>
+        <section>
+            <h2 id="rejected-withdrawn-hosts" class="y-target">Rejected / Withdrawn Sponsors/Hosts</h2>
+            <p>There may be occasions where a sponsor/host wishes to withdraw their interest in hosting or is rejected because of failed checks, such as local government/ property checks.  </p>
+            <p>If a host expresses that they wish to ‘withdraw’ from the scheme or is ‘rejected’ because of failed checks the record will need to be set to the correct sponsor journey status in order for the system to deactivate their records.  </p>
+
+            <img src="assets/images/moveon/rejected-status.png" alt="Screenshot of dropdown options for sponsor/host journey status">
+            <p>Once selected the system will automatically deactivate these records to prevent them from showing up on the active sponsors list.</p>
+            <ul>
+                <li>You will still have the ability to create case notes on the record once deactivated.  </li>
+                <li>The offered property tab for the host address will also become inactive and the offered property status will change to ‘removed’ </li>
+                <li>If you need to access a withdrawn / rejected sponsor record – you can locate these via the inactive sponsor’s view:</li>
+                <img src="assets/images/moveon/inactive-sponsors.png" alt="Screenshot of inactive sponsors selection">
+            </ul>
+            <h3 id="reinstate-host" class="y-target">To reinstate a withdrawn host </h3>
+            <p>If a host who has previously withdrawn from their responsibilities to host reaches out to state, they wish to begin hosting again you will need to obtain access of the previously deactivated sponsor/host record.</p>
+            <p>As local authorities don’t have access to reactivate records, data champions will need to contact the UDP team via the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a> mailbox to request that the sponsor record be reinstated to an active status.  Please include in your request:</p>
+            <ol>
+                <li>The name of the sponsor</li>
+                <li>The action to be taken – status changed from HST004-withdrawn to HST003-Active</li>
+                <li>A brief description that the sponsor has wished to resume their status as a host </li>
+            </ol>
+            <p>The UDP team with then reactivate the sponsor/ host record and the offered property record.  The offered property status will be changed to pending checks and it will be your responsibility to ensure that all sponsor/host checks are still relevant before making the property available within the move on search. </p>
+
+        </section>
 </main>
 <footer>
 </footer>
