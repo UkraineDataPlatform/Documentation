@@ -144,7 +144,7 @@
             <h2 id="download-copy" class="y-target">Download a copy of the User Guide</h2>
             <!---<p>An offline copy of the latest User Guide will be available to download by the 24/02/2023</p>-->
            <p>If you need to download a copy of the latest version of the User Guide click on the link below:</p>
-            <a href="assets/documents/data-platform-user-guide-v12-03-05-23.docx">Data Platform User Guide - Version 12 - Updated 03-5-2023</a> 
+            <a href="assets/documents/data-platform-user-guide-v13-05-07-23.docx">Data Platform User Guide - Version 13 - Updated 05-07-2023</a> 
             <div class="vspacer"></div>
         </section>
         <section>
@@ -256,6 +256,17 @@
                         <p>Handling deceased Applicants</p>
                         <p>Updated:</p>
                         <p>Escalating any Data Platform related issues or functionality requests; Support Model - Escalation Table </p>
+                    </td>
+                </tr>
+                <tr><td>V13</td>
+                    <td>05/07/2023</td>
+                    <td>
+                        <p>Added:</p>
+                        <p>Creating PT’s when there is an active Reservation; If a PT is created with the LA as outside of Wales; Other Placement Types; if there is no active Reservation; If any other PT is selected; Host Address Related Checks; The Move on Process; Local Authority and Contact Centre responsibilities for the Move on Process; Offered Property Tab; Searching for an Offered Property; Move on Search; Reservation Process; Reservation Status’; to View all Reservations that reside in your LA; Match Process; Automatic Creation of a new Placement Record; Matching within the same LA; Matching to a different LA; To Reinstate a Withdrawn Host.</p>
+                        <p>Updated:</p>
+                        <p>Menus – Placement menu; Household; Sponsor/host checks; Updating and Creating a Housing Need; Creating a Housing Need; Creating and Closing a Placement Record; Re-match within the individual LA boundary; Identifying a suitable Host; Handling No Shows; Cross Border Re- assignment across UK national borders (either scheme); Re-assignment across Local Authority boundaries but wholly within Wales; Linking a household record and a sponsor/host record; Adding a host address; Repatriation; Replacing and existing host/sponsor; Rejected/withdrawn host/sponsors. </p>
+                        <p>Removed:</p>
+                        <p>Deleting an Ophaned Household</p>
                     </td>
                 </tr>
             </table>
@@ -382,14 +393,16 @@
             <h4>Placements menu</h4>
             <div class="responsive-columns">
                 <div class="image-column">
-                    <img src="assets/images/placements-menu.png" alt="Screenshot of Placements menu layout described in surrounding text">
+                    <img src="assets/images/placement-menu.png" alt="Screenshot of Placements menu layout described in surrounding text">
                 </div>
                 <div class="text-column">
-                    <p>The <b>Applications</b> section lists the applicants by application number.</p>
-                    <p>The <b>Housing Needs</b> section summarises the housing needs of an individual.</p>
-                    <p>The <b>Accommodations</b> section is a list of all the Welcome Centres and Temporary Accommodations for the Super Sponsor route.</p>
+                    <p>The <b>Applications</b> section is a list of all the Welcome Centres and Temporary Accommodations for the Super Sponsor route.  </p>
                     <p>The <b>Host Addresses</b> section shows data on all addresses of properties offered to house individuals through the Homes for Ukraine Individual Route scheme.</p>
                     <p>The <b>Placement Tracking</b> section lists all of the placements that have been entered on the system.</p>
+                    <p>The <b>Offered Properties</b> section lists all the offered properties that are either new, pending, or available.</p>
+                    <p>The <b>Applications</b> section lists the applicants by application number.</p>
+                    <p>The <b>Housing Needs</b> section summarises the housing needs of an individual. </p>
+                    <p>The <b>Reservations</b> sections shows all active and inactive reservations.  </p>
                 </div>
             </div>
             <h3 id="navigation" class="y-target">Navigation</h3>
@@ -570,6 +583,22 @@
                     <td>
                         <p>
                             This Tab provides a summary of the placement tracking records for the household which you can easily access and amend. You can also create new placement tracking records.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Housing Needs</b></td>
+                    <td>
+                        <p>
+                            This tab provides details of the household set up and all the requirements and needs of each individual household member.  Details any pets arriving and any additional needs or adaptations required. 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Move on Search</b></td>
+                    <td>
+                        <p>
+                            This section provides a table displaying all available offered properties both locally and across Wales and is used to create reservations between hosts and household as part of the move on process. 
                         </p>
                     </td>
                 </tr>
@@ -776,14 +805,22 @@
             <p><a href="#create-case-note">Create a case note</a> to record that these checks have been completed and change the checks box as appropriate.  </p>
             <p>At this point you will also need to check that the accommodation needs of the household have not changed. </p>
             <p>When these checks/services have been offered or provided, you can <a href="#change-journey-status">change the journey status</a> from SS07 – SS08 Welcome Centre Ready for Move On.  That will then enable local authorities to assess the housing need of individuals in the Welcome Centre who have had checks completed against available accommodation. </p>
-            <h3 id="sponsor-host-checks" class="y-target">Sponsor/Host Checks</h3>
-            <P>The sponsor/Host and their property should be checked prior to arrival, or very shortly after, a person or household are matched to them.  Three of checks below can used to track when a check has been carried out, the two checks with padlocks will be provided the DLUHC data feeds.</P>   
-            <P>The checks should be toggled on the data platform once completed and include:</P>
-            <img src="assets/images/sponsor-checks23.png" alt="Screenshot showing Housing inspection completed No, Basic DBS check completed No, Enhanced DBS Check Completed No">
-            <p><b>Housing Inspection Check -</b> to ensure the property is suitable and meets the correct criteria to host applicants.</p>
-            <p><b>Basic DBS Check Completed - </b>to ensure that the Basic DBS check has been completed and passed.</p>
-            <p><b>Enhanced DBS Check Completed - </b>to ensure that the Enhanced DBS check (if required) has been completed and passed.</p>
-            <p>As part of the application process, a sponsor may be rejected by the home office if they fail their <b>PNC (Police National Computer services) Check</b>.  This will be recorded in the data platform under a locked field and will be read only for information only.  It will be the Home Office’s responsibility to rematch the applicant to a suitable sponsor for their application, this will also show in the sponsor checks section under <b>Home Office Rematching</b> as a read only checkbox for information only.</p>
+            <h3 id="sponsor-host-checks" class="y-target">Sponsor / host checks</h3>
+                <p>The sponsor or prospective Host (EOI) and their property should be checked prior to arrival, or very shortly after, a person or household are matched to them. The sponsor check box (shown below) can be used to track when a check has been carried out.  The two checks with padlocks will be provided the DLUHC data feeds and only apply to Sponsors, who have sponsored an application.</p>
+                <p>The checks should be toggled on the data platform once completed and include:</p>
+                <img src="assets/images/moveon/sponsor-checks.png" alt="Screenshot of sponsor checks list">
+                <p><b>Introductory Contact Made –</b> The LA has reached out to the host to make introductions, confirm they are still happy to host, provide all necessary information regarding the hosting and ensure they are prepared.   </p>
+                <p><b>Consent for DBS –</b> within the introductory contact the host should provide consent to start the DBS process, this will then either be completed by the individual or by the LA as per local processes. </p>
+                <p><b>Basic DBS Check Completed -</b> to ensure that the Basic DBS check has been completed.</p>
+                <p><b>Enhanced DBS Check Completed -</b> to ensure that the Enhanced DBS check (if required) has been completed.</p>
+                <p><b>Please note:</b> only one DBS check needs to be completed, this is at the discretion of each LA as to which one, however it is recommended that an enhanced check be completed if the host is willing to house families with children or vulnerable adults. </p>
+                <p><b>Sponsor checks only:</b> As part of the application process, a <b>sponsor</b> may be rejected by the home office if they fail their <b>PNC (Police National Computer services)</b> or <b>Home Office Warnings Index Checks.</b> This will be recorded in the data platform under a locked field on the sponsor record and will be read only for information only. It will be the Home Office’s responsibility to rematch the applicant to a suitable sponsor for their application, this will also show in the sponsor checks section under <b>Home Office Rematching</b> as a read only checkbox for information only.</p>
+
+                <h3 id="host-address-check" class="y-target">Host Address Related Checks </h3>
+                <p>The Host Address section has had some small changes made to ensure accurate data capture.  On each host address record, you will see the housing inspection checkbox: </p>
+                <img src="assets/images/moveon/housing-inspection.png" alt="Screenshot of housing inspection completed toggle in the yes position">
+                <p><b>Housing Inspection Check - </b>to ensure the property is suitable and meets the correct criteria to host applicants.</p>
+                <p>This has been removed from the Sponsor/Host section and will now sit on each individual host address record.  The toggle will need completed for each individual property that the sponsor/host has offered once the checks have been confirmed successful.</p>
             <h3 id="bulk-updates-checks" class="y-target">Bulk updates to checks</h3>
             <p>There is a table within each household record which lists the members of the household and which checks they have undergone in the Welcome Centre. When several members of a household group have each undergone the same checks (such as having a family health appointment booked or welfare visit completed), you can quickly update these checks in a single location to save time. </p>
             <p>You can also use this table to see which members of a merged household (a reunited family for example) have had checks and which individuals have not. </p>
@@ -894,41 +931,302 @@
                 <li>Update the linked housing need requirement for the existing household </li>
                 <li>Create a new linked housing need for the person that has been moved (if they are not joining another group). </li>
             </ul>
-            <p>Every Household ID should have a linked housing need which helps Local Authority colleagues when matching individuals to suitable accommodation whether that be super sponsor scheme households or individuals travelling on the individual scheme needing to be re-housed.</p>
-            <div class="vspacer"></div>
-            <h5 id="updating-existing-housing-need">Updating an existing housing need</h5>
-            <ol>
-                <li>Go to the <a href="#applicant">Applicants section</a> and double-click on the name of an applicant to get to their individual applicant screen.</li>
-                <li>On the Summary tab, click on the Household ID (FAM# or WG#).</li>
-                <img src="assets/images/household-id.png" alt="household id">
-                <li>On the Household screen click on the Linked Housing Need.  </li>
-                <img src="assets/images/linked-housing-need.png" alt="linked housing need">
-                <li>Make changes to the fields as required. Those marked with a red asterisk (*) are mandatory. </li>
-                <li>Once you have made the required changes, make sure to save by clicking the Save button or Save & Close button. </li>
-            </ol>
+            <p>Every Household ID, where the household is seeking new accommodation, should have a completed housing need tab which helps Local Authority colleagues when matching individuals to suitable accommodation, whether that be for individuals needing to be re-housed via the super sponsor scheme or for individuals who have arrived on the individual sponsor scheme.</p>
+                <h3 id="update-existing-housing" class="y-target">Updating an existing Housing Need </h3>
+                <ol><li>Go to the Applicants section and double-click on the name of an applicant to get to their individual applicant screen.  </li>
+                <li>On the Summary tab, click on the Household ID (FAM# or WG#).  </li>
+                <img src="assets/images/moveon/household-id.png" alt="Screenshot of Household ID">
+                <li>On the Household screen click on the Housing Need tab.   </li>
+                <img src="assets/images/moveon/household-general.png" alt="Screenshot of Household tab">
+                <li>Make changes to the fields as required. Those marked with a red asterisk (*) are mandatory.  </li>
+                <li>Once you have made the required changes, make sure to save by clicking the Save button or Save & Close button.  </li></ol>
             <h5>Creating a new Housing Need</h5>
             <ol>
                 <li>Search for the applicant(s) in the <a href="#applicant">Applicants section</a></li>
                 <li>Once you have found the applicant, click on the Household ID (FAM# or WG#). This will take you to the Household section.  </li>
-                <img src="assets/images/household-id-highlighted.png" alt="household id highlighted">
-                <li>On the General tab, double click on the Linked Housing Need field and select New Housing Need</li>
-                <img src="assets/images/select-new-housing-need.png" alt="select new housing need">
-                <li>Complete the fields as required. Those marked with a red asterisk (*) are mandatory. </li>
-                <li>Once you have made the required changes, make sure to save by clicking the Save button. This will assign the Housing Need record with a unique reference Code (HN--#####)</li>
-                <ol>
-                    <li>Copy the Housing Need reference code (you can highlight, right click and copy). Return to the Household Record (General Tab).and paste the Housing Need reference into the Linked Housing Need Field.</li>
-                    <img src="assets/images/linked-housing-needs.png" alt="screen grab of the linked housing needs menu">
-                    <li>Click Save & Close.</li>
+                <img src="assets/images/moveon/household-id.png" alt="Screenshot of Household ID">
+                    <li>On the Household screen click on the Housing Need tab – if there is no active housing need you will see the message: Source record not selected.  </li>
+                    <li>You will need to click the Create Housing Needs button, which will show at the top of the household screen.   </li>
+                    <img src="assets/images/moveon/create-housing-needs.png" alt="Screenshot of household screen with Create Housing Needs highlighted">
+                    <li>You will then see a pop up confirming that a housing need will be created for the household – select ok.</li>
+                    <img src="assets/images/moveon/new-record.png" alt="Screenshot of new record prompt">
+                    <li>This will generate a blank housing need screen.</li>
+                    <li><a href="user-guide.html#updating-housing-need">Complete the fields as required.</a> Those marked with a red asterisk (*) are mandatory.  </li>
+                    <li>Once you have made the required changes, make sure to save by clicking the Save button. </li>
+                    <li>As the Housing Need Record sits within its own tab, it will automatically link to the Household record. </li>
                 </ol>
             </ol>
-            <h5>Deleting an orphaned Housing Need record</h5>
-            <p>When you merge households, you will also update the main household housing need. The person that has joined the new household will now have an orphaned housing need record which will need to be deleted.  Only a limited number of platform users can delete records, so if you have a housing need which needs to be deleted, please email <a href="mailto:WNSManagement@cardiff.gov.uk">WNSManagement@cardiff.gov.uk</a> with the Housing Needs reference (H-N – xxxx) that needs to be deleted.  </p>
+            <h2 id="the-move-on-process" class="y-target">The Move on Process</h2>
+            <p>The move-on process has become the key focus of the Ukraine programme. In closing Initial Accommodation (IA) and Welcome Centres (WC) the overarching aim is to move people from WC/IA accommodation to longer term accommodation including hosted accommodation. We are also looking to place new applicant arrivals directly into hosted accommodation to reduce use of initial accommodation.</p>
+                <p>There is now a more definitive need to incorporate the move on process into the UDP and by doing so will reduce data duplication, provide a more consistent approach to managing move-on, make processes easier and will provide us with a complete single source of the truth.</p>
+                <p>The new process, as such, will remain quite like the current process: </p>
+                <ol>
+                    <li>EOI offers will need to be triaged by the local authority. </li>
+                    <li>All standard housing and DBS checks will need to be completed.</li>
+                    <li>Once checks have successfully been completed the property will be made available to all LA’s when searching.</li>
+                    <li>LA’s will be able to locate properties based on the criteria set out in the housing need for each household.</li>
+                    <li>A property can be reserved by any LA and once reserved, becomes unavailable to others that are using the move on search function. </li>
+                    <li>Once matching has been completed a placement tracking will be auto created.</li>
+                </ol>
+                <p>New processes that will be introduced following the move into the UDP (on 5th July 2023) will be as follows:</p>
+                <ol>
+                    <li>There will be no requirement to upload the EOI manually into the UDP and you will not be required to enter data previously received via Objective Connect (this will be made Read Only) .  All EOI’s that come through the Welsh Government Homes for Ukraine smart survey will be automatically uploaded via a data load.</li>
+                    <li>The LA will be responsible for inputting information into a new ‘offered property’ tab which will help aid the search functionality. </li>
+                    <li>The new search functionality will ensure that only one property can be reserved at a time.</li>
+                </ol>
+                <p><b>Please Note:</b></p>
+                <ul>
+                    <li>EOI’s that are matched outside of the smart survey, usually as a result of self-matching will still have to be manually uploaded to the platform.</li>
+                    <li>The move on process will also amalgamate <b>all</b> available hosts – not just EOI’s.  This means that when a household leaves their hosted accommodation and the host is still willing to host another family, the LA can recycle this record to be used within the reservation process on the move on search tab. </li>
+                </ul>
+                <h3 id="contact-centre" class="y-target">LA / Contact Centre Responsibilities for the Move On Process</h3>
+                <p>Both the contact centre and each respective LA will have responsibilities within the UDP to ensure that the move on process runs smoothly.</p>
+                <h4>Contact Centre Responsibilities</h4>
+                <p>The Contact Centre’s responsibility within the move on process is to ensure that direct allocations for Super Sponsor applicants runs smoothly.</p>
+                <ul>
+                    <li>The overarching concept of direct allocation to hosts includes allocating arrivals through the Welsh Government Super Sponsor Scheme to hosts prior to their arrival in Wales.  People will travel directly to hosts on arrival in the UK rather than placed in initial accommodation. Directly allocating people reduces the demand on initial accommodation and the need for local authorities to move people on from initial accommodation.  </li>
+                    <li>The Contact Centre will identify available host offers via the move on search.  They will then liaise with local authorities to coordinate the direct allocations and matching people to suitable hosts. People will not be directly allocated to a host by the Contact Centre without the agreement of the receiving local authority.  The intention is to directly allocate all new arrivals to hosts where suitable host offers are identified.  People will be offered initial accommodation in the form of a Welcome Centre or holiday park where a suitable host is not available.    </li>
+                    <li>The Contact Centre will liaise between hosts and guests regarding arrival and travel to Wales.  The contact centre will also manage the reservation process via the UDP to ensure that household records are linked and moved to the owning Local Authority of the new host / host address once the reservation process has been completed. </li>
+                </ul>
+                <h4>Local Authority Responsibilities</h4>
+                <p>Each local authority will need to ensure that they have completed the following.</p>
+                <p>For Households/Applicants:</p>
+                <ul>
+                    <li>Every Household within their LA has a completed Housing Need Tab.</li>
+                    <li>When a person joins or leaves the household the Housing Need Tab is updated to reflect the new household set up.</li>
+                    <li>The household timeline is updated with any important (but non sensitive) notes regarding the household. </li>
+                    <li>When actioning the move on search the LA must do this from the household tab and should consider the household needs when filtering their search. </li>
+                    <li>When a property has been reserved the LA must liaise with the host address Local Authority (if this is different to their own)</li>
+                    <li>When a property has been reserved, process the reservation through the stages, via the reservation status dropdowns, until the match is complete – regardless of whether the property is in your LA or not.</li>
+                </ul>
+                <p>For sponsors/hosts:</p>
+                <ul>
+                    <li>For every Sponsor or host (EOI), all sponsor and household checks must be completed and toggled before the property is made available in the move on search.</li>
+                    <li>Keep track of each reserved property within your LA (by means a of a view)</li>
+                    <li>Keep track of any hosts and host addresses that become available after their applicants have vacated to conduct a triage call for potential further hosting responsibilities (accessed by means of a view)</li>
+                    <li>Liaise with LAs who reserve one of your properties for their household – to arrange meetings and travel. </li>
+                </ul>
+            <h3 id="offered-property-tab" class="y-target">Offered Property Tab</h3>
+                <p>The offered property tab sits within the host address section as a separate tab.  This tab contains anonymised data and a partial postcode, to ensure that other LA’s access relevant data only.</p>
+                <p>The purpose of the offered property tab is to document the details of the property being offered, so that the Household property search shows viable properties only.</p>
+                <p>It is very important that this information is kept up to date and accurate to ensure that property searches across the board become successful reservations/matches. </p>
+                <p>The tab will include the following information, please complete the fields as required. Those marked with a red asterisk (*) are mandatory:</p>
+                <img src="assets/images/moveon/offered-property.png" alt="Screenshot of host address screen in the offered property tab">
+                <p>An offered property tab will appear automatically on any EOI data or when an additional address is added to a record. Existing sponsor records within the system that have an active hosting will still have an offered property tab but this will be empty and show ‘Source record not selected’: </p>
+                <img src="assets/images/moveon/offered-property2.png" alt="Screenshot of host address screen in the offered property tab with Source record not selected message">
+                <p>Once the current placement ends and the host address becomes available, the offered property status will revert to ‘Pending Checks’, and a blank offered property form will generate in the offered property tab.  It will be your responsibility to communicate with the host to enquire if they wish to host another family.  If they do, all previous checks should be confirmed to still be valid before making changing the offered property status to available.</p>
+                <p><b>Please note: </b>If the host no longer wishes to house any new applicants, then their records need to be set to withdrawn and this will automatically set the offered property tab to removed. </p>
+                <p>To view all offered properties in your area you will need to access the Offered Properties tab via the left have navigation:</p>
+                <img src="assets/images/moveon/offered-property-drop.png" alt="Screenshot of offered properties selected in navigation pane">
+                <p>You can then access the view ‘My LA New / Pending Properties’ from the dropdown menu which will show all new offered properties and all properties currently pending checks. </p>
+                <img src="assets/images/moveon/la-pending-property.png" alt="Screenshot of LA new / pending properties page">
+                <p>To access all Available properties in your area you need to select the ‘My LA Available Properties view:</p>
+                <img src="assets/images/moveon/la-pending-property2.png" alt="Screenshot of LA new / pending properties with My LA available view">
+            <h3 id="searching-offered-property" class="y-target">Searching for an Offered Property </h3>
+                <p>Once all checks are complete on an EOI record, the offer becomes viable and the status will need to be changed from ‘pending checks’ to ‘available’ on the offered property tab.</p>
+                <img src="assets/images/moveon/offered-property-status.png" alt="Screenshot of Offered Property Status drop down set to Available">
+                <p>This means that the record will be viewable to all local authorities across Wales for them to reserve where appropriate. </p>
+                <p>It is imperative that the housing need tab is kept up to date to ensure an accurate search is carried out and the correct host / household match is made. </p>
+                <p>Each LA will be able to search for all available offered properties via the ‘move on search’ tab on the household record.</p>
+                <img src="assets/images/moveon/move-on-search.png" alt="Screenshot of household page with move on search highlighted">
+                </section>
+                <div class="article-divider"></div>
+                <section>
+            <h2 id="move-on-search" class="y-target">Move On Search </h2>
+                <p>Within the Household Move On Search tab, each local authority will have access to the following view: </p>
+                <img src="assets/images/moveon/la-property-view.png" alt="Screenshot of household move on search tab with LA view">
+                <p>The view can show records from all local authorities across Wales in one table but also enables users to filter a few LA’s at one time or narrow the search down to one LA at a time.  This will ensure that LA’s can tailor their initial findings based on area, which can either be across the whole of Wales or for a particular LA and its surrounding areas if required.</p>
+                <p><b>To search by the whole of Wales:</b></p>
+                <p>Select the Wales Wide drop down in the Available Properties table.  This will show all available properties across every local authority within Wales.  This view can be filtered to tailor the search to the household needs, including filtering to specific locations. </p>
+                <img src="assets/images/moveon/wales-wide-view.png" alt="Screenshot of household move on search tab with Wales Wide view">
+                <p><b>To search by individual LA:</b></p>
+                <p>Select the ‘My LA Available Properties’ drop down in the Available Properties table.  This will show all available properties within your local authority only.  This view can be filtered to tailor the search to the household needs.</p>
+                <img src="assets/images/moveon/my-la-view.png" alt="Screenshot of household move on search tab with My LA view">
+                <p>To create more specific filters for the move on search such as showing only properties with a certain number of bedrooms, you will need edit the views by editing the columns and filters.  </p>
+                </section>
+                <div class="article-divider"></div>
+                <section>
+                    <h2 id="reservation-process" class="y-target">Reservation Process</h2>
+                    <p>Once a suitable property has been found you will need to follow the reservation process to ensure a match is completed successfully. </p>
+                    <p>Reservation process:</p>
+                    <ol><li>You will need to select the reservation by clicking the tick box on the left-hand side of the record in the list.  </li>
+                        <img src="assets/images/moveon/reserve.png" alt="Screenshot of reserve highlighted in record list">
+                    <li>You will then need to click the reserve button. <ul><li>A pop-up window will confirm you wish to reserve the selected property - Click OK to reserve it.</li>
+                    <li>You will see a ‘Reservation was created successfully’ message.</li></ul></li>
+                    <li>This will remove the record from the available offered properties view and change its status to RS00 – New Reservation. </li></ol>
+                    <p>The reservation journey status will show on the record and will need to be updated as you move through the process.</p>
+                    <img src="assets/images/moveon/reserve-status.png" alt="Screenshot of reservation menu with journey status highlighted">
+                    <p>The reservation will move to the Reservations table which can be located on the left-hand navigation.</p>
+                    <img src="assets/images/moveon/reserve-nav.png" alt="Screenshot of reservation selected in navigation bar">
+                    <p>The reserving Local authority will be able to view all active and inactive reservations here depending on the dropdown selected.  Once a reservation is complete the reservation will become inactive and move to the inactive reservation tab. </p>
+                    <img src="assets/images/moveon/inactive-reservations.png" alt="Screenshot of inactive reservation view">
+                    <p><b>Please Note:</b></p>
+                    <p>If the reservation is within the same Local Authority then the user will have access to the household record, the host record and the reservation record.</p>
+                    <p>If the reservation is requested for a property in another Local Authority only the requesting LA will see the reservation.  Both LAs will need to communicate off the Data Platform to ensure that the reservation process is completed successfully. </p>
+                    <h3 id="reservation-status" class="y-target">Reservation Status</h3>
+                    <p>Each stage of the reservation process requires a reservation status update.  Certain reservation statuses will have influence over the automatic update of the offered property status.  </p>
+                    <p>An example of this would be when ‘RS02 – Host/Applicant introduction successful’ is selected, the offered property status will change from ‘Reserved’ to ‘Matched’.</p>
+                    <p>It is important to understand what each reservations status means and its effect on the offered property status.</p>
+                    <table>
+                        <tr><th>Reservation Status</th>
+                        <th>When should this be used</th>
+                        <th>Impact on offered property status</th></tr>
+                        <tr><td>RS00- New Reservation (Default)</td>
+                        <td>This is the default status when a reservation is selected </td>
+                        <td>Status remains as ‘Reserved’</td></tr>
+                        <tr><td>RS01 - Applicant informed of reservation</td>
+                        <td>The LA has reached out to the applicant to inform them of details of property / host / location etc and the applicant has accepted the reservation.  At this point a meeting with host and household will be arranged. </td>
+                        <td>Status remains as ‘Reserved’</td></tr>
+                        <tr><td>RS02 - Host / Applicant introduction successful</td>
+                        <td>The host and household have met, either in person or virtually and have both agreed they are happy to go ahead with the reservation. </td>
+                        <td>Once selected the status will change from ‘Reserved’ to ‘Matched’ </td></tr>
+                        <tr><td>RS03 -Enhanced DBS check in progress</td>
+                        <td>If the host has previously only completed a basic DBS check and now requires an enhanced check (because for example there will now be a child / vulnerable adult being hosted).  This status will be selected once this process has started. </td>
+                        <td>Status remains as ‘Matched’</td></tr>
+                        <tr><td>RS04 - Enhanced DBS check complete </td>
+                        <td>The enhanced DBS check has come back complete with no issues.</td>
+                        <td>Status remains as ‘Matched’</td></tr>
+                        <tr><td>RS05 – Date for move on confirmed </td>
+                        <td>The LA has arranged between the two parties a date/time for the household to arrive at the new hosted property. </td>
+                        <td>Status remains as ‘Matched’</td></tr>
+                        <tr><td>RS06 – Travel to new host arranged</td>
+                        <td>The LA/host has arranged travel for the household to arrive at the new hosted property.</td>
+                        <td>Status remains as ‘Matched’</td></tr>
+                        <tr><td>RS07 – Move on match complete </td>
+                        <td>The household has successfully moved into the new hosted accommodation with no issues.</td>
+                        <td>Once selected the status will change from ‘Matched’ to ‘Match Completed’</td></tr>
+                        <tr><td>RS08 – Match Unsuccessful   </td>
+                        <td>The host/household match has fallen through (potentially because either or both parties have changed their mind) / the reservation was selected in error / the host has failed further DBS checks.</td>
+                        <td>Once selected the status will change from ‘Reserved’ / ‘Matched’ to ‘Available’</td></tr>
+                    </table>
+                    <h4>If a match becomes unsuccessful</h4>
+                    <p>There may be occasions where a match is deemed unsuccessful.  This may be due to the host or household changing their mind, it may be due to unsuitable accommodation/ location, or it may simply be that the property was reserved in error.</p>
+                    <p>When this happens, you should:</p>
+                    <ol><li>Make a note on the timeline explaining the reason for the match being unsuccessful (if necessary and remember to not include any sensitive information).</li>
+                    <li>Ensure both parties are aware that the reservation will be deleted.</li>
+                    <li>Set the reservation status to RS08 – Match Unsuccessful. </li></ol>
+                
+                <p>If RS08 – Match Unsuccessful is selected, then a sub status reason will appear.  This will enable you to specify the reason for the unsuccessful match.  This will ensure that no unnecessary information is inputted into the system and a generalised status reason is displayed.  The status reason does not include detailed information of why the match was unsuccessful, it is for overview purposes only.</p>
+                <p>One of the following status reasons should be selected depending on the individual circumstances: </p>
+                <table><tr><th>RS08 – Match Unsuccessful Status Reason </th>
+                <th>When should this be used?</th></tr>
+                <tr><td>Household rejected host </td>
+                <td>When the household has decided that the host / hosted property or location is not suitable for them. This should also be selected if a host has failed further DBS checks.</td></tr>
+                <tr><td>Host rejected Household </td>
+                <td>When the host has decided that the household is not suitable for them to host</td></tr>
+                <tr><td>Both parties in disagreement </td>
+                <td>When both the host and household agree that the hosting isn’t suitable for either party.  </td></tr>
+                <tr><td>Property reserved in error </td>
+                <td>When a property has been reserved incorrectly and no action has been taken </td></tr>
+            </table>
+            <h3 id="view-all-reserved-la" class="y-target">To view all reserved hosts and properties that reside within your LA </h3>
+        <p>Because the reserving LA has access to the reservation only, as the receiving LA you will have access to a system view that will ensure that you have sight of all reserved properties situated within your LA.</p>
+        <p>To access the view:</p>
+        <ol><li>Go to the offered properties tab (accessing via the left-hand Navigation)</li>
+        <li>Select the view ‘My Offered Properties with an Active Reservation’ view </li></ol>
+        <p>This will enable you to track the offered properties that have been reserved and what their current offered property statuses are. </p>
+        </section>
+        <div class="article-divider"></div>
+        <section>
+            <h2 id="match-process" class="y-target">Match Process</h2>
+            <p>Once the final steps for the reservation process have been completed you will need to:</p>
+            <ul><li>Ensure all necessary timeline notes have been created.</li>
+            <li>Set the reservation status to RS07- Move on match complete.</li>
+            <li>Enter the start date for the move.</li>
+            <li>Click Save or Save & Close.</li></ul>
+        
+        <h3 id="automatic-new-placement-record" class="y-target">Automatic creation of a new placement record </h3>
+        <p>Once the match process is completed successfully a placement tracking will be created whether this is within the same current LA or whether the new hosted arrangement is in a different LA.</p>
+        <p>The completed match process (setting the status to RS07- Move on match complete with the start date) will link the host and household together on the host section of the household tab.  It will create a placement tracking on the household, applicant and sponsor records and will move the household into the new LA (if the household is moving from one LA to another).  To confirm this has processed correctly you can go back into the household record and into placement tracking’s and view the new placement tracking records.  If the household is moving to a new LA you will lose sight of the household record completely once you have entered the start date for the reservation. </p>
+        <h4>Matching within the same LA</h4>
+        <p>If the household and host both reside in your local authority, then the match process will mirror the reservation process: </p>
+        <ol><li>Find a suitable host by using the move on search.</li>
+        <li>Reserve the host.</li>
+        <li>Follow and complete the reservation process.</li>
+        <li>Ensure all necessary timeline notes have been created.</li>
+        <li>Set the reservation status to RS07- Move on match complete.</li>
+        <li>Set the start date as the first day of the new placement.</li>
+    <li>Click Save or Save & Close.</li></ol>
+    <p>Once the match process is completed successfully a placement tracking for ‘Sponsor/host’ will be created and will create the link between the host and household.  The new host details replace any existing host details on the household and applicant records and the creation of the new placement tracking will close any previous placement tracking’s associated with these records. </p>
+    <p>If you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ this will not pull through the host details into the placement tracking.  It is important that you consider the below placement reasons and when to use them within a placement tracking record: </p>
+    <table>
+        <tr><th>Placement Type</th>
+        <th>Reason for Placement Type</th>
+        <th>Additional Reasons</th>
+        <th>Additional Reasons 2</th>
+        </tr>
+        <tr>
+            <td>Hospital </td>
+            <td>When someone has left their accommodation to be hospitalised </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Move on accommodation </td>
+            <td>When someone has left hosted accommodation to become self-supported </td>
+            <td>When someone has left one local authority to be hosted at another </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Repatriation </td>
+            <td>When someone has left the UK entirely to return to Ukraine </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Sponsor/Host </td>
+            <td>When someone is matched with a host - usually for the first time on the individual scheme </td>
+            <td>When someone is new to the local authority having moved from another LA in Wales to live with a chosen host </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Temporary Accommodation </td>
+            <td>When someone arrives unexpected and is housed in initial accommodation (welcome centre) until a suitable host can be found </td>
+            <td>When someone needs to leave host address due to relationship breakdown and is moved to initial accommodation (welcome centre) </td>
+            <td>When someone needs to leave host address due to relationship breakdown and is moved to another host temporarily </td>
+        </tr>
+        <tr>
+            <td>Welcome Centre </td>
+            <td>When a person on the super sponsor scheme is housed in initial accommodation (welcome centre) </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Temporarily Left </td>
+            <td>When a person has left their hosted accommodation for a short, temporary period for a holiday etc.   
+                There will be a known return date and the case should be kept with the LA. 
+                </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h4>Matching to a different LA</h4>
+    <p>If the household resides in your LA but the host resides in another local authority, you will need to follow the below steps: </p>
+    <ol>
+        <li>Find a suitable host by using the move on search.</li>
+        <li>Reserve the host.</li>
+        <li>Liaise with the receiving LA to follow and complete the reservation process.</li>
+        <li>Ensure all necessary timeline notes have been created.</li>
+        <li>Set the reservation status to RS07- Move on match complete.</li>
+        <li>Set the start date as the first day of the new placement (once confirmed with receiving LA)</li>
+        <li>Click Save or Save & Close</li>
+    </ol>
+    <p><b>At this point the current LA will lose access to the record(s) as these will be automatically transferred over to the new LA.  The host will automatically be replaced with the new host on the household page, the current PT will end.  It is important that you inform the new local authority the records have been transferred across. </b></p>
+    <p>The new local authority needs to: </p>
+    <ol>
+        <li>Check the records have been received correctly.</li>
+        <li>Ensure all relevant information has been recorded.</li>
+        <li>Complete any future check ins with the host and household. </li>
+    </ol>
+    <p>Once the host has confirmed the move has taken place, complete the finance section of the host record. </p> 
+
+        </section>
             <h3 id="creating-placement-record" class="y-target">Creating / Closing a Placement Record</h3>
             <p>Whenever a household is moved, you will need to create a new placement record. This creates a history of their placements including start and end dates and reasons for moving. </p>
             <p>Creating and closing placement records is equally applicable irrelevant of the Scheme.</p>
             <p>Creating a new placement tracking will force the closure of the previous placement tracking, so it is really important that the dates are entered correctly.</p>
             <p>If you only need to move one person in the household (for example someone needs to be moved to hospital) they will need to be split from the family group. You can find instructions on how to do that under the <a href="#removing-applicant-new-household">removing an applicant to a household</a> section.</p>
-            <p><b>Important:</b> Before creating a placement tracking for a sponsor/host placement you must first <a href="#using-the-Sponsor-section">assign / replace</a> a host within the household section. </p>
+            
             <h5>Closing a placement record</h5>
             <p> You do not need to close a placement record before you create a new record detailing their next placement. When you create a new placement tracking, this will automatically close the previous.  You must update the move on reason before you create a new placement tracking, to do so:</p>
             <ol>
@@ -999,10 +1297,11 @@
                 <div class="vspacer"></div>
                 <li>Once you have completed all relevant fields, click the Save or Save & Close buttons. </li>
             </ol>
-            <p>When creating a placement tracking once the placement type has been selected as ‘sponsor / host’ the host information will auto populate onto the right-hand side of the placement tracking from the household page.</p>
+            <p>To create a sponsor/host placement tracking you need to follow the <a href="user-guide.html#the-move-on-process">Move on</a> and <a href="user-guide.html#reservation-process">Reservation Process.</a>  </p>
             <img src="assets/images/npt23.png" alt="New Placement Tracking Menu">
-            <p>This will allow you to copy and paste information over to the free text address box if required.</p>
-            <p>If you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ this will not pull through the host details into the placement tracking.  It is important that you consider the below placement reasons and when to use them within a placement tracking record:</p>
+            
+            <p>When you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ you will not see any sponsor/host details on the right hand side of the placement tracking..  </p>
+            <p>It is important that you consider the below placement reasons and when to use them within a placement tracking record:</p>
             <table>
                 <tr>
                     <th>Placement Type</th>
@@ -1070,6 +1369,32 @@
                 <img src="assets/images/wrong_date23.png" alt="Menu prompt advising that the start date needs to be later then the previous date started." width="50%" height="50%">
                 <li>The end date of any PT will always be locked and you will not be able to update it – it is very important that when creating a new PT, the date selected is correct as this will impact the end date if the previous placement tracking.</li>
             </ol>
+            <h3 id="pt-active-reservation" class="y-target">Creating PT’s when there is an active reservation. </h3>
+        <p>There may be occasions where a reservation is in progress and a family need to move temporarily to emergency accommodation until the new reservation is complete.</p>
+        <p>The system will allow a PT to be created whilst the reservation is in place providing the person is staying within the same LA.  Once the reservation is completed the new PT will close the previous and pull in the new reservation and host details.</p>
+        <h4>If a PT is created with the local authority as outside of Wales: (outside of UK); (England) (Scotland):</h4>
+        <p>This may be due to the individuals repatriating or relocating.  The system will prevent the PT from being created until the reservation has been closed.  The below error message will appear: </p>
+        <img src="assets/images/moveon/error.png" alt="Screenshot of error message explaining that You need first to close the reservation before you can create move on placement tracking outside Wales">
+        <p>The reason this is blocked is to stop open reservations from being left in the system.  If a reservation has fallen through because the household has decided to leave Wales this should be set to RS08 – match unsuccessful and the status reason, be set to ‘property reserved in error’ before a PT repatriation or move on (with England or Scotland as the LA) PT is created on the household.</p>
+        <h3 id="other-placement" class="y-target">Other Placement Types</h3>
+        <h4>If Sponsor/Host PT is selected</h4>
+        <p>If a sponsor/host Placement type is selected whilst there is an active reservation, the system will prevent the PT from being created: </p>
+        <img src="assets/images/moveon/warning.png" alt="Screenshot of warning message stating that In order to create placement tracking from the type sponsor/host please create a reservation">
+        <p>This is because the reservation process should be followed to create a sponsor/host PT. </p>
+        <p><b>Please note:</b></p>
+        <p>If there is a host already attached to the household (from a previous/ current placement) then until the reservation is set to 'Matched' - RS02 – RS06, a host/ sponsor placement tracking will still be able to be created but will link to the current host linked to the household page.  Once the status is reflected to show the host / household as matched, the above error will appear preventing a PT from being created until the reservation process has been successfully completed.</p>
+        <h4>If there is no active reservation</h4>
+        <p>If the reservation process hasn’t been started but there is a host attached to the household (from previous data load) and no PT has yet been created, the system will allow this to be created to reflect the current hosted placement.  </p>
+        <p>When the time comes for the host to be changed, the reservation process should be followed. </p>
+        <h4>If any other PT is selected</h4>
+        <p>If any of the below PTs are created whilst a reservation is in place, the system will allow the PT to be created provided that the local authority is within Wales:</p>
+        <ul><li>Hospital</li>
+        <li>Move on accomodation</li>
+        <li>Temporary accomodation</li>
+        <li>Welcome Centre</li>
+        <li>Temporarily Left</li></ul>
+        <p>You should only need to create these placement tracking’s in emergency situations where someone needs to be relocated prior to the reservation process being completed.  </p>
+        <p>If you are creating a placement tracking for a more permanent move that is not a host/sponsor placement created via the reservation process, you should close the active reservation <b>before</b>creating the PT. </p>
             <h3 id="create-historic-placement-tracking" class="y-target">Creating a historical Placement Tracking</h3>
             <p>There may be a requirement to create historical placement tracking record for the period of time where applicants had arrived into Wales but the UDP was not yet set up.</p>
             <p>The ability to add a historic placement tracking will allow the Local Authority to create placement tracking’s with dates created prior to the first placement tracking for the household.  It will be the LAs responsibility to input any historic placement tracking’s for households who remain within the same Local Authority.  For households that no longer live in the same Local Authority as their original placement – it will be the responsibility of the Contact Centre to input historical placement tracking’s on these records, due to them having access to all Welsh LA data. The contact centre will liaise with the previous LA to ensure the information inputted is correct.</p>
@@ -1129,7 +1454,7 @@
                 <li>Add a journey status reason - relevant examples include Case completed; Not Traveling or Move to another scheme.</li>
                 <li>Where reasons are known, you can provide addiitonal information in the case notes.</li></ol>
                 <p>There are no placement records required where an individual has not shown.</p>
-                <p><a href="#remove-household-no-show">Updating the Journey Status</a> for these scenarios is essential as this allows for functionality to remove the host link on the household page.</p>
+                <p><a href="#remove-household-no-show">Updating the Journey Status</a> for these scenarios is essential as this allows for functionality to remove the host link on the household page. The host will be automatically removed from the locked household fields once all household members have been changed to a no show status and the records saved. </p>
                 <p>If there are safeguarding concerns, please refer to your local safeguarding policies.</p>
             <h3 id="making-changes-household-groups" class="y-target">Making changes to Household Groups</h3>
             <p>There may be circumstances when it is necessary to either add or remove a person to a household, or to change the lead applicant of the group. This section explains that process.  </p>
@@ -1253,54 +1578,100 @@
                 <li>Re-match from a super sponsor route to a host across a UK national boundary.</li>
             </ol>
             <h3 id="identifying-suitable-host" class="y-target">Identifying a suitable host</h3>
-            <p>If you are aware of a household (individual/family/group) that requires re-matching you will need to identify a host (either via the Ukrainian themselves, through the Expression of Interest data previously shared, or via other means)</p>
-            <p>There are two possible ways to identify a possible host:</p>
+            <p>If you are aware of a household (individual/family/group) that requires re-matching you will need to identify a host (either via the Ukrainian themselves, through the Expression of Interest data and the <a href="user-guide.html#the-move-on-process">move on process</a>, or via other means)</p>
+            <p>To identify a possible host::</p>
             <ol>
-                <li>Review existing sponsors that are/have hosted individuals through the Homes for Ukraine Sponsor Scheme. This can be done within the data platform.</li>
-                <li>Review those that have offered accommodation through the Super Sponsor Scheme. This will need to be done outside of the data platform using the Expressions of Interest shared through the Ukraine Offer Tracker spreadsheet. Access and further guidance on the <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsecure.objectiveconnect.co.uk%2Flogin&data=05%7C01%7CSarah.Lilley%40gov.wales%7C5188c88010944180a59108da6e4d9d90%7Ca2cc36c592804ae78887d06dab89216b%7C0%7C0%7C637943576870226169%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=0VA07uBBVe9%2FChZtintEkk5Gsm7TeOZGkBB6rhlvvyw%3D&reserved=0">Offer Tracker Spreadsheet is available here</a>.  You will require access to the to the URD - URD - Onward Accommodation workspace within Objective Connect to access both the spreadsheet and guidance.</li>
+                <li>Review existing sponsors that are/have hosted individuals through the Homes for Ukraine Sponsor Scheme. This can be done within the data platform.  If a suitable host is identified – the <a href="user-guide.html#offered-property-tab">offered property tab</a> will need to be updated / completed and the <a href="user-guide.html#the-move-on-process">move on process</a> is followed</li>
+                <li>Review those that have offered accommodation through the Super Sponsor Scheme. This will need to be done using the Expressions of Interest data shared directly into the UDP from the Smart Survey results.  Once checks have been completed for these EOI’s they will need to be made available in order to form part of the move on process</li>
             </ol>
             <h3 id="rematch-within-boundary" class="y-target">Re-match within the individual local authority boundary</h3>
-            <p>If you can facilitate a local re-match, there is no need for another local authority’s agreement nor notification to the UK Government.</p>
-            <p>If you are able to-match with a sponsor of another Ukrainian household who has travelled under the Homes for Ukraine Scheme, you will find their details in the system and will need to link the records of both the Sponsor and the household that requires re-matching.</p>
-            <p>If you have found a suitable host from the EoI data generated through the Super Sponsor Scheme, you will need to undertake the following steps on the data platform to record the re-match and ensure appropriate property, DBS and safeguarding checks are completed for the new host and where necessary other family members living with them.</p>
+            <p>If you can facilitate a local re-match, there is no need for another local authority’s agreement nor notification to the UK Government. If you are able to-match with a sponsor of another Ukrainian household who has travelled under the Homes for Ukraine Scheme, you will find their details in the system and will need to link the records of both the Sponsor and the household that requires re-matching.</p>
+            <p>If you have found a suitable host from the EoI data generated through the Super Sponsor Scheme, you will need to follow the move on and reservation process to ensure the record shows as a viable host in the UDP.  </p>
+            <p>If you have found a suitable host outside of the smart survey results (i.e. they have come to you directly) you will need toundertake the following steps on the data platform to record the re-match and ensure appropriate property, DBS and safeguarding checks are completed for the new host and where necessary other family members living with them.</p>
+            <p>Within the Home for Ukraine Data Platform, you will need to</p>
             <ol>
-                <li>Ensure you have changed the allocation status on the Ukraine Offer Tracker Spreadsheet. </li>
-                <li>
-                    Within the Home for Ukraine Data Platform, you will need to:
-                    <div class="vspacer"></div>
-                    <ol class="lower-alpha">
-                        <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
-                        <li><a href="#adding-host-addresses">Add the host property address</a></li>
-                        <li><a href="#linking-household-record">Link the host to the applicant</a></li>
-                        <li><a href="#creating-placement-record">Create a new tracking placement record</a></li>
-                    </ol>
-                </li>
+                <li><a href="user-guide.html#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
+                <li><a href="user-guide.html#adding-host-addresses">Add the host property address</a></li>
+                <li><a href="user-guide.html#offered-property-tab">Complete the offered property tab</a></li>
+                <li>Follow the <a href="user-guide.html#the-move-on-process">move on process</a> and <a href="user-guide.html#reservation-process">reservation process</a></li>
             </ol>
+            <h4>Matching within the same LA</h4>
+            <p>If the household and host both reside in your local authority, then the match process will mirror the reservation process: </p>
+            <ol><li>Find a suitable host by using the move on search.</li>
+            <li>Reserve the host.</li>
+            <li>Follow and complete the reservation process.</li>
+            <li>Ensure all necessary timeline notes have been created.</li>
+            <li>Set the reservation status to RS07- Move on match complete.</li>
+            <li>Set the start date as the first day of the new placement.</li>
+        <li>Click Save or Save & Close.</li></ol>
+        <p>Once the match process is completed successfully a placement tracking for ‘Sponsor/host’ will be created and will create the link between the host and household.  The new host details replace any existing host details on the household and applicant records and the creation of the new placement tracking will close any previous placement tracking’s associated with these records. </p>
+        <p>If you are creating a placement tracking for any other option other than ‘sponsor/host’ for example ‘move on accommodation’ this will not pull through the host details into the placement tracking.  It is important that you consider the below placement reasons and when to use them within a placement tracking record: </p>
+        <table>
+            <tr><th>Placement Type</th>
+            <th>Reason for Placement Type</th>
+            <th>Additional Reasons</th>
+            <th>Additional Reasons 2</th>
+            </tr>
+            <tr>
+                <td>Hospital </td>
+                <td>When someone has left their accommodation to be hospitalised </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Move on accommodation </td>
+                <td>When someone has left hosted accommodation to become self-supported </td>
+                <td>When someone has left one local authority to be hosted at another </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Repatriation </td>
+                <td>When someone has left the UK entirely to return to Ukraine </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sponsor/Host </td>
+                <td>When someone is matched with a host - usually for the first time on the individual scheme </td>
+                <td>When someone is new to the local authority having moved from another LA in Wales to live with a chosen host </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temporary Accommodation </td>
+                <td>When someone arrives unexpected and is housed in initial accommodation (welcome centre) until a suitable host can be found </td>
+                <td>When someone needs to leave host address due to relationship breakdown and is moved to initial accommodation (welcome centre) </td>
+                <td>When someone needs to leave host address due to relationship breakdown and is moved to another host temporarily </td>
+            </tr>
+            <tr>
+                <td>Welcome Centre </td>
+                <td>When a person on the super sponsor scheme is housed in initial accommodation (welcome centre) </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temporarily Left </td>
+                <td>When a person has left their hosted accommodation for a short, temporary period for a holiday etc.   
+                    There will be a known return date and the case should be kept with the LA. 
+                    </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
             <h3 id="rematch-across-boundary" class="y-target">Re-assignment across local authority boundaries but wholly within Wales</h3>
-            <p>The key difference between matching and this process is the need for local authorities to get the agreement of the onward destination local authority before processing the transfer on the Ukraine Data Platform. The Ukraine Data Platform does not permit full access to all records for every local authority. Only the records of those linked to an area can be viewed by the relevant local authority. Therefore, if a visa holder moves to a new local authority a re-assignment process must take place to ensure data transfers appropriately.</p>
-            <p>You will also need to export any data required about the specific Ukrainian household moving out of their area to ensure you do not lose access to the information before transferring records to the new local authority.</p>
-            <p>Once the re-match has been agreed between both local authorities, <b>the original local authority</b> (where a household is already placed) will need to:</p>
+            <p>The key difference between matching and this process is the need for local authorities to get the agreement of the onward destination local authority before processing the transfer on the Ukraine Data Platform. The Ukraine Data Platform does not permit full access to all records for every local authority. Only the records of those linked to an area can be viewed by the relevant local authority. Therefore, if a visa holder moves to a new local authority a re-assignment process must take place to ensure data transfers appropriately. This can be actioned by following the reservation process.  The move on search will allow Local Authorities to see partially anonymised host/host address data to enable them to re match applicants to new hosts by following the <a href="#reservation-process">reservation process.</a></p>
+           <p>Once the property has been reserved and the re-match has been agreed between both local authorities, <b>the original local authority</b> (where a household is already placed) will need to:</p>
             <ol>
-                <li><a href="#creating-personalised-system-views">Create a system view</a> of the names within the household transferring and all required fields and export the data to Excel.</li>
-                <li>Completing the Move on Reason and placement end date for the current placement tracking</li>
-                <li>To assign them to the new local authority, <a href="#creating-placement-record">create a new household placement tracking record</a>. 
-                    <ol>
-                        <li>Ensure the move on reason is set to ‘move on accommodation’.</li>
-                        <li>Detail the name and address of the new host within the address field, if known.</li>
-                        <li>Assign it to the new local authority by adding them into the ‘Local Authority’ field within the placement tracking form.  </li>
-                    </ol>
-                <li>Save the placement tracking record. <b>At this point the current host will automatically remove from the household page, the current PT will end and all information will transfer over to the new local authority and you will lose access to the record(s).</b></li>
-                <li>Inform the new local authority the records have been transferred across.</li>
-            </ol>
-            <p>The <b>new</b> local authority needs to:</p>
-            <ol>
-                <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
-                <li><a href="#adding-host-addresses">Add the host property address</a></li>
-                <li>Completing necessary checks on the host updating <a href="#using-case-notes">Case Notes and Check boxes</a> during the process.</li>
-                <li><a href="#linking-household-record">Add the host into the placement tracking record</a> using the Host field.</li>
-                <li>Open a new placement under the relevant placement type for the same day (this will not override the previous placement tracking date). </li>
-                <li>If the placement type ‘sponsor/host’ is selected, then the new host will pull through into the right-hand side of the placement tracking. </li>
-                <li>Once the host has confirmed the move has taken place, complete the finance section of the host record.</li>
+                <li><a href="#reservation-process">Liaise with the receiving LA to follow and complete the reservation process</a></li>
+                <li>Ensure all necessary timeline notes have been created.</li>
+                <li>Set the reservation status to RS07- Move on match complete.</li>
+                <li>Set the start date as the first day of the new placement (once confirmed with receiving LA)</li>
+                <li>Click Save or Save & Close</li>
+                <p><b>At this point the current LA will lose access to the record(s) as these will be automatically transfer over to new LA.  The host will automatically be replaced with the new host on the household page, the current PT will end.  It is important that you inform the new local authority the records have been transferred across.</b></p>
+                <p>The new local authority needs to:</p>
+                <ol><li>Check the records have been received correctly.</li>
+                <li>Ensure all relevant information has been recorded.</li>
+                <li>Complete any future check ins with the host and household. </li></ol>
+                <p>Once the host has confirmed the move has taken place, complete the finance section of the host record.</p>
             </ol>
             <h3 id="rematch-across-national-borders" class="y-target">Cross Border Re-assignment across UK national borders (either Scheme)</h3>
             <p>Where a Ukrainian wishes to move from or to Wales, to another country within the UK and agreement has been reached between both local authorities, the way to capture that within the system is straight forward.  The process of recording this in the data platform is the same, irrelevant of the scheme they are transferring from.</p>
@@ -1328,9 +1699,13 @@
                 <li>Within the data platform, you will need to:
                     <ol type="a">
                         <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
-                        <li><a href="#adding-host-addresses">Add the host property address</a></li>
+                        <li><a href="#adding-host-addresses">Add the host property address</a> and update the <a href="#offered-property-tab">offered property tab</a></li>
                         <li>Update the <a href="#using-case-notes">Case Notes and Check boxes</a> to record non sensitive info regarding outcomes of checks and any other information necessary.</li>
-                        <li>Once the applicant records are visible, you will need to <a href="#creating-placement-record">create a new household placement tracking record</a>, linking the host to the applicant within the Host Sponsor field in the placement tracking form.</li>
+                        <li>Once all checks are complete change the offered property status available.</li>
+                        <li>Follow and complete the <a href="#reservation-process">reservation process.</a></li>
+                        <li>Set the reservation status to RS07 - Move on match complete</li>
+                        <li>Set the start date as the first day of the new placement (once confirmed with both parties)</li>
+                        <li>Click Save or Save & Close.</li>
                         <li>Ensure the <a href="#using-case-notes">case notes</a> record the transfer has been agreed and include any information received from the Case Management Team</li>
 
                     </ol>
@@ -1348,9 +1723,13 @@
                 <li>Within the data platform, you will need to:
                     <ol type="a">
                         <li><a href="#adding-new-sponsor">Add a New Host</a> within the Sponsor section of the data platform</li>
-                        <li><a href="#adding-host-addresses">Add the host property address</a></li>
+                        <li><a href="#adding-host-addresses">Add the host property address</a> and update the <a href="#offered-property-tab">offered property tab</a></li>
                         <li>Update the <a href="#using-case-notes">Case Notes and Check boxes</a> to record non sensitive info regarding outcomes of checks and any other information necessary.</li>
-                        <li>Once the applicant records are visible, you will need to <a href="#creating-placement-record">create a new household placement tracking record</a>, linking the host to the applicant within the Host Sponsor field in the placement tracking form.</li>
+                        <li>Once all checks are complete change the offered property status available.</li>
+                        <li>Follow and complete the <a href="#reservation-process">reservation process</a></li>
+                        <li>Set the reservation status to RS04 - Move on match complete</li>
+                        <li>Set the start date as the first day of the new placement (once confirmed with receiiving LA)</li>
+                        <p>Click Save or Save & Close</p>
                         <li>Ensure the <a href="#using-case-notes">case notes</a> record the transfer has been agreed and include any information received from the Case Management Team</li>
                     </ol>
                 </li>
@@ -1412,7 +1791,7 @@
                                     <b>If no</b>, new accomodation will need to be found.
                                 </p>
                                 <p>
-                                    You can follow the <a href="#re-matching">re-matching process</a> to find them a suitable accomodation. In the short term, this may include emergency accomodation.
+                                    You can follow the <a href="#re-matching">re-matching process</a> and <a href="#reservation-process">reservation process</a> to find them a suitable accomodation. In the short term, this may include emergency accomodation.
                                 </p>
                             </li>
                             <li>
@@ -1420,7 +1799,7 @@
                                 <p>
                                     <ol type="i">
                                         <li>
-                                            <a href="#update-existing-tracking-record">update the original placement record if relevant</a>
+                                            <a href="#update-existing-tracking-record">update the original placement record if relevant with a move on reason</a>
                                         </li>
                                         <li>
                                             <a href="#creating-placement-record">create a new placement record</a> for repatriation. This is important for funding purposes
@@ -1430,13 +1809,20 @@
                             </li>
                             <li>Once the household is assigned to ‘(outside of UK)’ in the repatriation placement tracking record, it will disappear from your view. Email the Contact Centre (<a href="mailto:wnsadmin@cardiff.gov.uk">wnsadmin@cardiff.gov.uk</a>) with the FAM/WG household reference and ask them to re-assign the household record.</li>
                             <li>The Contact Centre will close the repatriation placement record and start a new placement tracking record to assign it back to the local authority.</li>
-                            <li>Once the household record is returned, complete the placement tracking record with required details.</li>
+                            <li>Once the household record is returned, you will need to change the offered property status available.</li>
+                            <li>Follow the <a href="#reservation-process">reservation process</a> to link the household to the host.</li>
                         </ol>    
                     </p>
                 </li>
                 <li><a href="#using-case-notes">Update case notes</a> as needed</li>
                 <li>Update <a href="#changing-journey-status">Journey Status</a> to IS03 - Moved to Accommodation, or SS10 – Moved on, or SS07 if returned to Welcome Centre accommodation.</li>
             </ol>
+            <p>Please note: If the host is still active you will need to ensure the offered property status is set back to available to aid the reservation process and ensure the property shows within the move on search table. </p>
+            <p>If the host has been set to withdrawn, as local authorities don’t have access to reactivate records, data champions will need to contact the UDP team via the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a> mailbox to request that the sponsor record be reinstated to an active status.  Please include in your request:</p>
+            <ol><li>The name of the sponsor</li>
+            <li>The action to be taken - status changed from HST004-withdrawn to HST003-Active</li>
+            <li>A brief description that the sponsor has wished to resume their status as a host</li></ol>
+            <p>The UDP team with then reactivate the sponsor/ host record and the offered property record.  The offered property status will be changed to pending checks and it will be your responsibility to ensure that all sponsor/host checks are still relevant before making the property available within the move on search. </p>
             <h4 id="repat-outside-la">If the household record is not assigned to your local authority </h4>
             <p>If the household records are not assigned to your local authority it means that either a repatriation tracking record has been completed and is assigned to (outside of UK) or the original local authority did not update their placement tracking records.</p>
             <ol>
@@ -1445,8 +1831,8 @@
                 <p>
                     <ol type="a">
                         <li>You will need to consider the available accommodation and whether the household has resided in the county previously and whether that placement (Welcome Centre or Host/Sponsor) is still available.</li>
-                        <li><b>If the previous placement is available, you can complete the placement tracking record.</b></li>
-                        <li><b>If the household is a new arrival to your local authority or the placement is no longer available</b>, new accommodation will need to be found. You can follow the <a href="#re-matching">re-matching process</a> to find them suitable accommodation. In the short term, this may include emergency accommodation. Once accommodation has been identified you can complete the new placement tracking record.</li>
+                        <li><b>b.	If the previous placement is available, you will need to change the offered property status available.</b></li>
+                        <li><b>If the household is a new arrival to your local authority or the placement is no longer available</b>, new accommodation will need to be found. You can follow the <a href="#the-move-on-process">move on process</a> to find them suitable accommodation. In the short term, this may include emergency accommodation. Once accommodation has been identified you can complete the new placement tracking record (if temporary/ emergency accommodation) or complete this by completing the reservation process.</li>
                     </ol>    
                 </p>
             </ol>
@@ -1487,12 +1873,40 @@
                     <li>Staying with Sponsor field indicates whether the property is the main residence of the sponsor and their family e.g. someone would be allocated a room in the sponsors/host house rather than accommodation separately owned by the sponsor/host.</li>
                 </ol>
                 <li>Save the record.</li>
-                <li>You now need to assign the sponsor and host address records to ensure everyone in your local authority group can access the records. Click Assign in the top navigation of the data platform. </li>
+                <li>You now need to assign the sponsor and host address records to ensure everyone in your local authority group can access the records. Select the address and click Assign Host Address.</li>
                 <img src="assets/images/assign-top-nav.png" alt="assign button">
                 <li>Assign to User or Team and then hit enter to browse your local authority</li>
                 <img src="assets/images/user-or-team-selector.png" alt="user or team selector">
             </ol>
             <p>To check, this has happened correctly, you can check the host address to ensure the host local authority has changed as well as the ‘owner’ in the top right corner of the record.  This may take a little while to filter through so refresh after 20 to 30 seconds</p>
+            <p>Whenever a host address is created, whether it be manually or via a data load, this will generate the creation of an offered property tab. These two will be linked via the Host Address reference.</p>
+            <img src="assets/images/host-address-menu-new.png" alt="Screenshot of the host address menu with the name field highlighted">
+
+            <h3 id="offered-property-tab" class="y-target">Offered Property Tab</h3>
+            <p>The offered property tab sits within the host address section as a separate tab.  This tab contains anonymised data and a partial postcode, to ensure that other LA’s access relevant data only.</p>
+            <p>The purpose of the offered property tab is to document the details of the property being offered, so that the Household property search shows viable properties only.</p>
+            <p>It is very important that this information is kept up to date and accurate to ensure that property searches across the board become successful reservations/matches. </p>
+            <p>The tab will include the following information, please complete the fields as required. Those marked with a red asterisk (*) are mandatory:</p>
+            <img src="assets/images/moveon/offered-property.png" alt="Screenshot of host address screen in the offered property tab">
+            <p>An offered property tab will appear automatically on any EOI data or when an additional address is added to a record. Existing sponsor records within the system that have an active hosting will still have an offered property tab but this will be empty and show ‘Source record not selected’: </p>
+            <img src="assets/images/moveon/offered-property2.png" alt="Screenshot of host address screen in the offered property tab with Source record not selected message">
+            <p>Once the current placement ends and the host address becomes available, the offered property status will revert to ‘Pending Checks’, and a blank offered property form will generate in the offered property tab.  It will be your responsibility to communicate with the host to enquire if they wish to host another family.  If they do, all previous checks should be confirmed to still be valid before making changing the offered property status to available.</p>
+            <p><b>Please note: </b>If the host no longer wishes to house any new applicants, then their records need to be set to withdrawn and this will automatically set the offered property tab to removed. </p>
+            <p>To view all offered properties in your area you will need to access the Offered Properties tab via the left have navigation:</p>
+            <img src="assets/images/moveon/offered-property-drop.png" alt="Screenshot of offered properties selected in navigation pane">
+            <p>You can then access the view ‘My LA New / Pending Properties’ from the dropdown menu which will show all new offered properties and all properties currently pending checks. </p>
+            <img src="assets/images/moveon/la-pending-property.png" alt="Screenshot of LA new / pending properties page">
+            <p>To access all Available properties in your area you need to select the ‘My LA Available Properties view:</p>
+            <img src="assets/images/moveon/la-pending-property2.png" alt="Screenshot of LA new / pending properties with My LA available view">
+       
+            <h3 id="searching-offered-property" class="y-target">Searching for an Offered Property </h3>
+            <p>Once all checks are complete on an EOI record, the offer becomes viable and the status will need to be changed from ‘pending checks’ to ‘available’ on the offered property tab.</p>
+            <img src="assets/images/moveon/offered-property-status.png" alt="Screenshot of Offered Property Status drop down set to Available">
+            <p>This means that the record will be viewable to all local authorities across Wales for them to reserve where appropriate. </p>
+            <p>It is imperative that the housing need tab is kept up to date to ensure an accurate search is carried out and the correct host / household match is made. </p>
+            <p>Each LA will be able to search for all available offered properties via the ‘move on search’ tab on the household record.</p>
+            <img src="assets/images/moveon/move-on-search.png" alt="Screenshot of household page with move on search highlighted">
+
             
             <h3 id="host-with-multiple-addresses" class="y-target">Hosts with multiple addresses</h3>
             <p>If a host has multiple addresses, then these need to be added separately for each property in the <a href="#adding-host-addresses">host addresses tab.</a>  Each address for the host will show as available individually until they are linked to an applicant. </p>
@@ -1503,58 +1917,44 @@
                 <li>Each address will require a different annotation to show it’s a different part of the house/ building – e.g. Flat 1 / Flat 2: </li>
                 <img src="assets/images/host-multiple-addresses-23.png" alt="Host address menu displaying multiple addresses">
             </ol>
+            <p>Each new address will generate an <a href="user-guide.html#offered-property-tab">offered property tab</a> which will also need to be completed alongside the host address details.</p>
 
             <h3 id="linking-household-record" class="y-target">Linking a household record and a Sponsor/host record</h3>
-            <p>When linking a sponsor to a household there are two steps to follow.</p>
+            <p>When linking a sponsor to a household there are certain steps to follow.</p>
             <ol>
-                <li>Within the household page, you need to input the sponsor / host into the house field.</li>
-                <li>Create a Household Placement Tracking record</li>
+                <li>Ensure all sponsor checks have been completed and the offered property status is set to available.</li>
+                <li>Follow the reservation process through to RS08 – Match Completed successfully. An automatic placement tracking will be created and the host details will appear on the household general page.</li>
             </ol>
-            <h4>Adding the Sponsor / host Details to your household record</h4>
-            <p>To open a household record:</p>
-            <ol>
-                <li>Search for an applicant within the household you wish to edit either through the Applicants or Households menu.  </li>
-                <li>Double-click on a member of the household and click on the blue Household ID at the top of the summary screen.  </li>
-                <li>Click in the Host Field to add the name of your sponsor.  You can either type the name or press return to bring up a full list.</li>
-                <img src="assets/images/host-field23.png" alt="menu showing the hose field" width="60%" height="60%">
-                <li>If you have multiple sponsors with the same name, click on the drop-down arrow next to their name to see further details</li>
-                <img src="assets/images/further-sponsor-details.png" alt="further details">
-                <li>Click in the host address field to select the appropriate address.  It will only list those associated with the sponsor that are currently available.</li>
-                <img src="assets/images/host-address-field.png" alt="host address field">
-                <div class="vspacer"></div>
-                <li>If you select the wrong address, you can easily delete and select the right address or check the HA reference in the host address tab within the Sponsor section of the platform.</li>
-                <li>Click Save or Save and Close - if you check the ‘sponsor’ section on the personal details tab of the applicant page – you will see this has now pulled through the new sponsor – this field will be locked with no option to update</li>
-                <img src="assets/images/sponsor-section23.png" alt="Menu showing the sponsor section">
-            </ol>
+            
             <div class="vspacer"></div>
             <h3 id="replacing-an-existing-host" class="y-target">Replacing an existing Host / Sponsor </h3>
             <p>On some occasions you will need to replace an existing host/sponsor with another within the current local authority. </p>
             <p>If the host is being replaced:</p>
             <ol>
-                <li>Firstly, you must delete the current host out of the host / host address field on the household page.</li>
-                <li>When searching the replacement host’s name in the host box, only available hosts will show (those that don’t have an applicant attached to their record).</li>
-                <li>Hosts with multiple properties will show as available if they have any available properties – only the available properties will show in the host address list. </li>
+               <li>Firstly, you must ensure the housing needs tab is up to date for the household. </li>
+               <li>When searching for a new suitable host you will need to access the move on search tab.</li>
+               <li>Complete the reservation process through to RS08- match completed successfully. ).</li>
+               <li>An automatic placement tracking will be created and the host details will appear on the household general page.</li>
             </ol>
-            <img src="assets/images/replace-host232.png" alt="Replace host menu">
-            <p><b>Important:</b>when changing / updating a host on the record you must update the host on the household field <b>first</b> and then create a placement tracking for the new placement.</p>
-            <p>As the host section on the household page is mandatory you can only replace a host with an alternative host unless the applicant is moving to move on accommodation (self-supporting).</p>
+            <p>Hosts with multiple properties will show as available if they have any available properties – only the available properties will show in the  move on search list.</p>
+            <p>As the host section on the household page is locked you can only replace a host with an alternative host via the move on search and reservation process.</p>
+           
             <p>To remove a host completely (because the person is moving to self-supporting within the LA for instance) you need to create a placement tracking with a dropdown of any scenario other than sponsor/host:</p>
             <img src="assets/images/dropdown-nohost23.png" alt="Drop down menu with sponsor/host striked through">
             <p>Once a placement tracking has been created with one of the above dropdowns, the host will be automatically removed from the household page and the host section will no longer be a mandatory field. </p>
 
             <h3 id="remove-household-no-show" class="y-target">Removing a Host/Sponsor when the household is a No Show</h3>
             <p>There will be occasions where a household has decided either not to travel to Wales, has decided not to use this Visa or has travelled to another part of the UK on a separate Homes for Ukraine Visa.  There may also be a situation where the household/applicant are uncontactable with no confirmed arrival date. </p>
-            <p>On these occasions, there may be a host still linked to the household page, which is a result of a flow that was run in release 4.0.  As the host / host address field is mandatory on the household page and you cannot create a placement tracking for someone who hasn’t arrived, it’s important that the IS Journey Status is reflective of the situation to enable the deletion of the data in these mandatory fields. </p>
+            <p>On these occasions, there may be a host still linked to the household page, which is a result of a flow that was run in release 4.0.  As the host / host address field is mandatory and locked on the household page and you cannot create a placement tracking for someone who hasn’t arrived, it’s important that the IS Journey Status is reflective of the situation to enable the deletion of the data in these mandatory fields. </p>
             <p>The system has functionality that when ALL members of a household group are set to No show / uncontactable it will remove the mandatory restrictions behind the host/ host address section of the household page.</p>
             <p>When a household (multiple applicants or single applicants) are no shows, you should:</p>
             <ol>
                 <li>Set the IS Journey Status to one of 3 options: IS21, IS22, IS23.</li>
                 <img src="assets/images/is_journey23.png" alt="list of IS codes available (IS21, IS22 and IS23)" width="60%" height="60%">
                 <li>Ensure that this is set for ALL members of the household.</li>
-                <li>Go into the household page and delete the host / host address. </li>
-                <li>Click save.</li>
+                <li>The system will automatically remove the host details from the locked fields on the household page (after about 30-40 seconds) </li>
             </ol>
-            <P>The host/host address fields will now be empty, the link between sponsor/host and applicant will be removed and the sponsor/host will now become available.</P>
+            <P>The host/host address fields will now be empty, the link between sponsor/host and applicant will be removed and the sponsor/host will now become available. The offered property status will also revert back to pending checks to enable you to start the triage process for move on, if relevant. </P>
             <P>Please note: if not all members of the household are no show’s then you will need to split the household removing the no show applicants into their own household group.</P>
 
             <h3 id="recording-additional" class="y-target">Recording additional sponsor household members</h3>
@@ -1593,9 +1993,21 @@
             <p>Once selected the system will automatically deactivate these records to prevent them from showing up on the active sponsors list.</p>
             <ul>
                 <li>You will still have the ability to create case notes on the record once deactivated.</li>
+                <li>The offered property tab for the host address will also become inactive and the offered property status will change to ‘removed’ </li>
                 <li>If you need to access a withdrawn / rejected sponsor record – you can locate these via the inactive sponsor’s view: </li>
                 <img src="assets/images/inactive-sponsors23.png" alt="Inactive Sponsor drop down">
             </ul>
+            <h3 id="reinstate-host" class="y-target">To reinstate a withdrawn host </h3>
+            <p>If a host who has previously withdrawn from their responsibilities to host reaches out to state, they wish to begin hosting again you will need to obtain access of the previously deactivated sponsor/host record.</p>
+            <p>As local authorities don’t have access to reactivate records, data champions will need to contact the UDP team via the <a href="mailto:nationofsanctuarysurvey@gov.wales">nationofsanctuarysurvey@gov.wales</a> mailbox to request that the sponsor record be reinstated to an active status.  Please include in your request:</p>
+            <ol>
+                <li>The name of the sponsor</li>
+                <li>The action to be taken – status changed from HST004-withdrawn to HST003-Active</li>
+                <li>A brief description that the sponsor has wished to resume their status as a host </li>
+            </ol>
+            <p>The UDP team with then reactivate the sponsor/ host record and the offered property record.  The offered property status will be changed to pending checks and it will be your responsibility to ensure that all sponsor/host checks are still relevant before making the property available within the <a href="user-guide.html#the-move-on-process">move on</a> search. </p>
+
+
             <h3 id="duplicate-host-no-approved" class="y-target">Duplicate Hosts with no approved applicants attached</h3>
             <p>From time to time you may come across an additional host record.  These will usually have no linked applicants or PTs attached.</p>
             <p>It will normally show an application linked with no applicant name which suggests that the applicant has not yet been approved.</p>
@@ -1603,6 +2015,8 @@
             <p>To avoid having multiple records in the system for hosts/sponsors you can deactivate these by selecting their sponsor/host journey status to HST006 – Duplicate. </p>
             <p>The record will be automatically de-activated</p>
             <img src="assets/images/hst00623.png" alt="Sponsor page showing HST006 selected">
+            <p>IMPORTANT: these records should only be deactivated if there is a live active record for the sponsor/host already in the system.</p>
+            <p>If this is a new sponsor/host record with multiple duplicates linked to different blank (unapproved) applications, these will need to be kept active until the applications have been approved.  This is due to the likelihood that the individual applicants will for a household group once approved and the duplicated sponsor records will be automatically deactivated as part of the deduplication process at data load. </p>
             <p>If you need to access a Deactivated sponsor record – you can locate these via the inactive sponsors view:</p>
             <img src="assets/images/inactive-sponsors23.png" alt="Inactive sponsors dropdown">
             <h3 id="updating-sponsor-comms" class="y-target">Updating Sponsor Communication Preferences</h3>
