@@ -2268,6 +2268,8 @@
             <P><b>SS08 - In WC ready to be moved on</b></P>
             <p><b>SS09 - Move on Accommodation Allocated</b></p>
             <p><b>SS10 - Moved On</b></p>
+            <p><b>SS11 - Duplicate</b></p>
+            <p><b>SS12 - Support Ended</b></p>
             <div class="vspacer"></div>
             <h4>How the process works in summary</h4>
             <table>
@@ -2285,10 +2287,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>SS05</td>
+                    <td>SS05 - SS05E</td>
                     <td>Contact Centre </td>
                     <td>
                         <p>CC to complete arrival hub details and make them aware of ETA and other info </p>
+                        <p>CC to update status if travel has ceased due to reasons in status’ SS05A-E or if applicant is a no show</p>
                         <p>Arrival Hub to phone through confirmation of contact and Contact Centre to update records </p>
                         <p>Status Change </p>
                     </td>
@@ -2323,6 +2326,25 @@
                         <p>Change Status </p>
                         <p>Close Welcome Centre placement record </p>
                         <p>Create a new placement record for their permanent accommodation </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SS11</td>
+                    <td>Contact Centre</td>
+                    <td>
+                        <p>CC‘s initial triage of records produce more than one application for the individual  </p>
+                        <p>Update status to reflect duplication of record</p>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>SS12</td>
+                    <td>Welcome Centre / Local Authority</td>
+                    <td>
+                        <p>Change status</p>
+                        <p>Create new placement tracking for new accommodation (if applicable)</p>
+                        <p>Select appropriate reason in status reason dropdown </p>
+                       
                     </td>
                 </tr>
             </table>
@@ -2518,6 +2540,20 @@
                         <p>Add a status reason (not mandatory)</p>
                     </td>
                 </tr>
+                <tr>
+                    <td><b>SS11 - Duplicate Record </b></td>
+                    <td>An individual has applied for multiple applications on the same, or different schemes.</td>
+                    <td>The applicant journey status should be marked as duplicate record and a case note should be created detailing the actual record for the individual. </td>
+                    <td>Contact Centre / LA </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>SS12 - Support Ended</b></td>
+                    <td>The family/individual no longer require regular support from the scheme.  This will be accompanied by the relevant status reason.</td>
+                    <td>Create a case note and update the journey status with the correct relevant status reason. The ‘no non-essential communications’ tab should also be toggled to ‘yes’.</td>
+                    <td>LA</td>
+                    <td></td>
+                </tr>
             </table>
             <h3 id="individual-sponsor-scheme" class="y-target">Individual Sponsor Scheme (Homes for Ukraine)</h3>
             <p>Each step of the process involves checks and updates to the data platform to ensure arrivals from Ukraine are safely guided to accommodation in Wales, through the Individual Sponsor Scheme.</p>
@@ -2528,6 +2564,7 @@
             <p><b>IS03 - Moved to accommodation</b></p>
             <p><b>IS04 - Rematching needed</b></p>
             <p><b>IS05 - Move On</b></p>
+            <p><b>ISO7 - Support Ended</b></p>
             <p><b>IS21 - No Show - Known</b></p>
             <p><b>IS22 - No Show - Unknown</b></p>
             <p><b>IS23 - Uncontactable</b></p>
@@ -2628,6 +2665,16 @@
                             <li>Open a new placement tracking record with as much information on where they are gone</li>
                             <li>Update Case Notes as required</li>
                         </ul>
+                    </td>
+                    <td>Local authority</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>IS07 - Support Ended</b></td>
+                    <td>
+                        <p>The family/individual no longer require regular support from the scheme.  This will be accompanied by the relevant status reason.</p>
+                    </td>
+                    <td><p>Create a case note and update the journey status with the correct relevant status reason. The ‘no non-essential communications’ tab should also be toggled to ‘yes’.</p>
                     </td>
                     <td>Local authority</td>
                     <td></td>
@@ -2811,8 +2858,8 @@
                 <td>They have returned to their home country and have not communicated plans regarding their return.</td>
             </tr>
             <tr>
-                <td>Support Ended</td>
-                <td>Individual no longer requires support.  This status reason can be used if the person has died whilst in the UK.  Please provide additional clarification as to reason in the case note.</td>
+                <td>Deceased</td>
+                <td>This status reason can be used if the person has died whilst in the UK. Please provide additional clarification as to reason in the case note.</td>
             </tr>
             
         </table>
